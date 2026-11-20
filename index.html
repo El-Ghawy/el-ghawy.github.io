@@ -3,858 +3,1354 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>منيو بن الغاوي</title>
+<title>منيو بن الغاوي | El Ghawy Coffee</title>
 <link rel="icon" type="image/png" href="data:image/png;base64,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">
 <link rel="apple-touch-icon" href="data:image/png;base64,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">
 <meta name="theme-color" content="#60101a">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Lalezar&display=swap" rel="stylesheet">
+<script>
+/* apply saved theme/lang before paint */
+try{var t=localStorage.getItem("gh_theme");if(t)document.documentElement.setAttribute("data-theme",t);var l=localStorage.getItem("gh_lang");if(l==="en"){document.documentElement.lang="en";document.documentElement.dir="ltr"}}catch(e){}
+</script>
 <style>
 /*
 VOICE: دافي وشعبي وواضح، زي كوباية قهوة على ناصية في إمبابة
-IDEA: كارت منيو مطبوع لمحل بن، بالنبيتي والأصفر بتوع البراند
-PICTURE: هيدر نبيتي فيه فنجان قهوة مرسوم وبخار طالع وحبوب بن
-COLOUR and TYPE: نبيتي #6e1222 أساسي، أصفر #f6d40c أكسنت، أبيض/كريمي خلفية؛ Lalezar للعناوين و Cairo للنص
-LAYOUT: هيدر، شريط أقسام ثابت فوق، بحث، كروت أقسام في عمود واحد على الموبايل وعمودين على الشاشة الكبيرة
+IDEA: كارت منيو محل بن، بالنبيتي والأصفر بتوع لوجو الغاوي
+PICTURE: هيدر نبيتي فيه اللوجو الحقيقي وحبات بن وبخار
+COLOUR and TYPE: نبيتي #60101a، أصفر #f9dc0c، كريمي فاتح أو غامق؛ Lalezar للعناوين و Cairo للنص
+LAYOUT: هيدر، 3 تابات للمنيوهات، شريط أقسام ثابت، بحث، كروت أقسام
 */
-:root{color-scheme:light dark;
---bg:light-dark(#fbf7f1,#1a0d10);--card:light-dark(#ffffff,#2a1419);--ink:light-dark(#2a1216,#f7ece9);
---soft:light-dark(#7d5b60,#c7a9ad);--line:light-dark(#efe3dc,#3d2228);
---wine:#60101a;--wine2:#7d1724;--yel:#f9dc0c;--chip:light-dark(#fff3b0,#3a2a0a)}
-:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+:root{--bg:#fbf7f1;--card:#ffffff;--ink:#2a1216;--soft:#7d5b60;--line:#efe3dc;--chip:#fff3b0;--pc:#7d1724;--seg:#efe5dc;
+--wine:#60101a;--wine2:#7a1a26;--yel:#f9dc0c;color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#1a0d10;--card:#2a1419;--ink:#f7ece9;--soft:#c7a9ad;--line:#3d2228;--chip:#3a2a0a;--pc:#f9dc0c;--seg:#2a1419;color-scheme:dark}}
+:root[data-theme=dark]{--bg:#1a0d10;--card:#2a1419;--ink:#f7ece9;--soft:#c7a9ad;--line:#3d2228;--chip:#3a2a0a;--pc:#f9dc0c;--seg:#2a1419;color-scheme:dark}
 *{box-sizing:border-box;min-width:0}
-body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 "Cairo",system-ui,sans-serif;overflow-x:clip}
-html{scroll-padding-top:120px;scroll-behavior:smooth}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.steam path{animation:none!important}}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 "Cairo",system-ui,-apple-system,sans-serif;overflow-x:hidden;transition:background .25s,color .25s}
+html{scroll-padding-top:150px;scroll-behavior:smooth}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.steam path{animation:none!important}body{transition:none}}
+button{font:inherit;cursor:pointer}
+button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid var(--yel);outline-offset:2px}
 
-header{background:radial-gradient(120% 140% at 50% 0%,#7a1a26 0%,#60101a 55%,#4a0b14 100%);color:#fff;position:relative;overflow:hidden;padding:34px max(5vw,18px) 52px;text-align:center}
-header::after{content:"";position:absolute;inset:auto 0 -1px 0;height:30px;background:var(--bg);border-radius:50% 50% 0 0/100% 100% 0 0}
-.hbg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+header{background:#60101a;background:radial-gradient(120% 140% at 50% 0%,#7a1a26 0%,#60101a 55%,#4a0b14 100%);color:#fff;position:relative;overflow:hidden;padding:56px max(5vw,18px) 52px;text-align:center}
+header:after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:30px;background:var(--bg);border-radius:50% 50% 0 0/100% 100% 0 0;transition:background .25s}
+.hbg{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none}
+.tools{position:absolute;top:12px;left:12px;right:12px;display:flex;justify-content:space-between;z-index:2}
+.tb{height:40px;min-width:40px;padding:0 12px;border-radius:999px;border:1px solid rgba(255,255,255,.28);background:rgba(255,255,255,.1);color:#fff;font-weight:800;font-size:14px;display:flex;align-items:center;justify-content:center}
+.tb svg{width:20px;height:20px}
 .hwrap{max-width:1100px;margin:0 auto;position:relative;z-index:1;display:flex;flex-direction:column;align-items:center}
-.logo{width:min(420px,82vw);height:auto;display:block;filter:drop-shadow(0 6px 14px rgba(0,0,0,.25))}
-.tag{display:flex;align-items:center;gap:12px;color:var(--yel);font-weight:800;margin-top:16px;font-size:18px;white-space:nowrap}
-.tag i{display:block;width:44px;height:2px;border-radius:2px;background:var(--yel);opacity:.8}
-.sub{margin:8px 0 0;color:#f0d3d8;font-size:15px}
-.steam path{animation:rise 3.2s ease-in-out infinite;transform-box:fill-box}
+.logo{width:min(400px,78vw);height:auto;display:block;filter:drop-shadow(0 6px 14px rgba(0,0,0,.25))}
+.tag{display:flex;align-items:center;color:var(--yel);font-weight:800;margin-top:16px;font-size:18px;text-align:center}
+.tag i{display:block;flex:none;width:36px;height:2px;border-radius:2px;background:var(--yel);opacity:.8;margin:0 12px}
+.sub{margin:6px 0 0;color:#f0d3d8;font-size:15px}
+.steam path{animation:rise 3.2s ease-in-out infinite}
 .steam path:nth-child(2){animation-delay:.8s}
 @keyframes rise{0%{opacity:0;transform:translateY(8px)}40%{opacity:.9}100%{opacity:0;transform:translateY(-14px)}}
 
-nav{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
-.navin{max-width:1100px;margin:0 auto;padding:10px max(5vw,14px) 10px;display:flex;gap:8px;overflow-x:auto;scrollbar-width:none}
+nav{position:-webkit-sticky;position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);transition:background .25s}
+.seg{max-width:640px;margin:0 auto;padding:10px max(4vw,12px) 4px}
+.segin{display:flex;background:var(--seg);border:1px solid var(--line);border-radius:16px;padding:4px}
+.segin button{flex:1 1 0;border:0;background:transparent;color:var(--ink);font-weight:800;font-size:15px;padding:9px 4px;border-radius:12px;min-height:44px;position:relative;line-height:1.2}
+.segin button.on{background:var(--wine);color:#fff;box-shadow:0 3px 10px rgba(96,16,26,.3)}
+.segin button .soon{display:block;font-size:10px;font-weight:700;color:var(--soft)}
+.segin button.on .soon{color:#f3c9cf}
+.navin{max-width:1100px;margin:0 auto;padding:8px max(5vw,14px) 10px;display:flex;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
 .navin::-webkit-scrollbar{display:none}
-.navin a{flex:none;text-decoration:none;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:999px;padding:8px 16px;font-weight:700;font-size:15px;min-height:42px;display:flex;align-items:center}
-.navin a.on{background:var(--wine);color:#fff;border-color:var(--wine)}
-.search{max-width:1100px;margin:0 auto;padding:0 max(5vw,14px) 10px}
-.search input{width:100%;font:inherit;font-size:16px;padding:11px 16px;border-radius:14px;border:1.5px solid var(--line);background:var(--card);color:var(--ink)}
-.search input:focus{outline:3px solid var(--yel);border-color:var(--wine)}
+.navin a{flex:none;text-decoration:none;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:999px;padding:7px 15px;font-weight:700;font-size:14px;min-height:40px;display:flex;align-items:center;margin-inline-end:8px}
+.navin a.on{background:var(--yel);color:var(--wine);border-color:var(--yel)}
+.search{max-width:1100px;margin:0 auto;padding:16px max(5vw,14px) 0}
+.search input{width:100%;font:inherit;font-size:16px;padding:11px 16px;border-radius:14px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);-webkit-appearance:none}
+.search input:focus{border-color:var(--wine)}
 
-main{max-width:1100px;margin:0 auto;padding:18px max(5vw,14px) 30px;columns:2 460px;column-gap:18px}
-.sec{break-inside:avoid;background:var(--card);border:1px solid var(--line);border-radius:22px;margin:0 0 18px;overflow:hidden;display:inline-block;width:100%}
-.sec h2{margin:0;background:linear-gradient(90deg,#60101a,#7a1a26);color:#fff;font-family:"Lalezar","Cairo",sans-serif;font-weight:400;font-size:28px;line-height:1.2;padding:14px 20px 10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
-.flat{font-family:"Cairo",sans-serif;font-size:14px;font-weight:800;background:var(--yel);color:var(--wine);border-radius:999px;padding:3px 12px;white-space:nowrap}
+main{max-width:1100px;margin:0 auto;padding:16px max(5vw,14px) 30px;-webkit-columns:2 460px;columns:2 460px;-webkit-column-gap:18px;column-gap:18px}
+.sec{-webkit-column-break-inside:avoid;break-inside:avoid;background:var(--card);border:1px solid var(--line);border-radius:22px;margin:0 0 18px;overflow:hidden;display:inline-block;width:100%}
+.sec h2{margin:0;background:#60101a;background:linear-gradient(90deg,#60101a,#7a1a26);color:#fff;font-family:"Lalezar","Cairo",sans-serif;font-weight:400;font-size:27px;line-height:1.2;padding:14px 20px 10px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}
+html[lang=en] .sec h2{font-family:"Cairo",sans-serif;font-weight:800;font-size:22px;padding:12px 20px}
+.flat{font-family:"Cairo",sans-serif;font-size:13px;font-weight:800;background:var(--yel);color:var(--wine);border-radius:999px;padding:3px 12px;white-space:nowrap;margin:2px 0}
 .note{margin:0;padding:10px 20px 0;color:var(--soft);font-size:14px}
 ul{list-style:none;margin:0;padding:8px 20px 14px}
-li{display:flex;align-items:baseline;gap:8px;padding:9px 0;border-bottom:1px dashed var(--line)}
+li{display:flex;align-items:baseline;padding:9px 0;border-bottom:1px dashed var(--line)}
 li:last-child{border-bottom:0}
 .n{font-weight:700}
 .d{display:block;font-size:13px;color:var(--soft);font-weight:600}
-.dots{flex:1;border-bottom:2px dotted var(--line);transform:translateY(-4px)}
-.p{white-space:nowrap;font-weight:800;color:var(--wine2);font-size:18px}
-:root[data-theme=dark] .p{color:var(--yel)}
-@media(prefers-color-scheme:dark){:root:not([data-theme=light]) .p{color:var(--yel)}}
-.p small{font-size:12px;font-weight:700;color:var(--soft);margin-inline-start:2px}
-.chips{display:flex;flex-wrap:wrap;gap:8px;padding:14px 20px 18px}
-.chips span{background:var(--chip);border-radius:10px;padding:6px 12px;font-weight:700;font-size:15px}
-.empty{display:none;text-align:center;color:var(--soft);padding:30px;column-span:all}
+.dots{flex:1;border-bottom:2px dotted var(--line);margin:0 8px;position:relative;top:-4px;min-width:16px}
+.p{white-space:nowrap;font-weight:800;color:var(--pc);font-size:18px}
+.p small{font-size:12px;font-weight:700;color:var(--soft);margin-inline-start:3px}
+.th{flex:none;width:58px;height:58px;padding:0;border:0;border-radius:14px;overflow:hidden;background:var(--line);cursor:zoom-in;align-self:center;box-shadow:0 2px 6px rgba(0,0,0,.12);margin-inline-end:12px}
+.th img{width:100%;height:100%;object-fit:cover;object-position:50% 28%;display:block}
+li.hasimg{align-items:center}
+.empty{display:none;text-align:center;color:var(--soft);padding:30px}
 
-footer{background:var(--wine);color:#fff;padding:26px max(5vw,18px) 34px}
-.fin{max-width:1100px;margin:0 auto;display:grid;gap:8px}
+.soonbox{max-width:560px;margin:26px auto 40px;padding:0 max(5vw,16px);text-align:center}
+.soonbox .card{background:var(--card);border:1px solid var(--line);border-radius:26px;padding:34px 24px 30px}
+.soonbox svg{width:150px;height:auto;display:block;margin:0 auto 10px}
+.soonbox h2{margin:0;font-family:"Lalezar","Cairo",sans-serif;font-weight:400;font-size:40px;color:var(--pc);line-height:1.2}
+html[lang=en] .soonbox h2{font-family:"Cairo",sans-serif;font-weight:800;font-size:32px}
+.soonbox p{margin:10px 0 18px;color:var(--soft);font-size:16px}
+.soonbox button{border:0;background:var(--wine);color:#fff;font-weight:800;border-radius:14px;padding:12px 22px;min-height:46px;margin:4px}
+.soonbox button.alt{background:var(--yel);color:var(--wine)}
+
+.lb{position:fixed;top:0;left:0;right:0;bottom:0;z-index:50;background:rgba(20,6,9,.9);display:none;align-items:center;justify-content:center;flex-direction:column;padding:24px}
+.lb.on{display:flex}
+.lb img{max-width:92vw;max-height:72vh;border-radius:20px;box-shadow:0 20px 50px rgba(0,0,0,.5)}
+@media(min-width:600px){.lb img{max-width:520px}}
+.lb p{margin:14px 0 0;color:#fff;font-weight:800;font-size:20px;text-align:center}
+.lb p span{color:var(--yel);margin-inline-start:10px}
+.lb .x{position:absolute;top:14px;left:14px;width:46px;height:46px;border-radius:50%;border:0;background:rgba(255,255,255,.15);color:#fff;font-size:22px}
+
+footer{background:#60101a;color:#fff;padding:26px max(5vw,18px) 34px}
+.fin{max-width:1100px;margin:0 auto}
+.fin div{margin:4px 0}
 .fin b{color:var(--yel)}
 .fin a{color:#fff}
+.ltr{direction:ltr;unicode-bidi:embed}
 .upd{font-size:13px;color:#e8bfc6}
-@media(max-width:600px){header{padding-top:22px}.sec h2{font-size:25px}}
+.slog{font-family:"Lalezar","Cairo",sans-serif;color:var(--yel);font-size:22px;margin-bottom:8px!important}
+@media(max-width:600px){.sec h2{font-size:24px}.segin button{font-size:14px}}
 </style>
 </head>
 <body>
 <header>
+  <div class="tools">
+    <button class="tb" type="button" id="langBtn" aria-label="Language">EN</button>
+    <button class="tb" type="button" id="themeBtn" aria-label="Theme"></button>
+  </div>
   <svg class="hbg" viewBox="0 0 400 260" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
     <defs><g id="bn"><ellipse rx="14" ry="9" fill="#f9dc0c"/><path d="M-11 2c4-5 9 4 14-1s6-3 8-3" fill="none" stroke="#60101a" stroke-width="2.2" stroke-linecap="round"/></g></defs>
-    <g opacity=".14"><use href="#bn" transform="translate(24 40) rotate(-30)"/><use href="#bn" transform="translate(378 70) rotate(25) scale(1.1)"/><use href="#bn" transform="translate(30 200) rotate(20) scale(1.2)"/><use href="#bn" transform="translate(372 210) rotate(-20)"/><use href="#bn" transform="translate(330 20) rotate(10) scale(.8)"/></g>
-    <g class="steam" fill="none" stroke="#f9dc0c" stroke-width="3" stroke-linecap="round" opacity=".3"><path d="M62 150c-5-7 5-10 0-18"/><path d="M72 150c-5-7 5-10 0-18"/></g>
+    <g opacity=".14"><use href="#bn" xlink:href="#bn" transform="translate(24 60) rotate(-30)"/><use href="#bn" xlink:href="#bn" transform="translate(378 90) rotate(25) scale(1.1)"/><use href="#bn" xlink:href="#bn" transform="translate(30 210) rotate(20) scale(1.2)"/><use href="#bn" xlink:href="#bn" transform="translate(372 215) rotate(-20)"/></g>
+    <g class="steam" fill="none" stroke="#f9dc0c" stroke-width="3" stroke-linecap="round" opacity=".3"><path d="M62 160c-5-7 5-10 0-18"/><path d="M72 160c-5-7 5-10 0-18"/></g>
   </svg>
   <div class="hwrap">
     <h1 style="margin:0"><img class="logo" src="data:image/png;base64,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" alt="بن الغاوي – El Ghawy Coffee" width="900" height="374"></h1>
-    <div class="tag"><i></i>أسعار التيك أواي<i></i></div>
-    <p class="sub">قهوة، عصاير فريش، سموزي وميلك شيك</p>
+    <div class="tag"><i></i><span id="tag"></span><i></i></div>
+    <p class="sub" id="slogan"></p>
   </div>
 </header>
 
 <nav>
-  <div class="navin scroll" id="nav"></div>
-  <div class="search"><input id="q" type="search" placeholder="دوّر على مشروب… مثلاً: مانجو، لاتيه" aria-label="بحث في المنيو"></div>
+  <div class="seg"><div class="segin" id="seg" role="tablist"></div></div>
+  <div class="navin" id="nav"></div>
 </nav>
 
-<main id="menu"><p class="empty" style="display:block">جاري تحميل المنيو…</p></main>
-<p class="empty" id="empty">مفيش حاجة بالاسم ده في المنيو</p>
+<div class="search" id="searchWrap"><input id="q" type="search" autocomplete="off"></div>
+<main id="menu"></main>
+<p class="empty" id="empty"></p>
+<div class="soonbox" id="soon" style="display:none"></div>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true"><button type="button" class="x" id="lbx" aria-label="close">✕</button><img id="lbi" alt=""><p id="lbt"></p></div>
 
 <footer>
   <div class="fin">
-    <div><b>العنوان:</b> <span id="addr"></span></div>
-    <div><b>للتواصل:</b> <a id="phone" href="#"></a></div>
+    <div class="slog" id="fslog"></div>
+    <div><b id="lAddr"></b> <span id="addr"></span></div>
+    <div><b id="lPhone"></b> <a id="phone" class="ltr" href="#"></a></div>
     <div class="upd" id="upd"></div>
   </div>
 </footer>
 
 <script>
-/* ===== المنيو: عدّل الأسعار والأصناف من هنا ===== */
+/* ============ المنيو: عدّل الأسعار والأصناف من هنا ============
+   "p" = السعر ، "n" = الاسم بالعربي ، "en" = الاسم بالإنجليزي
+   "hide": true = الصنف مستخبي ومش ظاهر
+   "soon": true = المنيو يظهر "قريباً"                                  */
 var MENU = {
  "updated": "نوفمبر 2026",
+ "updatedEn": "November 2026",
  "address": "أول شارع ممدوح سالم بجوار بي تيك – إمبابة",
+ "addressEn": "Start of Mamdouh Salem St., next to B.TECH – Imbaba",
  "phone": "01094846865",
- "sections": [
+ "menus": [
   {
-   "id": "hot",
-   "name": "مشروبات ساخنة",
-   "items": [
-    {
-     "n": "شاي",
-     "p": "7",
-     "d": ""
-    },
-    {
-     "n": "شاي نكهات",
-     "p": "15",
-     "d": ""
-    },
-    {
-     "n": "شاي حليب",
-     "p": "30",
-     "d": ""
-    },
-    {
-     "n": "قهوة تركي",
-     "p": "10",
-     "d": ""
-    },
-    {
-     "n": "قهوة بالجينسنج",
-     "p": "25",
-     "d": ""
-    },
-    {
-     "n": "قهوة كولمبي بيور",
-     "p": "25",
-     "d": ""
-    },
-    {
-     "n": "قهوة دبل",
-     "p": "18",
-     "d": ""
-    },
-    {
-     "n": "قهوة فرنساوي",
-     "p": "30",
-     "d": ""
-    },
-    {
-     "n": "قهوة نكهات",
-     "p": "30",
-     "d": "بندق – كراميل – مانجو – موز"
-    },
-    {
-     "n": "قهوة بندق قطع",
-     "p": "36",
-     "d": ""
-    },
-    {
-     "n": "قهوة نوتيلا",
-     "p": "40",
-     "d": ""
-    },
-    {
-     "n": "اسبريسو سنجل",
-     "p": "25",
-     "d": ""
-    },
-    {
-     "n": "اسبريسو دبل",
-     "p": "35",
-     "d": ""
-    },
-    {
-     "n": "اسبريسو ماكياتو",
-     "p": "30",
-     "d": ""
-    },
-    {
-     "n": "كرتادو",
-     "p": "45",
-     "d": ""
-    },
-    {
-     "n": "فلات وايت",
-     "p": "50",
-     "d": ""
-    },
-    {
-     "n": "هوت شوكليت",
-     "p": "35 – 45",
-     "d": "نوتيلا – كابري"
-    },
-    {
-     "n": "هوت سيدر",
-     "p": "40",
-     "d": ""
-    },
-    {
-     "n": "سحلب سادة",
-     "p": "30",
-     "d": ""
-    },
-    {
-     "n": "سحلب مكسرات",
-     "p": "40",
-     "d": ""
-    },
-    {
-     "n": "نسكافيه بلاك",
-     "p": "15",
-     "d": ""
-    },
-    {
-     "n": "نسكافيه حليب",
-     "p": "35",
-     "d": ""
-    },
-    {
-     "n": "كوفي ميكس",
-     "p": "15",
-     "d": ""
-    },
-    {
-     "n": "كافيه لاتيه",
-     "p": "40",
-     "d": ""
-    },
-    {
-     "n": "كابتشينو",
-     "p": "50",
-     "d": ""
-    },
-    {
-     "n": "موكا",
-     "p": "55",
-     "d": ""
-    }
-   ],
-   "flat": "",
-   "note": "",
-   "chips": false
+   "id": "hall",
+   "name": "منيو الصالة",
+   "en": "Dine-in",
+   "soon": true
   },
   {
-   "id": "iced",
-   "name": "قهوة مثلجة",
-   "items": [
+   "id": "takeaway",
+   "name": "التيك أواي",
+   "en": "Takeaway",
+   "tag": "أسعار التيك أواي",
+   "tagEn": "Takeaway prices",
+   "unit": "ج",
+   "unitEn": "EGP",
+   "sections": [
     {
-     "n": "اسبريسو أيس فانيلا",
-     "p": "40",
-     "d": ""
+     "id": "hot",
+     "name": "مشروبات ساخنة",
+     "en": "Hot Drinks",
+     "items": [
+      {
+       "n": "شاي",
+       "en": "Tea",
+       "p": "7",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "شاي نكهات",
+       "en": "Flavored Tea",
+       "p": "15",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "شاي حليب",
+       "en": "Milk Tea",
+       "p": "30",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "قهوة تركي",
+       "en": "Turkish Coffee",
+       "p": "10",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "قهوة بالجينسنج",
+       "en": "Ginseng Coffee",
+       "p": "25",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "قهوة كولمبي بيور",
+       "en": "Pure Colombian Coffee",
+       "p": "25",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "قهوة دبل",
+       "en": "Double Turkish Coffee",
+       "p": "18",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "قهوة فرنساوي",
+       "en": "French Coffee",
+       "p": "30",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "قهوة نكهات",
+       "en": "Flavored Coffee",
+       "p": "30",
+       "d": "بندق – كراميل – مانجو – موز",
+       "den": "Hazelnut – Caramel – Mango – Banana"
+      },
+      {
+       "n": "قهوة بندق قطع",
+       "en": "Hazelnut Chunks Coffee",
+       "p": "35",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "قهوة نوتيلا",
+       "en": "Nutella Coffee",
+       "p": "40",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "اسبريسو سنجل",
+       "en": "Single Espresso",
+       "p": "25",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "اسبريسو دبل",
+       "en": "Double Espresso",
+       "p": "35",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "اسبريسو ماكياتو",
+       "en": "Espresso Macchiato",
+       "p": "30",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "كرتادو",
+       "en": "Cortado",
+       "p": "45",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "فلات وايت",
+       "en": "Flat White",
+       "p": "50",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "هوت شوكليت",
+       "en": "Hot Chocolate",
+       "p": "35 – 45",
+       "d": "نوتيلا – كابري",
+       "den": "Nutella – Capri"
+      },
+      {
+       "n": "هوت سيدر",
+       "en": "Hot Cider",
+       "p": "40",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "سحلب سادة",
+       "en": "Plain Sahlab",
+       "p": "30",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "سحلب مكسرات",
+       "en": "Sahlab with Nuts",
+       "p": "40",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "نسكافيه بلاك",
+       "en": "Nescafé Black",
+       "p": "15",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "نسكافيه حليب",
+       "en": "Nescafé with Milk",
+       "p": "35",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "كوفي ميكس",
+       "en": "Coffee Mix",
+       "p": "15",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "كافيه لاتيه",
+       "en": "Caffè Latte",
+       "p": "40",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "كابتشينو",
+       "en": "Cappuccino",
+       "p": "50",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "موكا",
+       "en": "Mocha",
+       "p": "55",
+       "d": "",
+       "den": ""
+      }
+     ],
+     "flat": "",
+     "note": "",
+     "noteEn": ""
     },
     {
-     "n": "أيس كوفي",
-     "p": "50",
-     "d": ""
+     "id": "iced",
+     "name": "قهوة مثلجة",
+     "en": "Iced Coffee",
+     "items": [
+      {
+       "n": "اسبريسو أيس فانيلا",
+       "en": "Iced Vanilla Espresso",
+       "p": "40",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "أيس كوفي",
+       "en": "Iced Coffee",
+       "p": "50",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "أيس لاتيه",
+       "en": "Iced Latte",
+       "p": "50",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "أيس سبانش لاتيه",
+       "en": "Iced Spanish Latte",
+       "p": "60",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "أيس موكا / أيس وايت موكا",
+       "en": "Iced Mocha / Iced White Mocha",
+       "p": "60",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "أيس شوكليت",
+       "en": "Iced Chocolate",
+       "p": "45",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "فرابتشينو",
+       "en": "Frappuccino",
+       "p": "55",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "ميلك شيك اسبريسو",
+       "en": "Espresso Milkshake",
+       "p": "50",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "فرابيه سولتيد كاراميل",
+       "en": "Salted Caramel Frappé",
+       "p": "",
+       "d": "",
+       "den": "",
+       "img": "images/frappe-salted-caramel.jpg",
+       "hide": true
+      }
+     ],
+     "flat": "",
+     "note": "",
+     "noteEn": ""
     },
     {
-     "n": "أيس لاتيه",
-     "p": "50",
-     "d": ""
+     "id": "juice",
+     "name": "عصاير فريش",
+     "en": "Fresh Juices",
+     "items": [
+      {
+       "n": "مانجو",
+       "en": "Mango",
+       "p": "35",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "فراولة",
+       "en": "Strawberry",
+       "p": "35",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "جوافة",
+       "en": "Guava",
+       "p": "35",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "جوافة حليب",
+       "en": "Guava with Milk",
+       "p": "40",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "موز",
+       "en": "Banana",
+       "p": "40",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "برتقال",
+       "en": "Orange",
+       "p": "35",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "عناب",
+       "en": "Jujube",
+       "p": "30",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "ليمون",
+       "en": "Lemon",
+       "p": "30",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "ليمون نعناع",
+       "en": "Lemon Mint",
+       "p": "35",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "زبادي سادة",
+       "en": "Plain Yogurt",
+       "p": "40",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "زبادي عسل",
+       "en": "Yogurt with Honey",
+       "p": "45",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "زبادي فواكه",
+       "en": "Yogurt with Fruits",
+       "p": "50",
+       "d": "",
+       "den": ""
+      }
+     ],
+     "flat": "",
+     "note": "",
+     "noteEn": ""
     },
     {
-     "n": "أيس سبانش لاتيه",
-     "p": "60",
-     "d": ""
+     "id": "season",
+     "name": "عصاير موسمية",
+     "en": "Seasonal Juices",
+     "flat": "45",
+     "items": [
+      {
+       "n": "بلح باللبن",
+       "en": "Dates with Milk",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "كيوي",
+       "en": "Kiwi",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "بطيخ",
+       "en": "Watermelon",
+       "p": "",
+       "d": "",
+       "den": ""
+      }
+     ],
+     "note": "",
+     "noteEn": ""
     },
     {
-     "n": "أيس موكا / أيس وايت موكا",
-     "p": "60",
-     "d": ""
+     "id": "smoothie",
+     "name": "سموزي",
+     "en": "Smoothies",
+     "flat": "45",
+     "items": [
+      {
+       "n": "مانجو",
+       "en": "Mango",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "فراولة",
+       "en": "Strawberry",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "جوافة",
+       "en": "Guava",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "بطيخ",
+       "en": "Watermelon",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "ليمون",
+       "en": "Lemon",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "ليمون نعناع",
+       "en": "Lemon Mint",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "ريد بيري",
+       "en": "Red Berry",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "بلو بيري",
+       "en": "Blueberry",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "ميكس بيري",
+       "en": "Mixed Berry",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "أناناس جوز هند",
+       "en": "Pineapple Coconut",
+       "p": "",
+       "d": "",
+       "den": ""
+      }
+     ],
+     "note": "",
+     "noteEn": ""
     },
     {
-     "n": "أيس شوكليت",
-     "p": "45",
-     "d": ""
+     "id": "shake",
+     "name": "ميلك شيك",
+     "en": "Milkshakes",
+     "flat": "40",
+     "items": [
+      {
+       "n": "فانيليا",
+       "en": "Vanilla",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "فانيليا جوز هند",
+       "en": "Vanilla Coconut",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "شوكليت",
+       "en": "Chocolate",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "شوكليت جوز هند",
+       "en": "Chocolate Coconut",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "مانجو",
+       "en": "Mango",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "فراولة",
+       "en": "Strawberry",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "كراميل",
+       "en": "Caramel",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "أوريو",
+       "en": "Oreo",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "نوتيلا",
+       "en": "Nutella",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "بلو بيري",
+       "en": "Blueberry",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "ريد بيري",
+       "en": "Red Berry",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "ميكس بيري",
+       "en": "Mixed Berry",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "أناناس جوز هند",
+       "en": "Pineapple Coconut",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "كيوي",
+       "en": "Kiwi",
+       "p": "",
+       "d": "",
+       "den": ""
+      }
+     ],
+     "note": "",
+     "noteEn": ""
     },
     {
-     "n": "فرابتشينو",
-     "p": "55",
-     "d": ""
+     "id": "soda",
+     "name": "مشروبات صودا",
+     "en": "Soda Drinks",
+     "flat": "45",
+     "items": [
+      {
+       "n": "صن منت",
+       "en": "Sun Mint",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "صن شاين",
+       "en": "Sunshine",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "صودا أناناس",
+       "en": "Pineapple Soda",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "صودا كيوي",
+       "en": "Kiwi Soda",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "موهيتو كيوي",
+       "en": "Kiwi Mojito",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "موهيتو فراولة",
+       "en": "Strawberry Mojito",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "موهيتو توت",
+       "en": "Berry Mojito",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "موهيتو ميكس بيري",
+       "en": "Mixed Berry Mojito",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "موهيتو أناناس",
+       "en": "Pineapple Mojito",
+       "p": "",
+       "d": "",
+       "den": ""
+      }
+     ],
+     "note": "",
+     "noteEn": ""
     },
     {
-     "n": "ميلك شيك اسبريسو",
-     "p": "50",
-     "d": ""
+     "id": "herbs",
+     "name": "أعشاب",
+     "en": "Herbal Drinks",
+     "flat": "10",
+     "note": "السعر الموحد للأعشاب السادة",
+     "noteEn": "Flat price applies to plain herbs",
+     "items": [
+      {
+       "n": "شاي أخضر",
+       "en": "Green Tea",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "ينسون",
+       "en": "Anise",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "نعناع",
+       "en": "Mint",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "زنجبيل",
+       "en": "Ginger",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "قرفة",
+       "en": "Cinnamon",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "رمان",
+       "en": "Pomegranate",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "كركديه",
+       "en": "Hibiscus",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "حلبة",
+       "en": "Fenugreek",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "زنجبيل + ليمون",
+       "en": "Ginger + Lemon",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "زنجبيل + قرفة",
+       "en": "Ginger + Cinnamon",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "أزهار بابونج",
+       "en": "Chamomile",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "ميكس أعشاب",
+       "en": "Mixed Herbs",
+       "p": "15",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "حلبة حليب",
+       "en": "Fenugreek with Milk",
+       "p": "30",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "قرفة حليب",
+       "en": "Cinnamon with Milk",
+       "p": "30",
+       "d": "",
+       "den": ""
+      }
+     ]
+    },
+    {
+     "id": "ice",
+     "name": "آيس كريم",
+     "en": "Ice Cream",
+     "items": [
+      {
+       "n": "آيس كريم 2 بولة",
+       "en": "Ice Cream – 2 Scoops",
+       "p": "35",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "آيس كريم 3 بولة",
+       "en": "Ice Cream – 3 Scoops",
+       "p": "45",
+       "d": "",
+       "den": ""
+      }
+     ],
+     "flat": "",
+     "note": "",
+     "noteEn": ""
+    },
+    {
+     "id": "cold",
+     "name": "مشروبات غازية ومياه",
+     "en": "Soft Drinks & Water",
+     "items": [
+      {
+       "n": "بيبسي / سفن أب / ميرندا",
+       "en": "Pepsi / 7UP / Mirinda",
+       "p": "30",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "شويبس / فيروز / بيريل",
+       "en": "Schweppes / Fayrouz / Birell",
+       "p": "30",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "مياه صغيرة",
+       "en": "Small Water",
+       "p": "10",
+       "d": "",
+       "den": ""
+      }
+     ],
+     "flat": "",
+     "note": "",
+     "noteEn": ""
+    },
+    {
+     "id": "indomie",
+     "name": "إندومي",
+     "en": "Indomie",
+     "items": [
+      {
+       "n": "إندومي صغير",
+       "en": "Indomie – Small",
+       "p": "15",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "إندومي كبير",
+       "en": "Indomie – Large",
+       "p": "20",
+       "d": "",
+       "den": ""
+      }
+     ],
+     "flat": "",
+     "note": "",
+     "noteEn": ""
     }
-   ],
-   "flat": "",
-   "note": "",
-   "chips": false
-  },
-  {
-   "id": "juice",
-   "name": "عصاير فريش",
-   "items": [
-    {
-     "n": "مانجو",
-     "p": "35",
-     "d": ""
-    },
-    {
-     "n": "فراولة",
-     "p": "35",
-     "d": ""
-    },
-    {
-     "n": "جوافة",
-     "p": "35",
-     "d": ""
-    },
-    {
-     "n": "جوافة حليب",
-     "p": "40",
-     "d": ""
-    },
-    {
-     "n": "موز",
-     "p": "40",
-     "d": ""
-    },
-    {
-     "n": "برتقال",
-     "p": "35",
-     "d": ""
-    },
-    {
-     "n": "عناب",
-     "p": "30",
-     "d": ""
-    },
-    {
-     "n": "ليمون",
-     "p": "30",
-     "d": ""
-    },
-    {
-     "n": "ليمون نعناع",
-     "p": "35",
-     "d": ""
-    },
-    {
-     "n": "زبادي سادة",
-     "p": "40",
-     "d": ""
-    },
-    {
-     "n": "زبادي عسل",
-     "p": "45",
-     "d": ""
-    },
-    {
-     "n": "زبادي فواكه",
-     "p": "50",
-     "d": ""
-    }
-   ],
-   "flat": "",
-   "note": "",
-   "chips": false
-  },
-  {
-   "id": "season",
-   "name": "عصاير موسمية",
-   "flat": "45",
-   "items": [
-    {
-     "n": "بلح باللبن",
-     "p": "",
-     "d": ""
-    },
-    {
-     "n": "كيوي",
-     "p": "",
-     "d": ""
-    },
-    {
-     "n": "بطيخ",
-     "p": "",
-     "d": ""
-    }
-   ],
-   "note": "",
-   "chips": false
-  },
-  {
-   "id": "smoothie",
-   "name": "سموزي",
-   "flat": "45",
-   "items": [
-    {
-     "n": "مانجو",
-     "p": "",
-     "d": ""
-    },
-    {
-     "n": "فراولة",
-     "p": "",
-     "d": ""
-    },
-    {
-     "n": "جوافة",
-     "p": "",
-     "d": ""
-    },
-    {
-     "n": "بطيخ",
-     "p": "",
-     "d": ""
-    },
-    {
-     "n": "ليمون",
-     "p": "",
-     "d": ""
-    },
-    {
-     "n": "ليمون نعناع",
-     "p": "",
-     "d": ""
-    },
-    {
-     "n": "ريد بيري",
-     "p": "",
-     "d": ""
-    },
-    {
-     "n": "بلو بيري",
-     "p": "",
-     "d": ""
-    },
-    {
-     "n": "ميكس بيري",
-     "p": "",
-     "d": ""
-    },
-    {
-     "n": "أناناس جوز هند",
-     "p": "",
-     "d": ""
-    }
-   ],
-   "note": "",
-   "chips": false
-  },
-  {
-   "id": "shake",
-   "name": "ميلك شيك",
-   "flat": "40",
-   "items": [
-    {
-     "n": "فانيليا",
-     "p": "",
-     "d": ""
-    },
-    {
-     "n": "فانيليا جوز هند",
-     "p": "",
-     "d": ""
-    },
-    {
-     "n": "شوكليت",
-     "p": "",
-     "d": ""
-    },
-    {
-     "n": "شوكليت جوز هند",
-     "p": "",
-     "d": ""
-    },
-    {
-     "n": "مانجو",
-     "p": "",
-     "d": ""
-    },
-    {
-     "n": "فراولة",
-     "p": "",
-     "d": ""
-    },
-    {
-     "n": "كراميل",
-     "p": "",
-     "d": ""
-    },
-    {
-     "n": "أوريو",
-     "p": "",
-     "d": ""
-    },
-    {
-     "n": "نوتيلا",
-     "p": "",
-     "d": ""
-    },
-    {
-     "n": "بلو بيري",
-     "p": "",
-     "d": ""
-    },
-    {
-     "n": "ريد بيري",
-     "p": "",
-     "d": ""
-    },
-    {
-     "n": "ميكس بيري",
-     "p": "",
-     "d": ""
-    },
-    {
-     "n": "أناناس جوز هند",
-     "p": "",
-     "d": ""
-    },
-    {
-     "n": "كيوي",
-     "p": "",
-     "d": ""
-    }
-   ],
-   "note": "",
-   "chips": false
-  },
-  {
-   "id": "soda",
-   "name": "مشروبات صودا",
-   "flat": "45",
-   "items": [
-    {
-     "n": "صن منت",
-     "p": "",
-     "d": ""
-    },
-    {
-     "n": "صن شاين",
-     "p": "",
-     "d": ""
-    },
-    {
-     "n": "صودا أناناس",
-     "p": "",
-     "d": ""
-    },
-    {
-     "n": "صودا كيوي",
-     "p": "",
-     "d": ""
-    },
-    {
-     "n": "موهيتو كيوي",
-     "p": "",
-     "d": ""
-    },
-    {
-     "n": "موهيتو فراولة",
-     "p": "",
-     "d": ""
-    },
-    {
-     "n": "موهيتو توت",
-     "p": "",
-     "d": ""
-    },
-    {
-     "n": "موهيتو ميكس بيري",
-     "p": "",
-     "d": ""
-    },
-    {
-     "n": "موهيتو أناناس",
-     "p": "",
-     "d": ""
-    }
-   ],
-   "note": "",
-   "chips": false
-  },
-  {
-   "id": "herbs",
-   "name": "أعشاب",
-   "flat": "10",
-   "note": "السعر الموحد للأعشاب السادة",
-   "items": [
-    {
-     "n": "شاي أخضر",
-     "p": "",
-     "d": ""
-    },
-    {
-     "n": "ينسون",
-     "p": "",
-     "d": ""
-    },
-    {
-     "n": "نعناع",
-     "p": "",
-     "d": ""
-    },
-    {
-     "n": "زنجبيل",
-     "p": "",
-     "d": ""
-    },
-    {
-     "n": "قرفة",
-     "p": "",
-     "d": ""
-    },
-    {
-     "n": "رمان",
-     "p": "",
-     "d": ""
-    },
-    {
-     "n": "كركديه",
-     "p": "",
-     "d": ""
-    },
-    {
-     "n": "حلبة",
-     "p": "",
-     "d": ""
-    },
-    {
-     "n": "زنجبيل + ليمون",
-     "p": "",
-     "d": ""
-    },
-    {
-     "n": "زنجبيل + قرفة",
-     "p": "",
-     "d": ""
-    },
-    {
-     "n": "أزهار بابونج",
-     "p": "",
-     "d": ""
-    },
-    {
-     "n": "ميكس أعشاب",
-     "p": "15",
-     "d": ""
-    },
-    {
-     "n": "حلبة حليب",
-     "p": "30",
-     "d": ""
-    },
-    {
-     "n": "قرفة حليب",
-     "p": "30",
-     "d": ""
-    }
-   ],
-   "chips": false
-  },
-  {
-   "id": "ice",
-   "name": "آيس كريم",
-   "items": [
-    {
-     "n": "آيس كريم 2 بولة",
-     "p": "35",
-     "d": ""
-    },
-    {
-     "n": "آيس كريم 3 بولة",
-     "p": "45",
-     "d": ""
-    }
-   ],
-   "flat": "",
-   "note": "",
-   "chips": false
-  },
-  {
-   "id": "cold",
-   "name": "مشروبات غازية ومياه",
-   "items": [
-    {
-     "n": "بيبسي / سفن أب / ميرندا",
-     "p": "30",
-     "d": ""
-    },
-    {
-     "n": "شويبس / فيروز / بيريل",
-     "p": "30",
-     "d": ""
-    },
-    {
-     "n": "مياه صغيرة",
-     "p": "10",
-     "d": ""
-    }
-   ],
-   "flat": "",
-   "note": "",
-   "chips": false
-  },
-  {
-   "id": "indomie",
-   "name": "إندومي",
-   "items": [
-    {
-     "n": "إندومي صغير",
-     "p": "15",
-     "d": ""
-    },
-    {
-     "n": "إندومي كبير",
-     "p": "20",
-     "d": ""
-    }
-   ],
-   "flat": "",
-   "note": "",
-   "chips": false
+   ]
   },
   {
    "id": "beans",
-   "name": "توليفات البن",
-   "chips": true,
-   "note": "تبدأ من 480 جنيه / الكيلو",
-   "items": [
+   "name": "منيو البن",
+   "en": "Coffee Beans",
+   "tag": "منيو البن · الأسعار بالكيلو",
+   "tagEn": "Coffee beans · Per kg",
+   "unit": "ج/كيلو",
+   "unitEn": "EGP/kg",
+   "sections": [
     {
-     "n": "بن فرنساوي",
-     "p": "",
-     "d": ""
+     "id": "blends",
+     "name": "توليفات البن",
+     "en": "Coffee Blends",
+     "items": [
+      {
+       "n": "توليفة برازيلي",
+       "en": "Brazilian Blend",
+       "p": "480",
+       "d": "فاتح / وسط",
+       "den": "Light / Medium"
+      },
+      {
+       "n": "توليفة برازيلي غامق",
+       "en": "Dark Brazilian Blend",
+       "p": "520",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "توليفة ملكية",
+       "en": "Royal Blend",
+       "p": "520",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "توليفة العميد",
+       "en": "El-Ameed Blend",
+       "p": "600",
+       "d": "فاتح / وسط / غامق",
+       "den": "Light / Medium / Dark"
+      },
+      {
+       "n": "توليفة الغاوي",
+       "en": "El-Ghawy Signature Blend",
+       "p": "680",
+       "d": "",
+       "den": ""
+      }
+     ],
+     "flat": "",
+     "note": "",
+     "noteEn": ""
     },
     {
-     "n": "بن كراميل",
-     "p": "",
-     "d": ""
+     "id": "flavored",
+     "name": "البن بنكهات",
+     "en": "Flavored Coffee",
+     "items": [
+      {
+       "n": "بن بندق",
+       "en": "Hazelnut Coffee",
+       "p": "520",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "بن بندق قطع",
+       "en": "Hazelnut Chunks Coffee",
+       "p": "600",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "بن بستاشيو",
+       "en": "Pistachio Coffee",
+       "p": "720",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "بن توت / تفاح / كراميل",
+       "en": "Berry / Apple / Caramel Coffee",
+       "p": "480",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "بن شكولاتة قطع",
+       "en": "Chocolate Chunks Coffee",
+       "p": "520",
+       "d": "",
+       "den": ""
+      }
+     ],
+     "flat": "",
+     "note": "",
+     "noteEn": ""
     },
     {
-     "n": "بن فانيليا",
-     "p": "",
-     "d": ""
+     "id": "pure",
+     "name": "البن السادة",
+     "en": "Single-Origin Coffee",
+     "items": [
+      {
+       "n": "برازيلي بيور",
+       "en": "Pure Brazilian",
+       "p": "600",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "هندي أرابيكا",
+       "en": "Indian Arabica",
+       "p": "800",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "كولومبي بيور",
+       "en": "Pure Colombian",
+       "p": "880",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "اسبريسو",
+       "en": "Espresso",
+       "p": "800",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "بن فرنساوي",
+       "en": "French Coffee",
+       "p": "440",
+       "d": "",
+       "den": ""
+      }
+     ],
+     "flat": "",
+     "note": "",
+     "noteEn": ""
     },
     {
-     "n": "بن شيكولاتة",
-     "p": "",
-     "d": ""
-    },
-    {
-     "n": "بن بندق",
-     "p": "",
-     "d": ""
-    },
-    {
-     "n": "بن بندق قطع",
-     "p": "",
-     "d": ""
-    },
-    {
-     "n": "بن كولمبي",
-     "p": "",
-     "d": ""
-    },
-    {
-     "n": "بن تخسيس",
-     "p": "",
-     "d": ""
-    },
-    {
-     "n": "بن عربي",
-     "p": "",
-     "d": ""
-    },
-    {
-     "n": "توليفة الغاوي",
-     "p": "",
-     "d": ""
-    },
-    {
-     "n": "توليفة برازيلي",
-     "p": "",
-     "d": ""
-    },
-    {
-     "n": "توليفة العميد",
-     "p": "",
-     "d": ""
-    },
-    {
-     "n": "توليفة ملكية",
-     "p": "",
-     "d": ""
-    },
-    {
-     "n": "كوفي ميكس",
-     "p": "",
-     "d": ""
-    },
-    {
-     "n": "نسكافيه",
-     "p": "",
-     "d": ""
+     "id": "nes",
+     "name": "نسكافيه ومشروبات",
+     "en": "Nescafé & Drink Mixes",
+     "items": [
+      {
+       "n": "نسكافيه بلاك",
+       "en": "Nescafé Black",
+       "p": "960",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "نسكافيه جولد",
+       "en": "Nescafé Gold",
+       "p": "1360",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "بن أخضر / تخسيس",
+       "en": "Green Coffee / Slimming",
+       "p": "600",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "كوفي ميكس",
+       "en": "Coffee Mix",
+       "p": "400",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "هوت شوكليت",
+       "en": "Hot Chocolate",
+       "p": "480",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "سحلب",
+       "en": "Sahlab",
+       "p": "400",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "كريمر",
+       "en": "Creamer",
+       "p": "400",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "شاي كرك",
+       "en": "Karak Tea",
+       "p": "520",
+       "d": "",
+       "den": ""
+      }
+     ],
+     "flat": "",
+     "note": "",
+     "noteEn": ""
     }
-   ],
-   "flat": ""
+   ]
   }
  ]
 };
-/* ===== نهاية المنيو ===== */
+/* ============ نهاية المنيو ============ */
 </script>
 <script>
 (function(){
+var T={
+ ar:{search:"دوّر على مشروب… مثلاً: مانجو، لاتيه",empty:"مفيش حاجة بالاسم ده في المنيو",flat:"سعر موحد {x} جنيه",addr:"العنوان:",phone:"للتواصل:",upd:"آخر تحديث للأسعار: ",slogan:"كل غاوي وليه مزاج",soonT:"قريباً",soonP:"منيو الصالة بيتجهز… استنونا قريب جداً",goT:"شوف منيو التيك أواي",goB:"منيو البن",soonTab:"قريباً",lang:"EN"},
+ en:{search:"Search the menu… e.g. mango, latte",empty:"Nothing matches your search",flat:"All {x} EGP",addr:"Address:",phone:"Contact:",upd:"Prices last updated: ",slogan:"Every coffee lover has a mood of their own",soonT:"Coming soon",soonP:"Our dine-in menu is on its way — stay tuned!",goT:"See takeaway menu",goB:"Coffee beans",soonTab:"Soon",lang:"ع"}
+};
+var root=document.documentElement;
+function store(k,v){try{localStorage.setItem(k,v)}catch(e){}}
+function load(k){try{return localStorage.getItem(k)}catch(e){return null}}
+var lang=root.lang==="en"?"en":"ar";
+var cur=null;
 var esc=function(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})};
-var menu=document.getElementById("menu"),nav=document.getElementById("nav"),q=document.getElementById("q"),empty=document.getElementById("empty");
-function price(v){return '<span class="p">'+esc(v)+'<small>ج</small></span>'}
-function norm(t){return String(t).toLowerCase().replace(/[أإآ]/g,"ا").replace(/ى/g,"ي").replace(/ة/g,"ه").trim()}
-function secHTML(s){
-  var h='<section class="sec" id="'+esc(s.id)+'"><h2>'+esc(s.name)+(s.flat?'<span class="flat">سعر موحد '+esc(s.flat)+' جنيه</span>':'')+'</h2>';
-  if(s.note)h+='<p class="note">'+esc(s.note)+'</p>';
-  var items=s.items||[],i,it,v;
-  if(s.chips){h+='<div class="chips">';for(i=0;i<items.length;i++)h+='<span data-k="'+esc(items[i].n)+'">'+esc(items[i].n)+'</span>';h+='</div>'}
-  else{h+='<ul>';for(i=0;i<items.length;i++){it=items[i];v=it.p||s.flat;
-    h+='<li data-k="'+esc(it.n+' '+(it.d||''))+'"><span class="n">'+esc(it.n)+(it.d?'<span class="d">'+esc(it.d)+'</span>':'')+'</span><span class="dots"></span>'+(v?price(v):'')+'</li>'}
-    h+='</ul>'}
-  return h+'</section>';
+function $(id){return document.getElementById(id)}
+var menuEl=$("menu"),nav=$("nav"),seg=$("seg"),q=$("q"),empty=$("empty"),soon=$("soon"),searchWrap=$("searchWrap");
+function tr(o,f){return lang==="en"&&o[f+"En"]?o[f+"En"]:o[f]}
+function nm(o){return lang==="en"&&o.en?o.en:o.n||o.name}
+function norm(t){return String(t).toLowerCase().replace(/[أإآ]/g,"ا").replace(/ى/g,"ي").replace(/ة/g,"ه").replace(/^\s+|\s+$/g,"")}
+function findMenu(id){for(var i=0;i<MENU.menus.length;i++)if(MENU.menus[i].id===id)return MENU.menus[i];return null}
+
+/* ---- theme ---- */
+var sun='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>';
+var moon='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>';
+function isDark(){var t=root.getAttribute("data-theme");if(t)return t==="dark";return !!(window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)}
+function paintTheme(){var d=isDark();$("themeBtn").innerHTML=d?sun:moon;$("themeBtn").setAttribute("aria-label",d?"Light mode":"Dark mode")}
+$("themeBtn").addEventListener("click",function(){var t=isDark()?"light":"dark";root.setAttribute("data-theme",t);store("gh_theme",t);paintTheme()});
+
+/* ---- language ---- */
+$("langBtn").addEventListener("click",function(){lang=lang==="ar"?"en":"ar";root.lang=lang;root.dir=lang==="ar"?"rtl":"ltr";store("gh_lang",lang);renderAll()});
+
+function renderTabs(){
+  var h="";for(var i=0;i<MENU.menus.length;i++){var m=MENU.menus[i];
+    h+='<button type="button" role="tab" data-id="'+esc(m.id)+'" class="'+(m.id===cur?"on":"")+'" aria-selected="'+(m.id===cur)+'">'+esc(nm(m))+(m.soon?'<span class="soon">'+T[lang].soonTab+'</span>':'')+'</button>'}
+  seg.innerHTML=h;
 }
-function render(D){
-  var S=(D.sections||[]).filter(function(s){return s.items&&s.items.length}),i,navH='',menuH='';
-  for(i=0;i<S.length;i++){navH+='<a href="#'+esc(S[i].id)+'" data-id="'+esc(S[i].id)+'">'+esc(S[i].name)+'</a>';menuH+=secHTML(S[i])}
-  nav.innerHTML=navH;menu.innerHTML=menuH;
-  document.getElementById("upd").textContent=D.updated?"آخر تحديث للأسعار: "+D.updated:"";
-  document.getElementById("addr").textContent=D.address||"";
-  var ph=document.getElementById("phone");ph.textContent=D.phone||"";ph.href="tel:"+(D.phone||"");
+function secHTML(s,m){
+  var unit=tr(m,"unit")||"";
+  var h='<section class="sec" id="'+esc(s.id)+'"><h2>'+esc(nm(s))+(s.flat?'<span class="flat">'+esc(T[lang].flat.replace("{x}",s.flat))+'</span>':'')+'</h2>';
+  var note=tr(s,"note");if(note)h+='<p class="note">'+esc(note)+'</p>';
+  h+='<ul>';
+  for(var i=0;i<s.items.length;i++){var it=s.items[i];if(it.hide)continue;
+    var v=it.p||s.flat,d=lang==="en"&&it.den?it.den:it.d,name=nm(it);
+    var pr=v?'<span class="p">'+esc(v)+'<small>'+esc(unit)+'</small></span>':'';
+    h+='<li class="'+(it.img?'hasimg':'')+'" data-k="'+esc(it.n+' '+(it.en||'')+' '+(it.d||'')+' '+(it.den||''))+'">'+
+      (it.img?'<button type="button" class="th" data-img="'+esc(it.img)+'" data-t="'+esc(name)+'" data-p="'+esc(v?v+' '+unit:'')+'" aria-label="'+esc(name)+'"><img loading="lazy" src="'+esc(it.img)+'" alt=""></button>':'')+
+      '<span class="n">'+esc(name)+(d?'<span class="d">'+esc(d)+'</span>':'')+'</span><span class="dots"></span>'+pr+'</li>'}
+  return h+'</ul></section>';
+}
+function renderMenu(){
+  var m=findMenu(cur);
+  $("tag").textContent=m.soon?nm(m):tr(m,"tag");
+  if(m.soon){
+    menuEl.innerHTML="";nav.innerHTML="";nav.style.display="none";searchWrap.style.display="none";empty.style.display="none";soon.style.display="block";
+    soon.innerHTML='<div class="card"><svg viewBox="0 0 160 130" aria-hidden="true"><g class="steam" fill="none" stroke="#f9dc0c" stroke-width="6" stroke-linecap="round"><path d="M66 40c-8-10 8-15 0-28"/><path d="M90 40c-8-10 8-15 0-28"/></g><path d="M116 66h8a16 16 0 0 1 0 32h-10" fill="none" stroke="#60101a" stroke-width="9"/><path d="M30 54h96l-8 50a20 20 0 0 1-20 16H58a20 20 0 0 1-20-16z" fill="#60101a"/><path d="M38 60h80l-2 14c-14-10-24 8-40 4s-24-12-36-4z" fill="#f9dc0c"/><ellipse cx="78" cy="124" rx="62" ry="5" fill="#60101a" opacity=".25"/></svg>'+
+      '<h2>'+esc(T[lang].soonT)+'</h2><p>'+esc(T[lang].soonP)+'</p><button type="button" data-go="takeaway">'+esc(T[lang].goT)+'</button><button type="button" class="alt" data-go="beans">'+esc(T[lang].goB)+'</button></div>';
+    return;
+  }
+  soon.style.display="none";nav.style.display="";searchWrap.style.display="";
+  var S=[],i;for(i=0;i<m.sections.length;i++){var s=m.sections[i],vis=0;for(var j=0;j<s.items.length;j++)if(!s.items[j].hide)vis++;if(vis)S.push(s)}
+  var nh="",mh="";for(i=0;i<S.length;i++){nh+='<a href="#'+esc(S[i].id)+'" data-id="'+esc(S[i].id)+'">'+esc(nm(S[i]))+'</a>';mh+=secHTML(S[i],m)}
+  nav.innerHTML=nh;menuEl.innerHTML=mh;
+  q.value="";empty.style.display="none";
+  watch();
+}
+function renderAll(){
+  q.setAttribute("placeholder",T[lang].search);
+  empty.textContent=T[lang].empty;
+  $("langBtn").textContent=T[lang].lang;
+  $("slogan").textContent=T[lang].slogan;$("fslog").textContent=T[lang].slogan;
+  $("lAddr").textContent=T[lang].addr;$("addr").textContent=tr(MENU,"address")||"";
+  $("lPhone").textContent=T[lang].phone;var ph=$("phone");ph.textContent=MENU.phone||"";ph.href="tel:"+(MENU.phone||"");
+  $("upd").textContent=T[lang].upd+(tr(MENU,"updated")||"");
+  document.title=lang==="en"?"El Ghawy Coffee | Menu":"منيو بن الغاوي";
+  renderTabs();renderMenu();paintTheme();
+}
+function setMenu(id,scroll){
+  if(!findMenu(id))return;cur=id;store("gh_menu",id);
+  try{history.replaceState(null,"","#"+id)}catch(e){}
+  renderTabs();renderMenu();
+  if(scroll){var top=seg.getBoundingClientRect().top+window.pageYOffset-4;if(window.pageYOffset>top)window.scrollTo(0,top)}
+}
+seg.addEventListener("click",function(e){var b=e.target.closest?e.target.closest("button"):null;if(b)setMenu(b.getAttribute("data-id"),true)});
+soon.addEventListener("click",function(e){var b=e.target.closest?e.target.closest("[data-go]"):null;if(b)setMenu(b.getAttribute("data-go"),true)});
+
+/* ---- active chip while scrolling ---- */
+var io=null;
+function watch(){
   try{
+    if(io)io.disconnect();
     if(!("IntersectionObserver" in window))return;
     var links=nav.querySelectorAll("a");
-    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;
+    io=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;
       for(var j=0;j<links.length;j++)links[j].className=links[j].getAttribute("data-id")===e.target.id?"on":"";
-      var a=nav.querySelector(".on");if(a)nav.scrollLeft=a.offsetLeft-nav.clientWidth/2+a.clientWidth/2;})},{rootMargin:"-130px 0px -65% 0px"});
-    var secs=menu.querySelectorAll(".sec");for(var k=0;k<secs.length;k++)io.observe(secs[k]);
+      var a=nav.querySelector(".on");if(a){var r=a.getBoundingClientRect(),nr=nav.getBoundingClientRect();nav.scrollLeft+=r.left-nr.left-(nr.width-r.width)/2}})},{rootMargin:"-150px 0px -60% 0px"});
+    var secs=menuEl.querySelectorAll(".sec");for(var k=0;k<secs.length;k++)io.observe(secs[k]);
   }catch(e){}
 }
+
+/* ---- search ---- */
 q.addEventListener("input",function(){
-  var t=norm(q.value),shown=0,secs=menu.querySelectorAll(".sec");
+  var t=norm(q.value),shown=0,secs=menuEl.querySelectorAll(".sec");
   for(var i=0;i<secs.length;i++){var sec=secs[i],hit=norm(sec.querySelector("h2").textContent).indexOf(t)>-1,any=false,els=sec.querySelectorAll("[data-k]");
     for(var j=0;j<els.length;j++){var ok=!t||hit||norm(els[j].getAttribute("data-k")).indexOf(t)>-1;els[j].style.display=ok?"":"none";any=any||ok}
     sec.style.display=any?"":"none";if(any)shown++}
   empty.style.display=shown?"none":"block";
 });
-function fail(msg){menu.innerHTML='<p class="empty" style="display:block">المنيو مش راضي يفتح دلوقتي، جرّب تعمل refresh<br><small style="opacity:.6">'+esc(msg)+'</small></p>'}
-try{render(MENU)}catch(e){fail("render: "+e.message)}
+
+/* ---- photo viewer ---- */
+var lb=$("lb"),lbi=$("lbi"),lbt=$("lbt");
+menuEl.addEventListener("click",function(e){var b=e.target.closest?e.target.closest(".th"):null;if(!b)return;lbi.src=b.getAttribute("data-img");lbt.innerHTML=esc(b.getAttribute("data-t"))+(b.getAttribute("data-p")?'<span>'+esc(b.getAttribute("data-p"))+'</span>':'');lb.className="lb on"});
+function closeLb(){lb.className="lb";lbi.removeAttribute("src")}
+lb.addEventListener("click",function(e){if(e.target!==lbi)closeLb()});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")closeLb()});
+if(window.matchMedia){var mq=window.matchMedia("(prefers-color-scheme: dark)");if(mq.addListener)mq.addListener(paintTheme)}
+
+/* ---- start ---- */
+var h=(location.hash||"").replace("#","");
+cur=findMenu(h)?h:(findMenu(load("gh_menu"))&&!findMenu(load("gh_menu")).soon?load("gh_menu"):"takeaway");
+renderAll();
 })();
 </script>
 </body>

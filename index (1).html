@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>منيو بن الغاوي</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Lalezar&display=swap" rel="stylesheet">
+<style>
+/*
+VOICE: دافي وشعبي وواضح، زي كوباية قهوة على ناصية في إمبابة
+IDEA: كارت منيو مطبوع لمحل بن، بالنبيتي والأصفر بتوع البراند
+PICTURE: هيدر نبيتي فيه فنجان قهوة مرسوم وبخار طالع وحبوب بن
+COLOUR and TYPE: نبيتي #6e1222 أساسي، أصفر #f6d40c أكسنت، أبيض/كريمي خلفية؛ Lalezar للعناوين و Cairo للنص
+LAYOUT: هيدر، شريط أقسام ثابت فوق، بحث، كروت أقسام في عمود واحد على الموبايل وعمودين على الشاشة الكبيرة
+*/
+:root{color-scheme:light dark;
+--bg:light-dark(#fbf7f1,#1a0d10);--card:light-dark(#ffffff,#2a1419);--ink:light-dark(#2a1216,#f7ece9);
+--soft:light-dark(#7d5b60,#c7a9ad);--line:light-dark(#efe3dc,#3d2228);
+--wine:#6e1222;--wine2:#8d1b2f;--yel:#f6d40c;--chip:light-dark(#fff3b0,#3a2a0a)}
+:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 "Cairo",system-ui,sans-serif;overflow-x:clip}
+html{scroll-padding-top:120px;scroll-behavior:smooth}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.steam path{animation:none!important}}
+
+header{background:var(--wine);color:#fff;position:relative;overflow:hidden;padding:28px max(5vw,18px) 34px}
+header::after{content:"";position:absolute;inset:auto 0 -1px 0;height:26px;background:var(--bg);border-radius:50% 50% 0 0/100% 100% 0 0}
+.hwrap{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:18px;align-items:center;position:relative;z-index:1}
+.brand{font-family:"Lalezar","Cairo",sans-serif;font-size:clamp(46px,11vw,78px);line-height:1;margin:0;font-weight:400}
+.brand b{color:var(--yel);font-weight:400}
+.tag{display:inline-block;background:var(--yel);color:var(--wine);font-weight:800;border-radius:999px;padding:4px 16px;margin-top:10px;font-size:17px}
+.sub{margin:12px 0 0;color:#f3d6db;font-size:15px}
+.cup{width:clamp(120px,30vw,200px);height:auto}
+.steam path{animation:rise 3.2s ease-in-out infinite;transform-box:fill-box}
+.steam path:nth-child(2){animation-delay:.6s}.steam path:nth-child(3){animation-delay:1.2s}
+@keyframes rise{0%{opacity:0;transform:translateY(8px)}40%{opacity:.9}100%{opacity:0;transform:translateY(-14px)}}
+
+nav{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.navin{max-width:1100px;margin:0 auto;padding:10px max(5vw,14px) 10px;display:flex;gap:8px;overflow-x:auto;scrollbar-width:none}
+.navin::-webkit-scrollbar{display:none}
+.navin a{flex:none;text-decoration:none;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:999px;padding:8px 16px;font-weight:700;font-size:15px;min-height:42px;display:flex;align-items:center}
+.navin a.on{background:var(--wine);color:#fff;border-color:var(--wine)}
+.search{max-width:1100px;margin:0 auto;padding:0 max(5vw,14px) 10px}
+.search input{width:100%;font:inherit;font-size:16px;padding:11px 16px;border-radius:14px;border:1.5px solid var(--line);background:var(--card);color:var(--ink)}
+.search input:focus{outline:3px solid var(--yel);border-color:var(--wine)}
+
+main{max-width:1100px;margin:0 auto;padding:18px max(5vw,14px) 30px;columns:2 460px;column-gap:18px}
+.sec{break-inside:avoid;background:var(--card);border:1px solid var(--line);border-radius:22px;margin:0 0 18px;overflow:hidden;display:inline-block;width:100%}
+.sec h2{margin:0;background:var(--wine);color:#fff;font-family:"Lalezar","Cairo",sans-serif;font-weight:400;font-size:28px;line-height:1.2;padding:14px 20px 10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.flat{font-family:"Cairo",sans-serif;font-size:14px;font-weight:800;background:var(--yel);color:var(--wine);border-radius:999px;padding:3px 12px;white-space:nowrap}
+.note{margin:0;padding:10px 20px 0;color:var(--soft);font-size:14px}
+ul{list-style:none;margin:0;padding:8px 20px 14px}
+li{display:flex;align-items:baseline;gap:8px;padding:9px 0;border-bottom:1px dashed var(--line)}
+li:last-child{border-bottom:0}
+.n{font-weight:700}
+.d{display:block;font-size:13px;color:var(--soft);font-weight:600}
+.dots{flex:1;border-bottom:2px dotted var(--line);transform:translateY(-4px)}
+.p{white-space:nowrap;font-weight:800;color:var(--wine2);font-size:18px}
+:root[data-theme=dark] .p{color:var(--yel)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]) .p{color:var(--yel)}}
+.p small{font-size:12px;font-weight:700;color:var(--soft);margin-inline-start:2px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;padding:14px 20px 18px}
+.chips span{background:var(--chip);border-radius:10px;padding:6px 12px;font-weight:700;font-size:15px}
+.empty{display:none;text-align:center;color:var(--soft);padding:30px;column-span:all}
+
+footer{background:var(--wine);color:#fff;padding:26px max(5vw,18px) 34px}
+.fin{max-width:1100px;margin:0 auto;display:grid;gap:8px}
+.fin b{color:var(--yel)}
+.fin a{color:#fff}
+.upd{font-size:13px;color:#e8bfc6}
+@media(max-width:600px){header{padding-top:22px}.sec h2{font-size:25px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <div>
+      <h1 class="brand">بن <b>الغاوي</b></h1>
+      <span class="tag">أسعار التيك أواي</span>
+      <p class="sub">قهوة، عصاير فريش، سموزي وميلك شيك — اختار وإحنا نجهزهولك</p>
+    </div>
+    <svg class="cup" viewBox="0 0 200 190" aria-hidden="true">
+      <g class="steam" fill="none" stroke="#f6d40c" stroke-width="7" stroke-linecap="round">
+        <path d="M70 62c-12-14 12-22 0-38"/><path d="M100 58c-12-14 12-22 0-38"/><path d="M130 62c-12-14 12-22 0-38"/>
+      </g>
+      <ellipse cx="100" cy="176" rx="82" ry="11" fill="#4d0b17"/>
+      <path d="M150 96h12a24 24 0 0 1 0 48h-16" fill="none" stroke="#f6d40c" stroke-width="12"/>
+      <path d="M36 82h128l-12 70a26 26 0 0 1-26 22H74a26 26 0 0 1-26-22z" fill="#f6d40c"/>
+      <path d="M48 82h20l10 92h-4a26 26 0 0 1-26-22z" fill="#fff" opacity=".35"/>
+      <ellipse cx="100" cy="82" rx="64" ry="10" fill="#3a1a0e"/>
+      <ellipse cx="88" cy="80" rx="22" ry="4" fill="#7a4a2a"/>
+      <g fill="#3a1a0e"><ellipse cx="22" cy="160" rx="10" ry="7" transform="rotate(-30 22 160)"/><ellipse cx="182" cy="150" rx="9" ry="6" transform="rotate(25 182 150)"/></g>
+      <g stroke="#f6d40c" stroke-width="2"><path d="M16 164l12-8"/><path d="M176 147l12 6"/></g>
+    </svg>
+  </div>
+</header>
+
+<nav>
+  <div class="navin scroll" id="nav"></div>
+  <div class="search"><input id="q" type="search" placeholder="دوّر على مشروب… مثلاً: مانجو، لاتيه" aria-label="بحث في المنيو"></div>
+</nav>
+
+<main id="menu"><p class="empty" style="display:block">جاري تحميل المنيو…</p></main>
+<p class="empty" id="empty">مفيش حاجة بالاسم ده في المنيو</p>
+
+<footer>
+  <div class="fin">
+    <div><b>العنوان:</b> <span id="addr"></span></div>
+    <div><b>للتواصل:</b> <a id="phone" href="#"></a></div>
+    <div class="upd" id="upd"></div>
+  </div>
+</footer>
+
+<script>
+/* ===== المنيو: عدّل الأسعار والأصناف من هنا ===== */
+var MENU = {
+ "updated": "نوفمبر 2026",
+ "address": "أول شارع ممدوح سالم بجوار بي تيك – إمبابة",
+ "phone": "01094846865",
+ "sections": [
+  {
+   "id": "hot",
+   "name": "مشروبات ساخنة",
+   "items": [
+    {
+     "n": "شاي",
+     "p": "7",
+     "d": ""
+    },
+    {
+     "n": "شاي نكهات",
+     "p": "15",
+     "d": ""
+    },
+    {
+     "n": "شاي حليب",
+     "p": "30",
+     "d": ""
+    },
+    {
+     "n": "قهوة تركي",
+     "p": "10",
+     "d": ""
+    },
+    {
+     "n": "قهوة بالجينسنج",
+     "p": "25",
+     "d": ""
+    },
+    {
+     "n": "قهوة كولمبي بيور",
+     "p": "25",
+     "d": ""
+    },
+    {
+     "n": "قهوة دبل",
+     "p": "18",
+     "d": ""
+    },
+    {
+     "n": "قهوة فرنساوي",
+     "p": "30",
+     "d": ""
+    },
+    {
+     "n": "قهوة نكهات",
+     "p": "30",
+     "d": "بندق – كراميل – مانجو – موز"
+    },
+    {
+     "n": "قهوة بندق قطع",
+     "p": "36",
+     "d": ""
+    },
+    {
+     "n": "قهوة نوتيلا",
+     "p": "40",
+     "d": ""
+    },
+    {
+     "n": "اسبريسو سنجل",
+     "p": "25",
+     "d": ""
+    },
+    {
+     "n": "اسبريسو دبل",
+     "p": "35",
+     "d": ""
+    },
+    {
+     "n": "اسبريسو ماكياتو",
+     "p": "30",
+     "d": ""
+    },
+    {
+     "n": "كرتادو",
+     "p": "45",
+     "d": ""
+    },
+    {
+     "n": "فلات وايت",
+     "p": "50",
+     "d": ""
+    },
+    {
+     "n": "هوت شوكليت",
+     "p": "35 – 45",
+     "d": "نوتيلا – كابري"
+    },
+    {
+     "n": "هوت سيدر",
+     "p": "40",
+     "d": ""
+    },
+    {
+     "n": "سحلب سادة",
+     "p": "30",
+     "d": ""
+    },
+    {
+     "n": "سحلب مكسرات",
+     "p": "40",
+     "d": ""
+    },
+    {
+     "n": "نسكافيه بلاك",
+     "p": "15",
+     "d": ""
+    },
+    {
+     "n": "نسكافيه حليب",
+     "p": "35",
+     "d": ""
+    },
+    {
+     "n": "كوفي ميكس",
+     "p": "15",
+     "d": ""
+    },
+    {
+     "n": "كافيه لاتيه",
+     "p": "40",
+     "d": ""
+    },
+    {
+     "n": "كابتشينو",
+     "p": "50",
+     "d": ""
+    },
+    {
+     "n": "موكا",
+     "p": "55",
+     "d": ""
+    }
+   ],
+   "flat": "",
+   "note": "",
+   "chips": false
+  },
+  {
+   "id": "iced",
+   "name": "قهوة مثلجة",
+   "items": [
+    {
+     "n": "اسبريسو أيس فانيلا",
+     "p": "40",
+     "d": ""
+    },
+    {
+     "n": "أيس كوفي",
+     "p": "50",
+     "d": ""
+    },
+    {
+     "n": "أيس لاتيه",
+     "p": "50",
+     "d": ""
+    },
+    {
+     "n": "أيس سبانش لاتيه",
+     "p": "60",
+     "d": ""
+    },
+    {
+     "n": "أيس موكا / أيس وايت موكا",
+     "p": "60",
+     "d": ""
+    },
+    {
+     "n": "أيس شوكليت",
+     "p": "45",
+     "d": ""
+    },
+    {
+     "n": "فرابتشينو",
+     "p": "55",
+     "d": ""
+    },
+    {
+     "n": "ميلك شيك اسبريسو",
+     "p": "50",
+     "d": ""
+    }
+   ],
+   "flat": "",
+   "note": "",
+   "chips": false
+  },
+  {
+   "id": "juice",
+   "name": "عصاير فريش",
+   "items": [
+    {
+     "n": "مانجو",
+     "p": "35",
+     "d": ""
+    },
+    {
+     "n": "فراولة",
+     "p": "35",
+     "d": ""
+    },
+    {
+     "n": "جوافة",
+     "p": "35",
+     "d": ""
+    },
+    {
+     "n": "جوافة حليب",
+     "p": "40",
+     "d": ""
+    },
+    {
+     "n": "موز",
+     "p": "40",
+     "d": ""
+    },
+    {
+     "n": "برتقال",
+     "p": "35",
+     "d": ""
+    },
+    {
+     "n": "عناب",
+     "p": "30",
+     "d": ""
+    },
+    {
+     "n": "ليمون",
+     "p": "30",
+     "d": ""
+    },
+    {
+     "n": "ليمون نعناع",
+     "p": "35",
+     "d": ""
+    },
+    {
+     "n": "زبادي سادة",
+     "p": "40",
+     "d": ""
+    },
+    {
+     "n": "زبادي عسل",
+     "p": "45",
+     "d": ""
+    },
+    {
+     "n": "زبادي فواكه",
+     "p": "50",
+     "d": ""
+    }
+   ],
+   "flat": "",
+   "note": "",
+   "chips": false
+  },
+  {
+   "id": "season",
+   "name": "عصاير موسمية",
+   "flat": "45",
+   "items": [
+    {
+     "n": "بلح باللبن",
+     "p": "",
+     "d": ""
+    },
+    {
+     "n": "كيوي",
+     "p": "",
+     "d": ""
+    },
+    {
+     "n": "بطيخ",
+     "p": "",
+     "d": ""
+    }
+   ],
+   "note": "",
+   "chips": false
+  },
+  {
+   "id": "smoothie",
+   "name": "سموزي",
+   "flat": "45",
+   "items": [
+    {
+     "n": "مانجو",
+     "p": "",
+     "d": ""
+    },
+    {
+     "n": "فراولة",
+     "p": "",
+     "d": ""
+    },
+    {
+     "n": "جوافة",
+     "p": "",
+     "d": ""
+    },
+    {
+     "n": "بطيخ",
+     "p": "",
+     "d": ""
+    },
+    {
+     "n": "ليمون",
+     "p": "",
+     "d": ""
+    },
+    {
+     "n": "ليمون نعناع",
+     "p": "",
+     "d": ""
+    },
+    {
+     "n": "ريد بيري",
+     "p": "",
+     "d": ""
+    },
+    {
+     "n": "بلو بيري",
+     "p": "",
+     "d": ""
+    },
+    {
+     "n": "ميكس بيري",
+     "p": "",
+     "d": ""
+    },
+    {
+     "n": "أناناس جوز هند",
+     "p": "",
+     "d": ""
+    }
+   ],
+   "note": "",
+   "chips": false
+  },
+  {
+   "id": "shake",
+   "name": "ميلك شيك",
+   "flat": "40",
+   "items": [
+    {
+     "n": "فانيليا",
+     "p": "",
+     "d": ""
+    },
+    {
+     "n": "فانيليا جوز هند",
+     "p": "",
+     "d": ""
+    },
+    {
+     "n": "شوكليت",
+     "p": "",
+     "d": ""
+    },
+    {
+     "n": "شوكليت جوز هند",
+     "p": "",
+     "d": ""
+    },
+    {
+     "n": "مانجو",
+     "p": "",
+     "d": ""
+    },
+    {
+     "n": "فراولة",
+     "p": "",
+     "d": ""
+    },
+    {
+     "n": "كراميل",
+     "p": "",
+     "d": ""
+    },
+    {
+     "n": "أوريو",
+     "p": "",
+     "d": ""
+    },
+    {
+     "n": "نوتيلا",
+     "p": "",
+     "d": ""
+    },
+    {
+     "n": "بلو بيري",
+     "p": "",
+     "d": ""
+    },
+    {
+     "n": "ريد بيري",
+     "p": "",
+     "d": ""
+    },
+    {
+     "n": "ميكس بيري",
+     "p": "",
+     "d": ""
+    },
+    {
+     "n": "أناناس جوز هند",
+     "p": "",
+     "d": ""
+    },
+    {
+     "n": "كيوي",
+     "p": "",
+     "d": ""
+    }
+   ],
+   "note": "",
+   "chips": false
+  },
+  {
+   "id": "soda",
+   "name": "مشروبات صودا",
+   "flat": "45",
+   "items": [
+    {
+     "n": "صن منت",
+     "p": "",
+     "d": ""
+    },
+    {
+     "n": "صن شاين",
+     "p": "",
+     "d": ""
+    },
+    {
+     "n": "صودا أناناس",
+     "p": "",
+     "d": ""
+    },
+    {
+     "n": "صودا كيوي",
+     "p": "",
+     "d": ""
+    },
+    {
+     "n": "موهيتو كيوي",
+     "p": "",
+     "d": ""
+    },
+    {
+     "n": "موهيتو فراولة",
+     "p": "",
+     "d": ""
+    },
+    {
+     "n": "موهيتو توت",
+     "p": "",
+     "d": ""
+    },
+    {
+     "n": "موهيتو ميكس بيري",
+     "p": "",
+     "d": ""
+    },
+    {
+     "n": "موهيتو أناناس",
+     "p": "",
+     "d": ""
+    }
+   ],
+   "note": "",
+   "chips": false
+  },
+  {
+   "id": "herbs",
+   "name": "أعشاب",
+   "flat": "10",
+   "note": "السعر الموحد للأعشاب السادة",
+   "items": [
+    {
+     "n": "شاي أخضر",
+     "p": "",
+     "d": ""
+    },
+    {
+     "n": "ينسون",
+     "p": "",
+     "d": ""
+    },
+    {
+     "n": "نعناع",
+     "p": "",
+     "d": ""
+    },
+    {
+     "n": "زنجبيل",
+     "p": "",
+     "d": ""
+    },
+    {
+     "n": "قرفة",
+     "p": "",
+     "d": ""
+    },
+    {
+     "n": "رمان",
+     "p": "",
+     "d": ""
+    },
+    {
+     "n": "كركديه",
+     "p": "",
+     "d": ""
+    },
+    {
+     "n": "حلبة",
+     "p": "",
+     "d": ""
+    },
+    {
+     "n": "زنجبيل + ليمون",
+     "p": "",
+     "d": ""
+    },
+    {
+     "n": "زنجبيل + قرفة",
+     "p": "",
+     "d": ""
+    },
+    {
+     "n": "أزهار بابونج",
+     "p": "",
+     "d": ""
+    },
+    {
+     "n": "ميكس أعشاب",
+     "p": "15",
+     "d": ""
+    },
+    {
+     "n": "حلبة حليب",
+     "p": "30",
+     "d": ""
+    },
+    {
+     "n": "قرفة حليب",
+     "p": "30",
+     "d": ""
+    }
+   ],
+   "chips": false
+  },
+  {
+   "id": "ice",
+   "name": "آيس كريم",
+   "items": [
+    {
+     "n": "آيس كريم 2 بولة",
+     "p": "35",
+     "d": ""
+    },
+    {
+     "n": "آيس كريم 3 بولة",
+     "p": "45",
+     "d": ""
+    }
+   ],
+   "flat": "",
+   "note": "",
+   "chips": false
+  },
+  {
+   "id": "cold",
+   "name": "مشروبات غازية ومياه",
+   "items": [
+    {
+     "n": "بيبسي / سفن أب / ميرندا",
+     "p": "30",
+     "d": ""
+    },
+    {
+     "n": "شويبس / فيروز / بيريل",
+     "p": "30",
+     "d": ""
+    },
+    {
+     "n": "مياه صغيرة",
+     "p": "10",
+     "d": ""
+    }
+   ],
+   "flat": "",
+   "note": "",
+   "chips": false
+  },
+  {
+   "id": "indomie",
+   "name": "إندومي",
+   "items": [
+    {
+     "n": "إندومي صغير",
+     "p": "15",
+     "d": ""
+    },
+    {
+     "n": "إندومي كبير",
+     "p": "20",
+     "d": ""
+    }
+   ],
+   "flat": "",
+   "note": "",
+   "chips": false
+  },
+  {
+   "id": "beans",
+   "name": "توليفات البن",
+   "chips": true,
+   "note": "تبدأ من 480 جنيه / الكيلو",
+   "items": [
+    {
+     "n": "بن فرنساوي",
+     "p": "",
+     "d": ""
+    },
+    {
+     "n": "بن كراميل",
+     "p": "",
+     "d": ""
+    },
+    {
+     "n": "بن فانيليا",
+     "p": "",
+     "d": ""
+    },
+    {
+     "n": "بن شيكولاتة",
+     "p": "",
+     "d": ""
+    },
+    {
+     "n": "بن بندق",
+     "p": "",
+     "d": ""
+    },
+    {
+     "n": "بن بندق قطع",
+     "p": "",
+     "d": ""
+    },
+    {
+     "n": "بن كولمبي",
+     "p": "",
+     "d": ""
+    },
+    {
+     "n": "بن تخسيس",
+     "p": "",
+     "d": ""
+    },
+    {
+     "n": "بن عربي",
+     "p": "",
+     "d": ""
+    },
+    {
+     "n": "توليفة الغاوي",
+     "p": "",
+     "d": ""
+    },
+    {
+     "n": "توليفة برازيلي",
+     "p": "",
+     "d": ""
+    },
+    {
+     "n": "توليفة العميد",
+     "p": "",
+     "d": ""
+    },
+    {
+     "n": "توليفة ملكية",
+     "p": "",
+     "d": ""
+    },
+    {
+     "n": "كوفي ميكس",
+     "p": "",
+     "d": ""
+    },
+    {
+     "n": "نسكافيه",
+     "p": "",
+     "d": ""
+    }
+   ],
+   "flat": ""
+  }
+ ]
+};
+/* ===== نهاية المنيو ===== */
+</script>
+<script>
+(function(){
+var esc=function(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})};
+var menu=document.getElementById("menu"),nav=document.getElementById("nav"),q=document.getElementById("q"),empty=document.getElementById("empty");
+function price(v){return '<span class="p">'+esc(v)+'<small>ج</small></span>'}
+function norm(t){return String(t).toLowerCase().replace(/[أإآ]/g,"ا").replace(/ى/g,"ي").replace(/ة/g,"ه").trim()}
+function secHTML(s){
+  var h='<section class="sec" id="'+esc(s.id)+'"><h2>'+esc(s.name)+(s.flat?'<span class="flat">سعر موحد '+esc(s.flat)+' جنيه</span>':'')+'</h2>';
+  if(s.note)h+='<p class="note">'+esc(s.note)+'</p>';
+  var items=s.items||[],i,it,v;
+  if(s.chips){h+='<div class="chips">';for(i=0;i<items.length;i++)h+='<span data-k="'+esc(items[i].n)+'">'+esc(items[i].n)+'</span>';h+='</div>'}
+  else{h+='<ul>';for(i=0;i<items.length;i++){it=items[i];v=it.p||s.flat;
+    h+='<li data-k="'+esc(it.n+' '+(it.d||''))+'"><span class="n">'+esc(it.n)+(it.d?'<span class="d">'+esc(it.d)+'</span>':'')+'</span><span class="dots"></span>'+(v?price(v):'')+'</li>'}
+    h+='</ul>'}
+  return h+'</section>';
+}
+function render(D){
+  var S=(D.sections||[]).filter(function(s){return s.items&&s.items.length}),i,navH='',menuH='';
+  for(i=0;i<S.length;i++){navH+='<a href="#'+esc(S[i].id)+'" data-id="'+esc(S[i].id)+'">'+esc(S[i].name)+'</a>';menuH+=secHTML(S[i])}
+  nav.innerHTML=navH;menu.innerHTML=menuH;
+  document.getElementById("upd").textContent=D.updated?"آخر تحديث للأسعار: "+D.updated:"";
+  document.getElementById("addr").textContent=D.address||"";
+  var ph=document.getElementById("phone");ph.textContent=D.phone||"";ph.href="tel:"+(D.phone||"");
+  try{
+    if(!("IntersectionObserver" in window))return;
+    var links=nav.querySelectorAll("a");
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;
+      for(var j=0;j<links.length;j++)links[j].className=links[j].getAttribute("data-id")===e.target.id?"on":"";
+      var a=nav.querySelector(".on");if(a)nav.scrollLeft=a.offsetLeft-nav.clientWidth/2+a.clientWidth/2;})},{rootMargin:"-130px 0px -65% 0px"});
+    var secs=menu.querySelectorAll(".sec");for(var k=0;k<secs.length;k++)io.observe(secs[k]);
+  }catch(e){}
+}
+q.addEventListener("input",function(){
+  var t=norm(q.value),shown=0,secs=menu.querySelectorAll(".sec");
+  for(var i=0;i<secs.length;i++){var sec=secs[i],hit=norm(sec.querySelector("h2").textContent).indexOf(t)>-1,any=false,els=sec.querySelectorAll("[data-k]");
+    for(var j=0;j<els.length;j++){var ok=!t||hit||norm(els[j].getAttribute("data-k")).indexOf(t)>-1;els[j].style.display=ok?"":"none";any=any||ok}
+    sec.style.display=any?"":"none";if(any)shown++}
+  empty.style.display=shown?"none":"block";
+});
+function fail(msg){menu.innerHTML='<p class="empty" style="display:block">المنيو مش راضي يفتح دلوقتي، جرّب تعمل refresh<br><small style="opacity:.6">'+esc(msg)+'</small></p>'}
+try{render(MENU)}catch(e){fail("render: "+e.message)}
+})();
+</script>
+</body>
+</html>

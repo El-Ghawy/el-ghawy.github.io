@@ -1912,7 +1912,7 @@ var NUMS=["1️⃣","2️⃣","3️⃣","4️⃣","5️⃣","6️⃣","7️⃣",
 var sugar={},cart={},orderType="t",tableNo="",custName="",custNotes="";
 try{var cs=JSON.parse(localStorage.getItem("gh_cart")||"{}");cart=cs.c||{};sugar=cs.s||{};orderType=cs.t||"t";tableNo=cs.tb||"";custName=cs.n||""}catch(e){}
 var FLAVORS={ar:["فانيلا","كراميل","بندق","شوكولاتة","بستاشيو","توت"],en:["Vanilla","Caramel","Hazelnut","Chocolate","Pistachio","Berry"]};
-var SUGAR={ar:["خفيف","مظبوط","مانو","زيادة","فوق الزيادة","سادة"],en:["Light","Medium","Mano","Sweet","Extra sweet","No sugar"]},SUGAR_ORDER=[5,0,1,2,3,4];
+var SUGAR={ar:["خفيف","مظبوط","مانو","زيادة","فوق الزيادة","سادة"],en:["Light","Medium","Medium+","Sweet","Extra sweet","No sugar"]},SUGAR_ORDER=[5,0,1,2,3,4];
 function needsSugar(L){return !!L&&!L.forKey&&L.m.id==="takeaway"&&(L.sec.id==="hot"||L.sec.id==="iced"||L.sec.id==="herbs")&&!/^(إضافة|اضافة|زيادة)/.test(L.it.n||"")}
 function spName(n){var en=lang==="en";if(en)return (n%1?(Math.floor(n)?Math.floor(n)+"½":"½"):n)+(n>1?" spoons":" spoon");
   var w=Math.floor(n),h=n%1?" ونص":"";if(!w)return "نص معلقة";return (w===1?"معلقة":w===2?"معلقتين":w+" معالق")+h}

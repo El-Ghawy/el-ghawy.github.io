@@ -154,7 +154,7 @@ footer{background:#60101a;color:#fff;padding:26px max(5vw,18px) 34px}
 .featured{max-width:1100px;margin:0 auto;padding:14px max(5vw,14px) 2px;display:none}
 .featured.show{display:block}
 .featured-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:10px}
-.featured-head h2{margin:0;font-family:"Cairo",system-ui,-apple-system,"Geeza Pro",sans-serif;font-weight:900;font-size:23px;font-weight:400;color:var(--pc)}
+.featured-head h2{margin:0;font-family:"Cairo",system-ui,-apple-system,"Geeza Pro",sans-serif;font-weight:900;font-size:23px;color:var(--pc)}
 .featured-head p{margin:0;color:var(--soft);font-size:12px}
 .featured-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
 .featured-item{display:flex;flex-direction:column;gap:4px;text-align:start;border:1px solid var(--line);background:var(--card);color:var(--ink);padding:13px;border-radius:16px;box-shadow:0 4px 14px rgba(35,12,15,.04);min-height:90px}
@@ -226,7 +226,7 @@ header{padding-top:48px;padding-bottom:42px}
 
 /* EL GHAWY SIGNATURE EXPERIENCE — immersive editorial refresh */
 header{padding-top:66px;padding-bottom:64px;background:radial-gradient(ellipse at 50% 18%,rgba(249,220,12,.12),transparent 44%),radial-gradient(ellipse at 15% 85%,rgba(255,255,255,.07),transparent 40%),linear-gradient(145deg,#771b27,#4b0b13 76%);}
-header:before{content:"";position:absolute;inset:18px;border:1px solid rgba(249,220,12,.14);border-radius:28px;pointer-events:none}
+header:before{content:"";position:absolute;top:18px;right:18px;bottom:18px;left:18px;border:1px solid rgba(249,220,12,.14);border-radius:28px;pointer-events:none}
 .tag{letter-spacing:.02em}.sub{font-size:16px;letter-spacing:.02em}
 nav{box-shadow:0 8px 24px rgba(35,12,15,.045);backdrop-filter:blur(14px)}
 .navin a{transition:transform .2s,background .2s,border-color .2s}.navin a:hover{transform:translateY(-2px);border-color:var(--yel)}
@@ -243,7 +243,7 @@ nav{box-shadow:0 8px 24px rgba(35,12,15,.045);backdrop-filter:blur(14px)}
 .featured-item{position:relative;overflow:hidden;border-radius:20px;min-height:110px;padding:16px;background:linear-gradient(135deg,var(--card),var(--bg));box-shadow:0 8px 26px rgba(35,12,15,.06);transition:transform .2s,box-shadow .2s,border-color .2s}
 .featured-item:before{content:"✦";position:absolute;left:12px;bottom:5px;font-size:30px;color:var(--yel);opacity:.38;pointer-events:none}
 html[dir="ltr"] .featured-item:before{left:auto;right:12px}
-.flv{position:fixed;inset:0;z-index:90;background:rgba(20,6,8,.55);display:flex;align-items:flex-end;justify-content:center;opacity:0;transition:opacity .2s}
+.flv{position:fixed;top:0;right:0;bottom:0;left:0;z-index:90;background:rgba(20,6,8,.55);display:flex;align-items:flex-end;justify-content:center;opacity:0;transition:opacity .2s}
 .flv.on{opacity:1}
 .flv[hidden]{display:none}
 .flv-card h4 small{font-size:13px;color:var(--soft);font-weight:800}

@@ -263,6 +263,7 @@ html[dir="ltr"] .featured-item:before{left:auto;right:12px}
 .sh-up-b button.no{flex:0 0 auto;padding:0 14px;background:transparent;color:var(--soft);border:1px solid var(--line)}
 .sh-list li.sl-sugar{display:block;padding:2px 0 12px;border-bottom:1px dashed var(--line)}
 .sh-list li.sl-sugar .sg-l{display:block;font-size:12px;font-weight:800;color:var(--soft);margin:0 0 6px}
+.op-c{grid-template-columns:repeat(3,1fr)!important}
 .sg-c{display:grid;grid-template-columns:repeat(6,auto);justify-content:stretch;gap:4px}
 .sg-c button{min-height:40px;padding:4px 2px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--ink);font:inherit;font-size:clamp(11px,3.1vw,14px);font-weight:800;line-height:1.15;cursor:pointer;min-width:0;padding:4px 3px}
 @media (min-width:375px){.sg-c button{white-space:nowrap}}
@@ -554,7 +555,7 @@ var MENU = {
  "reviewUrl": "https://maps.app.goo.gl/75Zio4KhW2PpcRrt9",
  "goatcounter": "elghawy",
  "showVisits": true,
- "moods": [{"id": "classic", "icon": "☕", "name": "قهوة على أصولها", "en": "Proper coffee", "line": "ريحة القهوة لوحدها بتعدّل اليوم.", "lineEn": "The smell alone fixes your day.", "items": [["hot", "قهوة تركي"], ["hot", "قهوة فرنساوي"], ["hot", "قهوة بندق قطع"], ["hot", "اسبريسو دبل"], ["hot", "كابتشينو"], ["hot", "فلات وايت"], ["hot", "كرتادو"]]}, {"id": "boost", "icon": "⚡", "name": "محتاج أصحصح", "en": "Need a boost", "line": "جرعة طاقة محترمة تشغّلك للآخر.", "lineEn": "A proper kick to get you going.", "items": [["hot", "اسبريسو دبل"], ["hot", "قهوة دبل"], ["hot", "قهوة بالجينسنج"], ["iced", "أيس كوفي"], ["hot", "كرتادو"]]}, {"id": "cold", "icon": "🧊", "name": "حاجة ساقعة", "en": "Something cold", "line": "خلّي يومك أبرد وأخف.", "lineEn": "Cool down and slow down.", "items": [["iced", "أيس سبانش لاتيه"], ["iced", "أيس لاتيه"], ["iced", "أيس موكا / أيس وايت موكا"], ["iced", "فرابتشينو"], ["iced", "أيس كوفي"], ["iced", "اسبريسو أيس فانيلا"]]}, {"id": "sweet", "icon": "🍫", "name": "مزاج حلو", "en": "Sweet tooth", "line": "لما القهوة تقابل الحلاوة… يبقى ده اختيارك.", "lineEn": "When coffee meets sweet — this is your cup.", "items": [["hot", "موكا"], ["hot", "قهوة نوتيلا"], ["hot", "هوت شوكليت"], ["iced", "فرابيه سولتيد كاراميل"], ["shake", "نوتيلا", "ميلك شيك نوتيلا", "Nutella Milkshake"], ["shake", "أوريو", "ميلك شيك أوريو", "Oreo Milkshake"], ["hot", "سحلب مكسرات"]]}, {"id": "fresh", "icon": "🍃", "name": "فريش ومنعش", "en": "Fresh & zesty", "line": "فريش، خفيف، وبيفوّق الحواس.", "lineEn": "Light, bright and refreshing.", "items": [["juice", "ليمون نعناع"], ["soda", "موهيتو ميكس بيري"], ["soda", "موهيتو فراولة"], ["soda", "صن منت"], ["smoothie", "بطيخ", "سموزي بطيخ", "Watermelon Smoothie"], ["juice", "مانجو", "عصير مانجو", "Mango Juice"]]}, {"id": "calm", "icon": "🌿", "name": "عايز أهدى", "en": "Calm & cozy", "line": "كوباية دافية تريّح أعصابك.", "lineEn": "A warm cup to slow things down.", "items": [["herbs", "أزهار بابونج", "بابونج", "Chamomile"], ["herbs", "ينسون"], ["herbs", "نعناع"], ["herbs", "شاي أخضر"], ["hot", "سحلب سادة"], ["herbs", "قرفة حليب"]]}],
+ "moods": [{"id": "classic", "icon": "☕", "name": "قهوة على أصولها", "en": "Proper coffee", "line": "ريحة القهوة لوحدها بتعدّل اليوم.", "lineEn": "The smell alone fixes your day.", "items": [["hot", "قهوة تركي"], ["hot", "قهوة فرنساوي"], ["hot", "قهوة بندق قطع"], ["hot", "اسبريسو دبل"], ["hot", "كابتشينو"], ["hot", "فلات وايت"], ["hot", "كرتادو"]]}, {"id": "boost", "icon": "⚡", "name": "محتاج أصحصح", "en": "Need a boost", "line": "جرعة طاقة محترمة تشغّلك للآخر.", "lineEn": "A proper kick to get you going.", "items": [["hot", "اسبريسو دبل"], ["hot", "قهوة دبل"], ["hot", "قهوة بالجينسنج"], ["iced", "أيس كوفي"], ["hot", "كرتادو"]]}, {"id": "cold", "icon": "🧊", "name": "حاجة ساقعة", "en": "Something cold", "line": "خلّي يومك أبرد وأخف.", "lineEn": "Cool down and slow down.", "items": [["iced", "أيس سبانش لاتيه"], ["iced", "أيس لاتيه"], ["iced", "أيس موكا"], ["iced", "أيس وايت موكا"], ["iced", "فرابتشينو"], ["iced", "أيس كوفي"], ["iced", "اسبريسو أيس فانيلا"]]}, {"id": "sweet", "icon": "🍫", "name": "مزاج حلو", "en": "Sweet tooth", "line": "لما القهوة تقابل الحلاوة… يبقى ده اختيارك.", "lineEn": "When coffee meets sweet — this is your cup.", "items": [["hot", "موكا"], ["hot", "قهوة نوتيلا"], ["hot", "هوت شوكليت"], ["iced", "فرابيه سولتيد كاراميل"], ["shake", "نوتيلا", "ميلك شيك نوتيلا", "Nutella Milkshake"], ["shake", "أوريو", "ميلك شيك أوريو", "Oreo Milkshake"], ["hot", "سحلب مكسرات"]]}, {"id": "fresh", "icon": "🍃", "name": "فريش ومنعش", "en": "Fresh & zesty", "line": "فريش، خفيف، وبيفوّق الحواس.", "lineEn": "Light, bright and refreshing.", "items": [["juice", "ليمون نعناع"], ["soda", "موهيتو ميكس بيري"], ["soda", "موهيتو فراولة"], ["soda", "صن منت"], ["smoothie", "بطيخ", "سموزي بطيخ", "Watermelon Smoothie"], ["juice", "مانجو", "عصير مانجو", "Mango Juice"]]}, {"id": "calm", "icon": "🌿", "name": "عايز أهدى", "en": "Calm & cozy", "line": "كوباية دافية تريّح أعصابك.", "lineEn": "A warm cup to slow things down.", "items": [["herbs", "أزهار بابونج", "بابونج", "Chamomile"], ["herbs", "ينسون"], ["herbs", "نعناع"], ["herbs", "شاي أخضر"], ["hot", "سحلب سادة"], ["herbs", "قرفة حليب"]]}],
  "menus": [
   {
    "id": "hall",
@@ -593,6 +594,8 @@ var MENU = {
       {
        "n": "شاي نكهات",
        "en": "Flavored Tea",
+       "opts": ["تفاح", "فراولة", "خوخ", "توت", "ليمون", "نعناع"],
+       "optsEn": ["Apple", "Strawberry", "Peach", "Berry", "Lemon", "Mint"],
        "p": "15",
        "d": "",
        "den": ""
@@ -804,8 +807,15 @@ var MENU = {
        "den": ""
       },
       {
-       "n": "أيس موكا / أيس وايت موكا",
-       "en": "Iced Mocha / Iced White Mocha",
+       "n": "أيس موكا",
+       "en": "Iced Mocha",
+       "p": "60",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "أيس وايت موكا",
+       "en": "Iced White Mocha",
        "p": "60",
        "d": "",
        "den": ""
@@ -1670,8 +1680,8 @@ var MENU = {
 <script>
 (function(){
 var T={
- ar:{search:"دوّر على مشروب… مثلاً: مانجو، لاتيه",empty:"مفيش حاجة بالاسم ده. جرّب اسم تاني، أو اختار مزاجك تحت.",flat:"سعر موحد {x} جنيه",addr:"العنوان:",phone:"للتواصل:",upd:"آخر تحديث للأسعار: ",slogan:"كل غاوي وليه مزاج",soonT:"قريباً",soonP:"منيو الصالة بيتجهز… استنونا قريب جداً",goT:"شوف منيو التيك أواي",goB:"منيو البن",soonTab:"قريباً",lang:"EN",featured:"ترشيحات الغاوي",featuredSub:"اختيارات للي محتار يبدأ بإيه",featuredLabel:"ترشيح",order:"اطلب على واتساب",directions:"اعرف طريقك",moodEy:"مزاجك… كوبايتك",moodH:"مش عارف تختار؟ <em>اختار مزاجك</em>",moodP:"دوس على مزاجك والغاوي يختارلك.",surprise:"فاجئني",mrK:"اختيار الغاوي لمزاجك",find:"لاقيه في المنيو",another:"اقترح غيره",also:"وممكن كمان يعجبك:",gm:"صباحك قهوة ☀️",revK:"رأيك يفرق معانا",revT:"عجبك مزاجك النهارده؟",revP:"قيّمنا على جوجل في ثانية، وساعد غاويين تانيين يلاقونا.",revB:"قيّمنا على جوجل",revApp:"أو افتحنا في تطبيق الخرائط ← التقييمات",cart:"سلتك",cartBar:"عرض الطلب",items:"صنف",total:"الإجمالي",typeT:"تيك أواي",typeH:"في الصالة",table:"رقم الترابيزة",name:"اسمك (اختياري)",notes:"ملاحظات (بدون ثلج، شوت زيادة…)",send:"ابعت الطلب على واتساب",clear:"فضّي السلة",emptyCart:"السلة فاضية… ضيف أي حاجة من المنيو ☕",added:"اتضاف للسلة",addLbl:"أضف",remLbl:"شيل",removed:"اتشال من السلة",needTable:"اكتب رقم الترابيزة",priceAsk:"السعر يتحدد في المحل",kg:"كيلو",close:"إغلاق",addMood:"ضيفه للسلة",ga:"عصرية رايقة 🌤️",ge:"سهرة على مزاجك 🌙"},
- en:{search:"Search the menu… e.g. mango, latte",empty:"Nothing matches that. Try another name, or pick your mood below.",flat:"All {x} EGP",addr:"Address:",phone:"Contact:",upd:"Prices last updated: ",slogan:"Every coffee lover has a mood of their own",soonT:"Coming soon",soonP:"Our dine-in menu is on its way — stay tuned!",goT:"See takeaway menu",goB:"Coffee beans",soonTab:"Soon",lang:"ع",featured:"El Ghawy Picks",featuredSub:"A few favorites to help you choose",featuredLabel:"Recommended",order:"Order on WhatsApp",directions:"Get directions",moodEy:"YOUR MOOD, YOUR CUP",moodH:"Can't decide? <em>Pick your mood</em>",moodP:"Tap your mood and El Ghawy picks for you.",surprise:"Surprise me",mrK:"EL GHAWY PICK FOR YOUR MOOD",find:"Find it in the menu",another:"Suggest another",also:"You might also like:",gm:"Good morning ☀️",revK:"YOUR OPINION MATTERS",revT:"Enjoyed your cup today?",revP:"Rate us on Google in seconds and help other coffee lovers find us.",revB:"Rate us on Google",revApp:"or open us in the Maps app → Reviews",cart:"Your order",cartBar:"View order",items:"items",total:"Total",typeT:"Takeaway",typeH:"Dine-in",table:"Table number",name:"Your name (optional)",notes:"Notes (no ice, extra shot…)",send:"Send order on WhatsApp",clear:"Clear",emptyCart:"Your cart is empty… add something from the menu ☕",added:"Added to your order",addLbl:"Add",remLbl:"Remove",removed:"Removed from your order",needTable:"Enter your table number",priceAsk:"Price confirmed in store",kg:"kg",close:"Close",addMood:"Add to order",ga:"Easy afternoon 🌤️",ge:"Cozy evening 🌙"}
+ ar:{search:"دوّر على مشروب… مثلاً: مانجو، لاتيه",empty:"مفيش حاجة بالاسم ده. جرّب اسم تاني، أو اختار مزاجك تحت.",flat:"سعر موحد {x} جنيه",addr:"العنوان:",phone:"للتواصل:",upd:"آخر تحديث للأسعار: ",slogan:"كل غاوي وليه مزاج",soonT:"قريباً",soonP:"منيو الصالة بيتجهز… استنونا قريب جداً",goT:"شوف منيو التيك أواي",goB:"منيو البن",soonTab:"قريباً",lang:"EN",featured:"ترشيحات الغاوي",featuredSub:"اختيارات للي محتار يبدأ بإيه",featuredLabel:"ترشيح",order:"اطلب على واتساب",directions:"اعرف طريقك",moodEy:"مزاجك… كوبايتك",moodH:"مش عارف تختار؟ <em>اختار مزاجك</em>",moodP:"دوس على مزاجك والغاوي يختارلك.",surprise:"فاجئني",mrK:"اختيار الغاوي لمزاجك",find:"لاقيه في المنيو",another:"اقترح غيره",also:"وممكن كمان يعجبك:",gm:"صباحك قهوة ☀️",revK:"رأيك يفرق معانا",revT:"عجبك مزاجك النهارده؟",revP:"قيّمنا على جوجل في ثانية، وساعد غاويين تانيين يلاقونا.",revB:"قيّمنا على جوجل",revApp:"أو افتحنا في تطبيق الخرائط ← التقييمات",cart:"سلتك",cartBar:"عرض الطلب",items:"صنف",total:"الإجمالي",typeT:"تيك أواي",typeH:"في الصالة",table:"رقم الترابيزة",name:"اسمك (اختياري)",notes:"ملاحظات",notesPh:"مثلاً: كوب تيك أواي، كوب زجاج، فنجان، بدون ثلج، شوت زيادة…",send:"ابعت الطلب على واتساب",clear:"فضّي السلة",emptyCart:"السلة فاضية… ضيف أي حاجة من المنيو ☕",added:"اتضاف للسلة",addLbl:"أضف",remLbl:"شيل",removed:"اتشال من السلة",needTable:"اكتب رقم الترابيزة",priceAsk:"السعر يتحدد في المحل",kg:"كيلو",close:"إغلاق",addMood:"ضيفه للسلة",ga:"عصرية رايقة 🌤️",ge:"سهرة على مزاجك 🌙"},
+ en:{search:"Search the menu… e.g. mango, latte",empty:"Nothing matches that. Try another name, or pick your mood below.",flat:"All {x} EGP",addr:"Address:",phone:"Contact:",upd:"Prices last updated: ",slogan:"Every coffee lover has a mood of their own",soonT:"Coming soon",soonP:"Our dine-in menu is on its way — stay tuned!",goT:"See takeaway menu",goB:"Coffee beans",soonTab:"Soon",lang:"ع",featured:"El Ghawy Picks",featuredSub:"A few favorites to help you choose",featuredLabel:"Recommended",order:"Order on WhatsApp",directions:"Get directions",moodEy:"YOUR MOOD, YOUR CUP",moodH:"Can't decide? <em>Pick your mood</em>",moodP:"Tap your mood and El Ghawy picks for you.",surprise:"Surprise me",mrK:"EL GHAWY PICK FOR YOUR MOOD",find:"Find it in the menu",another:"Suggest another",also:"You might also like:",gm:"Good morning ☀️",revK:"YOUR OPINION MATTERS",revT:"Enjoyed your cup today?",revP:"Rate us on Google in seconds and help other coffee lovers find us.",revB:"Rate us on Google",revApp:"or open us in the Maps app → Reviews",cart:"Your order",cartBar:"View order",items:"items",total:"Total",typeT:"Takeaway",typeH:"Dine-in",table:"Table number",name:"Your name (optional)",notes:"Notes",notesPh:"e.g. takeaway cup, glass cup, small cup (fingan), no ice, extra shot…",send:"Send order on WhatsApp",clear:"Clear",emptyCart:"Your cart is empty… add something from the menu ☕",added:"Added to your order",addLbl:"Add",remLbl:"Remove",removed:"Removed from your order",needTable:"Enter your table number",priceAsk:"Price confirmed in store",kg:"kg",close:"Close",addMood:"Add to order",ga:"Easy afternoon 🌤️",ge:"Cozy evening 🌙"}
 };
 var root=document.documentElement;
 function store(k,v){try{localStorage.setItem(k,v)}catch(e){}}
@@ -1909,16 +1919,19 @@ function renderReview(){var box=$("review");if(!box)return;var u=MENU.reviewUrl|
 /* ================= CART ================= */
 var SEC_EMOJI={hot:"☕",iced:"🧊",juice:"🍹",season:"🍉",smoothie:"🥤",shake:"🥛",soda:"🫧",herbs:"🌿",ice:"🍨",cold:"🥤",indomie:"🍜",blends:"🫘",flavored:"🫘",pure:"🫘",nes:"🫙"};
 var NUMS=["1️⃣","2️⃣","3️⃣","4️⃣","5️⃣","6️⃣","7️⃣","8️⃣","9️⃣","🔟"];
-var sugar={},cart={},orderType="t",tableNo="",custName="",custNotes="";
-try{var cs=JSON.parse(localStorage.getItem("gh_cart")||"{}");cart=cs.c||{};sugar=cs.s||{};orderType=cs.t||"t";tableNo=cs.tb||"";custName=cs.n||""}catch(e){}
+var opt={},sugar={},cart={},orderType="t",tableNo="",custName="",custNotes="";
+try{var cs=JSON.parse(localStorage.getItem("gh_cart2")||"{}");cart=cs.c||{};sugar=cs.s||{};opt=cs.o||{};orderType=cs.t||"t";tableNo=cs.tb||"";custName=cs.n||""}catch(e){}
 var FLAVORS={ar:["فانيلا","كراميل","بندق","شوكولاتة","بستاشيو","توت"],en:["Vanilla","Caramel","Hazelnut","Chocolate","Pistachio","Berry"]};
 var SUGAR={ar:["خفيف","مظبوط","مانو","زيادة","فوق الزيادة","سادة"],en:["Light","Medium","Medium+","Sweet","Extra sweet","No sugar"]},SUGAR_ORDER=[5,0,1,2,3,4];
 function needsSugar(L){return !!L&&!L.forKey&&L.m.id==="takeaway"&&(L.sec.id==="hot"||L.sec.id==="iced"||L.sec.id==="herbs")&&!/^(إضافة|اضافة|زيادة)/.test(L.it.n||"")}
 function spName(n){var en=lang==="en";if(en)return (n%1?(Math.floor(n)?Math.floor(n)+"½":"½"):n)+(n>1?" spoons":" spoon");
   var w=Math.floor(n),h=n%1?" ونص":"";if(!w)return "نص معلقة";return (w===1?"معلقة":w===2?"معلقتين":w+" معالق")+h}
 function sugarName(i){if(typeof i==="string"&&i.indexOf("sp:")===0)return spName(+i.slice(3));return (lang==="en"?SUGAR.en:SUGAR.ar)[i]}
+function optsOf(it){return it&&it.opts&&it.opts.length?it.opts:null}
+function optName(it,i){return (lang==="en"&&it.optsEn?it.optsEn:it.opts)[i]||""}
+function missingOpt(){var ls=cartLines();for(var i=0;i<ls.length;i++)if(!ls[i].L.forKey&&optsOf(ls[i].L.it)&&opt[ls[i].k]==null)return ls[i];return null}
 function missingSugar(){var ls=cartLines();for(var i=0;i<ls.length;i++)if(needsSugar(ls[i].L)&&sugar[ls[i].k]==null)return ls[i];return null}
-function saveCart(){try{localStorage.setItem("gh_cart",JSON.stringify({c:cart,s:sugar,t:orderType,tb:tableNo,n:custName}))}catch(e){}}
+function saveCart(){try{localStorage.setItem("gh_cart2",JSON.stringify({c:cart,s:sugar,o:opt,t:orderType,tb:tableNo,n:custName}))}catch(e){}}
 function numPrice(v){v=String(v||"").replace(/\s/g,"");return /^\d+(\.\d+)?$/.test(v)?parseFloat(v):null}
 function stepOf(menuId){return menuId==="beans"?0.25:1}
 function isFlvIt(it){return !!it&&/فليفر/.test(it.n||"")}
@@ -1941,7 +1954,7 @@ function fmtQ(q,menuId){if(menuId!=="beans")return String(q);var map={"0.25":"¼
 function fmtMoney(n){n=Math.round(n*100)/100;return String(n).replace(/\B(?=(\d{3})+(?!\d))/g,",")}
 function cartLines(){var out=[],fl=[],k,i;for(k in cart){if(!cart.hasOwnProperty(k)||!cart[k])continue;var L=lookup(k);if(!L||(isFlvIt(L.it)&&!L.forKey)){delete cart[k];continue}
     if(L.forKey){if(!cart[L.forKey]){delete cart[k];continue}if(cart[k]>cart[L.forKey])cart[k]=cart[L.forKey];fl.push({k:k,L:L,q:cart[k]})}else out.push({k:k,L:L,q:cart[k]})}
-  for(k in sugar)if(sugar.hasOwnProperty(k)&&!cart[k])delete sugar[k];
+  for(k in sugar)if(sugar.hasOwnProperty(k)&&!cart[k])delete sugar[k];for(k in opt)if(opt.hasOwnProperty(k)&&!cart[k])delete opt[k];
   var res=[];for(i=0;i<out.length;i++){res.push(out[i]);for(var j=0;j<fl.length;j++)if(fl[j].L.forKey===out[i].k)res.push(fl[j])}return res}
 function cartTotals(){var lines=cartLines(),n=0,tot=0,unknown=false;for(var i=0;i<lines.length;i++){n+=lines[i].L.m.id==="beans"?1:lines[i].q;if(lines[i].L.price===null)unknown=true;else tot+=lines[i].L.price*lines[i].q}return {lines:lines,n:n,tot:tot,unknown:unknown}}
 function changeQty(key,delta){var L=lookup(key);if(!L)return;var st=stepOf(L.m.id),q=+((cart[key]||0)+delta*st).toFixed(2);
@@ -1993,6 +2006,9 @@ function renderSheet(){
   for(var i=0;i<T2.lines.length;i++){var l=T2.lines[i],L=l.L,isB=L.m.id==="beans",unit=isB?" "+t.kg:"",line=L.price===null?t.priceAsk:fmtMoney(L.price*l.q)+" "+(lang==="en"?"EGP":"ج");
     h+='<li'+(L.forKey?' class="sl-flv"':'')+'><span class="sl-e">'+(L.forKey?"✨":(SEC_EMOJI[L.sec.id]||"•"))+'</span><span class="sl-n">'+esc(L.forKey?flvLabel(L):nm(L.it))+'<small>'+(L.forKey?esc((lang==="en"?"on ":"على ")+nm(L.forIt)):esc(nm(L.sec)))+(L.price!==null?' · '+fmtMoney(L.price)+(isB?(lang==="en"?" EGP/kg":" ج/كيلو"):(lang==="en"?" EGP":" ج")):"")+'</small></span>'+
       '<span class="sl-q"><button type="button" data-dec="'+l.k+'" aria-label="−">−</button><b>'+fmtQ(l.q,L.m.id)+unit+'</b><button type="button" data-inc="'+l.k+'" aria-label="+">+</button></span><span class="sl-t">'+esc(line)+'</span></li>';
+    if(!L.forKey&&optsOf(L.it)){var ov=opt[l.k],os=optsOf(L.it);h+='<li class="sl-sugar sl-opt'+(sugarErr===l.k+"#o"?' err':'')+'" id="op-'+l.k.replace(/\|/g,"-")+'"><span class="sg-l">🍃 '+(lang==="en"?"Flavor":"النكهة")+'</span><span class="sg-c op-c">';
+      for(var oz=0;oz<os.length;oz++)h+='<button type="button" data-opt="'+l.k+'" data-ov="'+oz+'" class="'+(ov===oz?"on":"")+'" aria-pressed="'+(ov===oz)+'">'+esc(optName(L.it,oz))+'</button>';
+      h+='</span></li>'}
     if(needsSugar(L)){var sv=sugar[l.k];h+='<li class="sl-sugar'+(sugarErr===l.k?' err':'')+'" id="sg-'+l.k.replace(/\|/g,"-")+'"><span class="sg-l">🍬 '+(lang==="en"?"Sugar":"السكر")+'</span><span class="sg-c" role="radiogroup">';
       for(var zz=0;zz<SUGAR_ORDER.length;zz++){var z=SUGAR_ORDER[zz];h+='<button type="button" data-sugar="'+l.k+'" data-sv="'+z+'" class="'+(sv===z?"on":"")+'" aria-pressed="'+(sv===z)+'">'+esc(sugarName(z))+'</button>'}
       var spv=typeof sv==="string"&&sv.indexOf("sp:")===0?+sv.slice(3):0;
@@ -2003,7 +2019,7 @@ function renderSheet(){
     if(!any&&left&&!flvNo&&flvBases().length){var en=lang==="en",P=lookup0(baseFor(ts[0].k)),pr=P&&P.price!=null?fmtMoney(P.price)+(en?" EGP":" ج"):"";
       h+='<div class="sh-up"><div><b>✨ '+(en?"Add a flavor to your drink?":"تحب تزود فليفر لمشروبك؟")+'</b><small>'+esc(FLAVORS[en?"en":"ar"].slice(0,4).join(en?", ":"، "))+'… '+(pr?(en?"for just ":"بـ ")+pr:'')+'</small></div><div class="sh-up-b"><button type="button" data-upflv="1">'+(en?"Choose flavor":"اختار الفليفر")+'</button><button type="button" class="no" data-upno="1">'+(en?"No thanks":"لا شكراً")+'</button></div></div>'}})();
   h+='<label class="sh-f"><span>👤 '+esc(t.name)+'</span><input id="fName" value="'+esc(custName)+'" autocomplete="name"></label>';
-  h+='<label class="sh-f"><span>📝 '+esc(t.notes)+'</span><textarea id="fNotes" rows="2">'+esc(custNotes)+'</textarea></label>';
+  h+='<label class="sh-f"><span>📝 '+esc(t.notes)+'</span><textarea id="fNotes" rows="2" placeholder="'+esc(t.notesPh)+'">'+esc(custNotes)+'</textarea></label>';
   h+='<div class="sh-total"><span>💰 '+esc(t.total)+'</span><b>'+fmtMoney(T2.tot)+' '+(lang==="en"?"EGP":"ج")+(T2.unknown?' +':'')+'</b></div>';
   h+='<a class="sh-send" id="fSend" href="'+esc(waUrl())+'" rel="noopener">'+esc(t.send)+'</a><button type="button" class="sh-clear" id="fClear">'+esc(t.clear)+'</button>';
   $("shBody").innerHTML=h;
@@ -2021,7 +2037,7 @@ function buildMsg(){var t=T[lang],T2=cartTotals(),ar=lang!=="en",L=[];
   for(var i=0,no=0;i<T2.lines.length;i++){var l=T2.lines[i],x=l.L,isB=x.m.id==="beans",q=fmtQ(l.q,x.m.id)+(isB?" "+t.kg:"");
     var price=x.price===null?(ar?"(السعر يتحدد)":"(price TBC)"):fmtMoney(x.price*l.q)+(ar?" ج":" EGP");
     if(x.forKey){L.push("      ↳ ✨ "+flvLabel(x)+(ar?" على ":" on ")+nm(x.forIt)+" × "+q+" = "+price);continue}
-    L.push((NUMS[no++]||"▫️")+" "+(SEC_EMOJI[x.sec.id]||"")+" "+nm(x.it)+" × "+q+" = "+price);
+    L.push((NUMS[no++]||"▫️")+" "+(SEC_EMOJI[x.sec.id]||"")+" "+nm(x.it)+(optsOf(x.it)&&opt[l.k]!=null?" ("+optName(x.it,opt[l.k])+")":"")+" × "+q+" = "+price);
     if(needsSugar(x)&&sugar[l.k]!=null)L.push("      🍬 "+(ar?"السكر: ":"Sugar: ")+sugarName(sugar[l.k]))}
   L.push("━━━━━━━━━━━━");
   L.push((ar?"💰 *الإجمالي: ":"💰 *Total: ")+fmtMoney(T2.tot)+(ar?" ج*":" EGP*")+(T2.unknown?(ar?" + أصناف سعرها يتحدد":" + items priced in store"):""));
@@ -2042,7 +2058,8 @@ $("cartbar").addEventListener("click",openSheet);
   document.addEventListener("mousemove",function(e){if(md)move(e.clientY,e)});document.addEventListener("mouseup",function(){if(md){md=false;end()}});
 })();
 $("sheet").addEventListener("click",function(e){var a=e.target.closest?e.target.closest("#fSend"):null;
-  if(a){var ms=missingSugar();if(ms){e.preventDefault();sugarErr=ms.k;renderSheet();var el=$("sg-"+ms.k.replace(/\|/g,"-"));if(el&&el.scrollIntoView)el.scrollIntoView({block:"center",behavior:"smooth"});toast((lang==="en"?"Choose sugar for ":"اختار السكر لـ ")+nm(ms.L.it));return}
+  if(a){var mo=missingOpt();if(mo){e.preventDefault();sugarErr=mo.k+"#o";renderSheet();var eo=$("op-"+mo.k.replace(/\|/g,"-"));if(eo&&eo.scrollIntoView)eo.scrollIntoView({block:"center",behavior:"smooth"});toast((lang==="en"?"Choose the flavor for ":"اختار النكهة لـ ")+nm(mo.L.it));return}
+    var ms=missingSugar();if(ms){e.preventDefault();sugarErr=ms.k;renderSheet();var el=$("sg-"+ms.k.replace(/\|/g,"-"));if(el&&el.scrollIntoView)el.scrollIntoView({block:"center",behavior:"smooth"});toast((lang==="en"?"Choose sugar for ":"اختار السكر لـ ")+nm(ms.L.it));return}
     if(orderType==="h"&&!String(tableNo).replace(/\s/g,"")){e.preventDefault();var f=$("fTable");if(f){f.className="err";f.focus()}toast(T[lang].needTable);return}a.href=waUrl();return}
   var b=e.target.closest?e.target.closest("button,[data-close]"):null;if(!b)return;
   if(b.getAttribute("data-close")){closeSheet();return}
@@ -2050,6 +2067,7 @@ $("sheet").addEventListener("click",function(e){var a=e.target.closest?e.target.
   if(b.getAttribute("data-upno")){flvNo=true;renderSheet();return}
   if(b.getAttribute("data-sp")){var sk=b.getAttribute("data-sp"),cv=sugar[sk],n=typeof cv==="string"&&cv.indexOf("sp:")===0?+cv.slice(3):0;n=Math.max(0,Math.min(5,n+0.5*(+b.getAttribute("data-d"))));
     if(n)sugar[sk]="sp:"+n;else delete sugar[sk];if(sugarErr===sk&&n)sugarErr=null;saveCart();var sc2=$("shBody").scrollTop;renderSheet();try{$("shBody").scrollTop=sc2}catch(e){}syncSend();return}
+  if(b.getAttribute("data-opt")){var okk=b.getAttribute("data-opt");opt[okk]=+b.getAttribute("data-ov");if(sugarErr===okk+"#o")sugarErr=null;saveCart();var sc3=$("shBody").scrollTop;renderSheet();try{$("shBody").scrollTop=sc3}catch(e){}return}
   if(b.getAttribute("data-sugar")){sugar[b.getAttribute("data-sugar")]=+b.getAttribute("data-sv");if(sugarErr===b.getAttribute("data-sugar"))sugarErr=null;saveCart();var y=window.pageYOffset,sc=$("shBody").scrollTop;renderSheet();try{$("shBody").scrollTop=sc}catch(e){}return}
   if(b.getAttribute("data-inc")){changeQty(b.getAttribute("data-inc"),1);return}
   if(b.getAttribute("data-dec")){changeQty(b.getAttribute("data-dec"),-1);return}

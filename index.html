@@ -263,8 +263,9 @@ html[dir="ltr"] .featured-item:before{left:auto;right:12px}
 .sh-up-b button.no{flex:0 0 auto;padding:0 14px;background:transparent;color:var(--soft);border:1px solid var(--line)}
 .sh-list li.sl-sugar{display:block;padding:2px 0 12px;border-bottom:1px dashed var(--line)}
 .sh-list li.sl-sugar .sg-l{display:block;font-size:12px;font-weight:800;color:var(--soft);margin:0 0 6px}
-.sg-c{display:grid;grid-template-columns:repeat(5,auto);justify-content:stretch;gap:5px}
-.sg-c button{min-height:40px;padding:4px 2px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--ink);font:inherit;font-size:clamp(11px,3.3vw,14px);font-weight:800;white-space:nowrap;cursor:pointer;min-width:0}
+.sg-c{display:grid;grid-template-columns:repeat(6,auto);justify-content:stretch;gap:4px}
+.sg-c button{min-height:40px;padding:4px 2px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--ink);font:inherit;font-size:clamp(11px,3.1vw,14px);font-weight:800;line-height:1.15;cursor:pointer;min-width:0;padding:4px 3px}
+@media (min-width:375px){.sg-c button{white-space:nowrap}}
 .sg-sp{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:8px;padding:4px 4px 4px 12px;border-radius:999px;border:1px solid var(--line);background:var(--card)}
 html[dir="rtl"] .sg-sp{padding:4px 12px 4px 4px}
 .sg-sp.on{border-color:var(--yel);box-shadow:0 0 0 1px var(--yel) inset}
@@ -426,7 +427,9 @@ body.hascart footer{padding-bottom:100px}
 .sheet.on .sh-bg{opacity:1}
 .sh-panel{position:absolute;left:0;right:0;bottom:0;max-width:620px;margin:0 auto;max-height:88vh;overflow:auto;-webkit-overflow-scrolling:touch;background:var(--bg);color:var(--ink);border-radius:26px 26px 0 0;padding:8px 18px max(18px,env(safe-area-inset-bottom));transform:translateY(100%);transition:transform .3s cubic-bezier(.2,.8,.2,1);box-shadow:0 -10px 40px rgba(0,0,0,.3)}
 .sheet.on .sh-panel{transform:none}
-.sh-grab{width:44px;height:5px;border-radius:5px;background:var(--line);margin:4px auto 8px}
+.sh-grab{position:relative;width:54px;height:6px;border-radius:6px;background:var(--line);margin:4px auto 8px;cursor:grab;touch-action:none}
+.sh-grab:before{content:"";position:absolute;left:-60px;right:-60px;top:-14px;bottom:-14px}
+.sh-head{touch-action:none}
 .sh-head{display:flex;align-items:center;justify-content:space-between}
 .sh-head h2{margin:0;font-family:"Cairo",system-ui,-apple-system,"Geeza Pro",sans-serif;font-weight:900;font-size:26px;color:var(--pc)}
 html[lang=en] .sh-head h2{font-family:"Cairo",sans-serif;font-weight:900;font-size:22px}
@@ -1909,7 +1912,7 @@ var NUMS=["1️⃣","2️⃣","3️⃣","4️⃣","5️⃣","6️⃣","7️⃣",
 var sugar={},cart={},orderType="t",tableNo="",custName="",custNotes="";
 try{var cs=JSON.parse(localStorage.getItem("gh_cart")||"{}");cart=cs.c||{};sugar=cs.s||{};orderType=cs.t||"t";tableNo=cs.tb||"";custName=cs.n||""}catch(e){}
 var FLAVORS={ar:["فانيلا","كراميل","بندق","شوكولاتة","بستاشيو","توت"],en:["Vanilla","Caramel","Hazelnut","Chocolate","Pistachio","Berry"]};
-var SUGAR={ar:["خفيف","مظبوط","مانو","زيادة","فوق الزيادة"],en:["Light","Medium","Mano","Sweet","Extra sweet"]};
+var SUGAR={ar:["خفيف","مظبوط","مانو","زيادة","فوق الزيادة","سادة"],en:["Light","Medium","Mano","Sweet","Extra sweet","No sugar"]},SUGAR_ORDER=[5,0,1,2,3,4];
 function needsSugar(L){return !!L&&!L.forKey&&L.m.id==="takeaway"&&(L.sec.id==="hot"||L.sec.id==="iced"||L.sec.id==="herbs")&&!/^(إضافة|اضافة|زيادة)/.test(L.it.n||"")}
 function spName(n){var en=lang==="en";if(en)return (n%1?(Math.floor(n)?Math.floor(n)+"½":"½"):n)+(n>1?" spoons":" spoon");
   var w=Math.floor(n),h=n%1?" ونص":"";if(!w)return "نص معلقة";return (w===1?"معلقة":w===2?"معلقتين":w+" معالق")+h}
@@ -1991,7 +1994,7 @@ function renderSheet(){
     h+='<li'+(L.forKey?' class="sl-flv"':'')+'><span class="sl-e">'+(L.forKey?"✨":(SEC_EMOJI[L.sec.id]||"•"))+'</span><span class="sl-n">'+esc(L.forKey?flvLabel(L):nm(L.it))+'<small>'+(L.forKey?esc((lang==="en"?"on ":"على ")+nm(L.forIt)):esc(nm(L.sec)))+(L.price!==null?' · '+fmtMoney(L.price)+(isB?(lang==="en"?" EGP/kg":" ج/كيلو"):(lang==="en"?" EGP":" ج")):"")+'</small></span>'+
       '<span class="sl-q"><button type="button" data-dec="'+l.k+'" aria-label="−">−</button><b>'+fmtQ(l.q,L.m.id)+unit+'</b><button type="button" data-inc="'+l.k+'" aria-label="+">+</button></span><span class="sl-t">'+esc(line)+'</span></li>';
     if(needsSugar(L)){var sv=sugar[l.k];h+='<li class="sl-sugar'+(sugarErr===l.k?' err':'')+'" id="sg-'+l.k.replace(/\|/g,"-")+'"><span class="sg-l">🍬 '+(lang==="en"?"Sugar":"السكر")+'</span><span class="sg-c" role="radiogroup">';
-      for(var z=0;z<5;z++)h+='<button type="button" data-sugar="'+l.k+'" data-sv="'+z+'" class="'+(sv===z?"on":"")+'" aria-pressed="'+(sv===z)+'">'+esc(sugarName(z))+'</button>';
+      for(var zz=0;zz<SUGAR_ORDER.length;zz++){var z=SUGAR_ORDER[zz];h+='<button type="button" data-sugar="'+l.k+'" data-sv="'+z+'" class="'+(sv===z?"on":"")+'" aria-pressed="'+(sv===z)+'">'+esc(sugarName(z))+'</button>'}
       var spv=typeof sv==="string"&&sv.indexOf("sp:")===0?+sv.slice(3):0;
       h+='</span><span class="sg-sp'+(spv?' on':'')+'"><span class="sp-l">🥄 '+(lang==="en"?"Or by spoon":"أو بالمعلقة")+'</span><span class="sp-q"><button type="button" data-sp="'+l.k+'" data-d="-1" aria-label="−"'+(spv?'':' disabled')+'>−</button><b>'+(spv?esc(spName(spv)):(lang==="en"?"—":"—"))+'</b><button type="button" data-sp="'+l.k+'" data-d="1" aria-label="+"'+(spv>=5?' disabled':'')+'>+</button></span></span></li>'}}
   h+='</ul>';
@@ -2007,7 +2010,7 @@ function renderSheet(){
 }
 var lastFocus=null;
 function openSheet(){lastFocus=document.activeElement;renderSheet();var s=$("sheet");s.hidden=false;void s.offsetWidth;s.className="sheet on";document.documentElement.style.overflow="hidden";setTimeout(function(){try{$("shX").focus()}catch(e){}},50)}
-function closeSheet(){var s=$("sheet");s.className="sheet";document.documentElement.style.overflow="";setTimeout(function(){s.hidden=true},250);try{lastFocus&&lastFocus.focus()}catch(e){}}
+function closeSheet(){var s=$("sheet"),pn=s.querySelector(".sh-panel");if(pn){pn.style.transition="";pn.style.transform=""};s.className="sheet";document.documentElement.style.overflow="";setTimeout(function(){s.hidden=true},250);try{lastFocus&&lastFocus.focus()}catch(e){}}
 function waUrl(){return "https://wa.me/"+MENU.whatsappOrder+"?text="+encodeURIComponent(buildMsg())}
 function syncSend(){var a=$("fSend");if(a)a.href=waUrl()}
 function buildMsg(){var t=T[lang],T2=cartTotals(),ar=lang!=="en",L=[];
@@ -2026,6 +2029,18 @@ function buildMsg(){var t=T[lang],T2=cartTotals(),ar=lang!=="en",L=[];
   L.push("");L.push(ar?"شكراً 🙏 مستني تأكيد الطلب":"Thanks 🙏 waiting for confirmation");
   return L.join("\n")}
 $("cartbar").addEventListener("click",openSheet);
+(function(){var pn=$("sheet").querySelector(".sh-panel"),y0=0,t0=0,dy=0,can=false,drag=false,handle=false;if(!pn)return;
+  function start(y,tg){y0=y;t0=Date.now();dy=0;drag=false;handle=!!(tg.closest&&tg.closest(".sh-grab,.sh-head"))&&!(tg.closest&&tg.closest("button"));can=handle||pn.scrollTop<=0}
+  function move(y,e){if(!can)return;dy=y-y0;if(dy<=0){if(drag){pn.style.transform="";}if(!handle)can=dy>-5;return}
+    if(!drag&&dy<8)return;drag=true;if(e&&e.cancelable)e.preventDefault();pn.style.transition="none";pn.style.transform="translateY("+(dy-8)+"px)"}
+  function end(){if(!drag){can=false;return}var fast=dy>50&&(Date.now()-t0)<250;drag=false;can=false;
+    if(dy>110||fast){closeSheet()}else{pn.style.transition="";pn.style.transform=""}}
+  pn.addEventListener("touchstart",function(e){if(e.touches.length===1)start(e.touches[0].clientY,e.target)},{passive:true});
+  pn.addEventListener("touchmove",function(e){if(e.touches.length===1)move(e.touches[0].clientY,e)},{passive:false});
+  pn.addEventListener("touchend",end);pn.addEventListener("touchcancel",end);
+  var md=false;pn.addEventListener("mousedown",function(e){if(e.target.closest&&e.target.closest(".sh-grab")){md=true;start(e.clientY,e.target);e.preventDefault()}});
+  document.addEventListener("mousemove",function(e){if(md)move(e.clientY,e)});document.addEventListener("mouseup",function(){if(md){md=false;end()}});
+})();
 $("sheet").addEventListener("click",function(e){var a=e.target.closest?e.target.closest("#fSend"):null;
   if(a){var ms=missingSugar();if(ms){e.preventDefault();sugarErr=ms.k;renderSheet();var el=$("sg-"+ms.k.replace(/\|/g,"-"));if(el&&el.scrollIntoView)el.scrollIntoView({block:"center",behavior:"smooth"});toast((lang==="en"?"Choose sugar for ":"اختار السكر لـ ")+nm(ms.L.it));return}
     if(orderType==="h"&&!String(tableNo).replace(/\s/g,"")){e.preventDefault();var f=$("fTable");if(f){f.className="err";f.focus()}toast(T[lang].needTable);return}a.href=waUrl();return}

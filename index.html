@@ -1770,7 +1770,8 @@ function resolvePick(m,ref){/* ref=[sectionId,itemName,labelAr,labelEn] */
   for(var i=0;i<m.sections.length;i++){var s=m.sections[i];if(s.id!==ref[0])continue;
     for(var j=0;j<s.items.length;j++){var it=s.items[j];if(!it.hide&&it.n===ref[1])return {it:it,sec:s,id:"it-"+s.id+"-"+j,label:(lang==="en"?ref[3]:ref[2])||nm(it),price:it.p||s.flat||""}}}
   return null}
-function allPicks(m){var out=[];for(var i=0;i<m.sections.length;i++){var s=m.sections[i];for(var j=0;j<s.items.length;j++){var it=s.items[j];if(!it.hide&&!/^(إضافة|اضافة|زيادة)/.test(it.n||"")&&(it.p||s.flat))out.push({it:it,sec:s,id:"it-"+s.id+"-"+j,label:nm(it),price:it.p||s.flat})}}return out}
+var SURPRISE_SKIP_SEC=["cold","indomie","herbs"],SURPRISE_SKIP=["شاي","قهوة تركي","نسكافيه بلاك","كوفي ميكس"];
+function allPicks(m){var out=[];for(var i=0;i<m.sections.length;i++){var s=m.sections[i];if(s.id==="cold"||s.id==="indomie")continue;if(SURPRISE_SKIP_SEC.indexOf(s.id)>-1)continue;for(var j=0;j<s.items.length;j++){var it=s.items[j];if(SURPRISE_SKIP.indexOf(it.n)>-1)continue;if(!it.hide&&!/^(إضافة|اضافة|زيادة)/.test(it.n||"")&&s.id!=="indomie"&&!/^مياه/.test(it.n||"")&&(it.p||s.flat))out.push({it:it,sec:s,id:"it-"+s.id+"-"+j,label:nm(it),price:it.p||s.flat})}}return out}
 function showMood(id,btn){
   var m=findMenu("takeaway"),box=$("moodResult");if(!m||!box)return;
   var bs=$("mood").querySelectorAll("[data-mood]");for(var z=0;z<bs.length;z++)bs[z].className=bs[z].className.replace(/\s*active/g,"");

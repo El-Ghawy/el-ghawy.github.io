@@ -243,6 +243,54 @@ nav{box-shadow:0 8px 24px rgba(35,12,15,.045);backdrop-filter:blur(14px)}
 .featured-item{position:relative;overflow:hidden;border-radius:20px;min-height:110px;padding:16px;background:linear-gradient(135deg,var(--card),var(--bg));box-shadow:0 8px 26px rgba(35,12,15,.06);transition:transform .2s,box-shadow .2s,border-color .2s}
 .featured-item:before{content:"✦";position:absolute;left:12px;bottom:5px;font-size:30px;color:var(--yel);opacity:.38;pointer-events:none}
 html[dir="ltr"] .featured-item:before{left:auto;right:12px}
+.flv{position:fixed;inset:0;z-index:90;background:rgba(20,6,8,.55);display:flex;align-items:flex-end;justify-content:center;opacity:0;transition:opacity .2s}
+.flv.on{opacity:1}
+.flv[hidden]{display:none}
+.flv-card h4 small{font-size:13px;color:var(--soft);font-weight:800}
+.flv-l{margin:12px 2px 6px;font-weight:800;font-size:13px;color:var(--soft)}
+.flv-l b{color:var(--ink)}
+.flv-list button.on{border-color:var(--yel);box-shadow:0 0 0 2px var(--yel) inset}
+.flv-types{display:flex;flex-wrap:wrap;gap:8px}
+.flv-types button{min-height:44px;padding:6px 16px;border-radius:999px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font:inherit;font-weight:800;font-size:15px;cursor:pointer}
+.flv-types button.on{background:var(--yel);border-color:var(--yel);color:#5a0f18}
+.flv-go{display:block;width:100%;margin-top:16px;min-height:52px;border:0;border-radius:16px;background:#f9dc0c;color:#60101a;font:inherit;font-weight:900;font-size:16px;box-shadow:0 4px 0 #b89d00;cursor:pointer}
+.sh-up2{display:block;width:100%;margin:2px 0 8px;min-height:46px;border-radius:14px;border:1.5px dashed var(--yel);background:transparent;color:var(--ink);font:inherit;font-weight:800;font-size:14px;cursor:pointer}
+.sh-up{display:flex;flex-direction:column;gap:10px;margin:4px 0 8px;padding:14px;border-radius:18px;border:1.5px dashed var(--yel);background:var(--card)}
+.sh-up b{display:block;font-weight:900;font-size:15px}
+.sh-up small{display:block;color:var(--soft);font-weight:700;font-size:12.5px;margin-top:2px}
+.sh-up-b{display:flex;gap:8px}
+.sh-up-b button{flex:1;min-height:44px;border-radius:12px;border:0;background:#f9dc0c;color:#60101a;font:inherit;font-weight:900;cursor:pointer}
+.sh-up-b button.no{flex:0 0 auto;padding:0 14px;background:transparent;color:var(--soft);border:1px solid var(--line)}
+.sh-list li.sl-sugar{display:block;padding:2px 0 12px;border-bottom:1px dashed var(--line)}
+.sh-list li.sl-sugar .sg-l{display:block;font-size:12px;font-weight:800;color:var(--soft);margin:0 0 6px}
+.sg-c{display:grid;grid-template-columns:repeat(5,auto);justify-content:stretch;gap:5px}
+.sg-c button{min-height:40px;padding:4px 2px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--ink);font:inherit;font-size:clamp(11px,3.3vw,14px);font-weight:800;white-space:nowrap;cursor:pointer;min-width:0}
+.sg-sp{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:8px;padding:4px 4px 4px 12px;border-radius:999px;border:1px solid var(--line);background:var(--card)}
+html[dir="rtl"] .sg-sp{padding:4px 12px 4px 4px}
+.sg-sp.on{border-color:var(--yel);box-shadow:0 0 0 1px var(--yel) inset}
+.sp-l{font-size:13px;font-weight:800;color:var(--soft);white-space:nowrap}
+.sp-q{display:flex;align-items:center;gap:4px}
+.sp-q b{min-width:92px;text-align:center;font-size:14px;font-weight:900;white-space:nowrap}
+.sg-sp.on .sp-q b{color:var(--wine)}
+.sp-q button{width:38px;height:38px;border-radius:50%;border:0;background:var(--yel);color:#5a0f18;font:inherit;font-size:20px;font-weight:900;line-height:1;cursor:pointer}
+.sp-q button:disabled{opacity:.35}
+.sg-c button.on{background:var(--yel);border-color:var(--yel);color:#5a0f18}
+.sh-list li.sl-sugar.err .sg-l{color:#d33}
+.sh-list li.sl-sugar.err .sg-c button{border-color:#d33}
+
+.flv-card{width:100%;max-width:520px;background:var(--card);color:var(--ink);border-radius:24px 24px 0 0;padding:18px 16px calc(16px + env(safe-area-inset-bottom));transform:translateY(30px);transition:transform .25s;box-shadow:0 -10px 40px rgba(0,0,0,.25)}
+.flv.on .flv-card{transform:none}
+.flv-card h4{margin:0 0 12px;font-size:18px;font-weight:900;text-align:center}
+.flv-list{display:flex;flex-direction:column;gap:8px;max-height:50vh;overflow:auto}
+.flv-list button{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:50px;padding:10px 14px;border-radius:14px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font:inherit;font-weight:800;font-size:15px;text-align:start;cursor:pointer}
+.flv-list button:active{border-color:var(--yel);transform:scale(.98)}
+.flv-list small{color:var(--soft);font-weight:700}
+.flv-list em{font-style:normal;font-size:12px;color:var(--wine);background:var(--yel);padding:2px 8px;border-radius:999px}
+.flv-hint{margin:12px 0 8px;text-align:center;color:var(--soft);font-size:13px}
+.flv-x{display:block;width:100%;min-height:46px;border:0;border-radius:14px;background:transparent;color:var(--soft);font:inherit;font-weight:800;cursor:pointer}
+.sh-list li.sl-flv{padding-inline-start:18px;opacity:.95}
+.sh-list li.sl-flv .sl-n{font-size:.92em}
+
 .featured-item .ft-name{min-height:2.7em}
 .featured-item .ft-price{margin-top:auto}
 .featured-item:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(35,12,15,.11);border-color:var(--yel)}
@@ -786,6 +834,13 @@ var MENU = {
        "p": "65",
        "d": "",
        "den": ""
+      },
+      {
+       "n": "إضافة فليفر",
+       "en": "Add Flavor",
+       "p": "10",
+       "d": "إضافة نكهة للمشروب",
+       "den": "Add a flavor to your drink"
       }
      ],
      "flat": "",
@@ -1612,8 +1667,8 @@ var MENU = {
 <script>
 (function(){
 var T={
- ar:{search:"دوّر على مشروب… مثلاً: مانجو، لاتيه",empty:"مفيش حاجة بالاسم ده. جرّب اسم تاني، أو اختار مزاجك تحت.",flat:"سعر موحد {x} جنيه",addr:"العنوان:",phone:"للتواصل:",upd:"آخر تحديث للأسعار: ",slogan:"كل غاوي وليه مزاج",soonT:"قريباً",soonP:"منيو الصالة بيتجهز… استنونا قريب جداً",goT:"شوف منيو التيك أواي",goB:"منيو البن",soonTab:"قريباً",lang:"EN",featured:"ترشيحات الغاوي",featuredSub:"اختيارات للي محتار يبدأ بإيه",featuredLabel:"ترشيح",order:"اطلب على واتساب",directions:"اعرف طريقك",moodEy:"مزاجك… كوبايتك",moodH:"مش عارف تختار؟ <em>اختار مزاجك</em>",moodP:"دوس على مزاجك والغاوي يختارلك.",surprise:"فاجئني",mrK:"اختيار الغاوي لمزاجك",find:"لاقيه في المنيو",another:"اقترح غيره",also:"وممكن كمان يعجبك:",gm:"صباحك قهوة ☀️",revK:"رأيك يفرق معانا",revT:"عجبك مزاجك النهارده؟",revP:"قيّمنا على جوجل في ثانية، وساعد غاويين تانيين يلاقونا.",revB:"قيّمنا على جوجل",revApp:"أو افتحنا في تطبيق الخرائط ← التقييمات",cart:"سلتك",cartBar:"عرض الطلب",items:"صنف",total:"الإجمالي",typeT:"تيك أواي",typeH:"في الصالة",table:"رقم الترابيزة",name:"اسمك (اختياري)",notes:"ملاحظات (سكر، نكهة، بدون ثلج…)",send:"ابعت الطلب على واتساب",clear:"فضّي السلة",emptyCart:"السلة فاضية… ضيف أي حاجة من المنيو ☕",added:"اتضاف للسلة",addLbl:"أضف",remLbl:"شيل",removed:"اتشال من السلة",needTable:"اكتب رقم الترابيزة",priceAsk:"السعر يتحدد في المحل",kg:"كيلو",close:"إغلاق",addMood:"ضيفه للسلة",ga:"عصرية رايقة 🌤️",ge:"سهرة على مزاجك 🌙"},
- en:{search:"Search the menu… e.g. mango, latte",empty:"Nothing matches that. Try another name, or pick your mood below.",flat:"All {x} EGP",addr:"Address:",phone:"Contact:",upd:"Prices last updated: ",slogan:"Every coffee lover has a mood of their own",soonT:"Coming soon",soonP:"Our dine-in menu is on its way — stay tuned!",goT:"See takeaway menu",goB:"Coffee beans",soonTab:"Soon",lang:"ع",featured:"El Ghawy Picks",featuredSub:"A few favorites to help you choose",featuredLabel:"Recommended",order:"Order on WhatsApp",directions:"Get directions",moodEy:"YOUR MOOD, YOUR CUP",moodH:"Can't decide? <em>Pick your mood</em>",moodP:"Tap your mood and El Ghawy picks for you.",surprise:"Surprise me",mrK:"EL GHAWY PICK FOR YOUR MOOD",find:"Find it in the menu",another:"Suggest another",also:"You might also like:",gm:"Good morning ☀️",revK:"YOUR OPINION MATTERS",revT:"Enjoyed your cup today?",revP:"Rate us on Google in seconds and help other coffee lovers find us.",revB:"Rate us on Google",revApp:"or open us in the Maps app → Reviews",cart:"Your order",cartBar:"View order",items:"items",total:"Total",typeT:"Takeaway",typeH:"Dine-in",table:"Table number",name:"Your name (optional)",notes:"Notes (sugar, flavor, no ice…)",send:"Send order on WhatsApp",clear:"Clear",emptyCart:"Your cart is empty… add something from the menu ☕",added:"Added to your order",addLbl:"Add",remLbl:"Remove",removed:"Removed from your order",needTable:"Enter your table number",priceAsk:"Price confirmed in store",kg:"kg",close:"Close",addMood:"Add to order",ga:"Easy afternoon 🌤️",ge:"Cozy evening 🌙"}
+ ar:{search:"دوّر على مشروب… مثلاً: مانجو، لاتيه",empty:"مفيش حاجة بالاسم ده. جرّب اسم تاني، أو اختار مزاجك تحت.",flat:"سعر موحد {x} جنيه",addr:"العنوان:",phone:"للتواصل:",upd:"آخر تحديث للأسعار: ",slogan:"كل غاوي وليه مزاج",soonT:"قريباً",soonP:"منيو الصالة بيتجهز… استنونا قريب جداً",goT:"شوف منيو التيك أواي",goB:"منيو البن",soonTab:"قريباً",lang:"EN",featured:"ترشيحات الغاوي",featuredSub:"اختيارات للي محتار يبدأ بإيه",featuredLabel:"ترشيح",order:"اطلب على واتساب",directions:"اعرف طريقك",moodEy:"مزاجك… كوبايتك",moodH:"مش عارف تختار؟ <em>اختار مزاجك</em>",moodP:"دوس على مزاجك والغاوي يختارلك.",surprise:"فاجئني",mrK:"اختيار الغاوي لمزاجك",find:"لاقيه في المنيو",another:"اقترح غيره",also:"وممكن كمان يعجبك:",gm:"صباحك قهوة ☀️",revK:"رأيك يفرق معانا",revT:"عجبك مزاجك النهارده؟",revP:"قيّمنا على جوجل في ثانية، وساعد غاويين تانيين يلاقونا.",revB:"قيّمنا على جوجل",revApp:"أو افتحنا في تطبيق الخرائط ← التقييمات",cart:"سلتك",cartBar:"عرض الطلب",items:"صنف",total:"الإجمالي",typeT:"تيك أواي",typeH:"في الصالة",table:"رقم الترابيزة",name:"اسمك (اختياري)",notes:"ملاحظات (بدون ثلج، شوت زيادة…)",send:"ابعت الطلب على واتساب",clear:"فضّي السلة",emptyCart:"السلة فاضية… ضيف أي حاجة من المنيو ☕",added:"اتضاف للسلة",addLbl:"أضف",remLbl:"شيل",removed:"اتشال من السلة",needTable:"اكتب رقم الترابيزة",priceAsk:"السعر يتحدد في المحل",kg:"كيلو",close:"إغلاق",addMood:"ضيفه للسلة",ga:"عصرية رايقة 🌤️",ge:"سهرة على مزاجك 🌙"},
+ en:{search:"Search the menu… e.g. mango, latte",empty:"Nothing matches that. Try another name, or pick your mood below.",flat:"All {x} EGP",addr:"Address:",phone:"Contact:",upd:"Prices last updated: ",slogan:"Every coffee lover has a mood of their own",soonT:"Coming soon",soonP:"Our dine-in menu is on its way — stay tuned!",goT:"See takeaway menu",goB:"Coffee beans",soonTab:"Soon",lang:"ع",featured:"El Ghawy Picks",featuredSub:"A few favorites to help you choose",featuredLabel:"Recommended",order:"Order on WhatsApp",directions:"Get directions",moodEy:"YOUR MOOD, YOUR CUP",moodH:"Can't decide? <em>Pick your mood</em>",moodP:"Tap your mood and El Ghawy picks for you.",surprise:"Surprise me",mrK:"EL GHAWY PICK FOR YOUR MOOD",find:"Find it in the menu",another:"Suggest another",also:"You might also like:",gm:"Good morning ☀️",revK:"YOUR OPINION MATTERS",revT:"Enjoyed your cup today?",revP:"Rate us on Google in seconds and help other coffee lovers find us.",revB:"Rate us on Google",revApp:"or open us in the Maps app → Reviews",cart:"Your order",cartBar:"View order",items:"items",total:"Total",typeT:"Takeaway",typeH:"Dine-in",table:"Table number",name:"Your name (optional)",notes:"Notes (no ice, extra shot…)",send:"Send order on WhatsApp",clear:"Clear",emptyCart:"Your cart is empty… add something from the menu ☕",added:"Added to your order",addLbl:"Add",remLbl:"Remove",removed:"Removed from your order",needTable:"Enter your table number",priceAsk:"Price confirmed in store",kg:"kg",close:"Close",addMood:"Add to order",ga:"Easy afternoon 🌤️",ge:"Cozy evening 🌙"}
 };
 var root=document.documentElement;
 function store(k,v){try{localStorage.setItem(k,v)}catch(e){}}
@@ -1648,7 +1703,7 @@ function secHTML(s,m){
   var h='<section class="sec" id="'+esc(s.id)+'"><h2>'+esc(nm(s))+(s.flat?'<span class="flat">'+esc(T[lang].flat.replace("{x}",s.flat))+'</span>':'')+'</h2>';
   var note=tr(s,"note");if(note)h+='<p class="note">'+esc(note)+'</p>';
   h+='<ul>';
-  for(var i=0;i<s.items.length;i++){var it=s.items[i];if(it.hide)continue;
+  for(var i=0;i<s.items.length;i++){var it=s.items[i];if(it.hide||isFlvIt(it))continue;
     var v=it.p||s.flat,d=lang==="en"&&it.den?it.den:it.d,name=nm(it);
     var pr=v?'<span class="p">'+esc(v)+'<small>'+esc(unit)+'</small></span>':'';
     h+='<li id="it-'+esc(s.id)+'-'+i+'" class="'+(it.img?'hasimg':'')+'" data-k="'+esc(it.n+' '+(it.en||'')+' '+(it.d||'')+' '+(it.den||''))+'">'+
@@ -1702,7 +1757,7 @@ function resolvePick(m,ref){/* ref=[sectionId,itemName,labelAr,labelEn] */
   for(var i=0;i<m.sections.length;i++){var s=m.sections[i];if(s.id!==ref[0])continue;
     for(var j=0;j<s.items.length;j++){var it=s.items[j];if(!it.hide&&it.n===ref[1])return {it:it,sec:s,id:"it-"+s.id+"-"+j,label:(lang==="en"?ref[3]:ref[2])||nm(it),price:it.p||s.flat||""}}}
   return null}
-function allPicks(m){var out=[];for(var i=0;i<m.sections.length;i++){var s=m.sections[i];for(var j=0;j<s.items.length;j++){var it=s.items[j];if(!it.hide&&(it.p||s.flat))out.push({it:it,sec:s,id:"it-"+s.id+"-"+j,label:nm(it),price:it.p||s.flat})}}return out}
+function allPicks(m){var out=[];for(var i=0;i<m.sections.length;i++){var s=m.sections[i];for(var j=0;j<s.items.length;j++){var it=s.items[j];if(!it.hide&&!/^(إضافة|اضافة|زيادة)/.test(it.n||"")&&(it.p||s.flat))out.push({it:it,sec:s,id:"it-"+s.id+"-"+j,label:nm(it),price:it.p||s.flat})}}return out}
 function showMood(id,btn){
   var m=findMenu("takeaway"),box=$("moodResult");if(!m||!box)return;
   var bs=$("mood").querySelectorAll("[data-mood]");for(var z=0;z<bs.length;z++)bs[z].className=bs[z].className.replace(/\s*active/g,"");
@@ -1851,24 +1906,73 @@ function renderReview(){var box=$("review");if(!box)return;var u=MENU.reviewUrl|
 /* ================= CART ================= */
 var SEC_EMOJI={hot:"☕",iced:"🧊",juice:"🍹",season:"🍉",smoothie:"🥤",shake:"🥛",soda:"🫧",herbs:"🌿",ice:"🍨",cold:"🥤",indomie:"🍜",blends:"🫘",flavored:"🫘",pure:"🫘",nes:"🫙"};
 var NUMS=["1️⃣","2️⃣","3️⃣","4️⃣","5️⃣","6️⃣","7️⃣","8️⃣","9️⃣","🔟"];
-var cart={},orderType="t",tableNo="",custName="",custNotes="";
-try{var cs=JSON.parse(localStorage.getItem("gh_cart")||"{}");cart=cs.c||{};orderType=cs.t||"t";tableNo=cs.tb||"";custName=cs.n||""}catch(e){}
-function saveCart(){try{localStorage.setItem("gh_cart",JSON.stringify({c:cart,t:orderType,tb:tableNo,n:custName}))}catch(e){}}
+var sugar={},cart={},orderType="t",tableNo="",custName="",custNotes="";
+try{var cs=JSON.parse(localStorage.getItem("gh_cart")||"{}");cart=cs.c||{};sugar=cs.s||{};orderType=cs.t||"t";tableNo=cs.tb||"";custName=cs.n||""}catch(e){}
+var FLAVORS={ar:["فانيلا","كراميل","بندق","شوكولاتة","بستاشيو","توت"],en:["Vanilla","Caramel","Hazelnut","Chocolate","Pistachio","Berry"]};
+var SUGAR={ar:["خفيف","مظبوط","مانو","زيادة","فوق الزيادة"],en:["Light","Medium","Mano","Sweet","Extra sweet"]};
+function needsSugar(L){return !!L&&!L.forKey&&L.m.id==="takeaway"&&(L.sec.id==="hot"||L.sec.id==="iced"||L.sec.id==="herbs")&&!/^(إضافة|اضافة|زيادة)/.test(L.it.n||"")}
+function spName(n){var en=lang==="en";if(en)return (n%1?(Math.floor(n)?Math.floor(n)+"½":"½"):n)+(n>1?" spoons":" spoon");
+  var w=Math.floor(n),h=n%1?" ونص":"";if(!w)return "نص معلقة";return (w===1?"معلقة":w===2?"معلقتين":w+" معالق")+h}
+function sugarName(i){if(typeof i==="string"&&i.indexOf("sp:")===0)return spName(+i.slice(3));return (lang==="en"?SUGAR.en:SUGAR.ar)[i]}
+function missingSugar(){var ls=cartLines();for(var i=0;i<ls.length;i++)if(needsSugar(ls[i].L)&&sugar[ls[i].k]==null)return ls[i];return null}
+function saveCart(){try{localStorage.setItem("gh_cart",JSON.stringify({c:cart,s:sugar,t:orderType,tb:tableNo,n:custName}))}catch(e){}}
 function numPrice(v){v=String(v||"").replace(/\s/g,"");return /^\d+(\.\d+)?$/.test(v)?parseFloat(v):null}
 function stepOf(menuId){return menuId==="beans"?0.25:1}
-function lookup(key){var p=key.split("|"),m=findMenu(p[0]);if(!m||!m.sections)return null;var sec=null;for(var i=0;i<m.sections.length;i++)if(m.sections[i].id===p[1])sec=m.sections[i];if(!sec)return null;var it=sec.items[+p[2]];if(!it||it.hide)return null;
+function isFlvIt(it){return !!it&&/فليفر/.test(it.n||"")}
+function isFlvKey(k){var L=lookup0(k);return !!(L&&isFlvIt(L.it))}
+function qOf(k){if(!isFlvKey(k))return cart[k]||0;var n=0;for(var x in cart)if(cart.hasOwnProperty(x)&&x.indexOf(k+">")===0)n+=cart[x];return n}
+function lookup(key){var j=key.indexOf(">");if(j<0)return lookup0(key);var rest=key.slice(j+1),w=rest.indexOf("~");if(w<0)return null;var dk=rest.slice(0,w),fi=+rest.slice(w+1);if(!FLAVORS.ar[fi])return null;
+  var B=lookup0(key.slice(0,j)),D=lookup0(dk);if(!B||!D)return null;B.forKey=dk;B.forIt=D.it;B.base=key.slice(0,j);B.fl=fi;return B}
+function flName(i){return (lang==="en"?FLAVORS.en:FLAVORS.ar)[i]||""}
+function flvLabel(L){return (lang==="en"?flName(L.fl)+" flavor":"فليفر "+flName(L.fl))}
+function flvOn(dk){var n=0;for(var x in cart)if(cart.hasOwnProperty(x)&&x.indexOf(">"+dk+"~")>-1)n+=cart[x];return n}
+function flvBases(){var m=findMenu("takeaway"),out=[];if(!m)return out;for(var i=0;i<m.sections.length;i++)for(var j=0;j<m.sections[i].items.length;j++){var it=m.sections[i].items[j];if(!it.hide&&isFlvIt(it))out.push({k:"takeaway|"+m.sections[i].id+"|"+j,sec:m.sections[i].id})}return out}
+function baseFor(dk){var bs=flvBases(),sec=dk.split("|")[1];for(var i=0;i<bs.length;i++)if(bs[i].sec===sec)return bs[i].k;return bs.length?bs[0].k:null}
+function lookup0(key){var p=key.split("|"),m=findMenu(p[0]);if(!m||!m.sections)return null;var sec=null;for(var i=0;i<m.sections.length;i++)if(m.sections[i].id===p[1])sec=m.sections[i];if(!sec)return null;var it=sec.items[+p[2]];if(!it||it.hide)return null;
   return {m:m,sec:sec,it:it,price:numPrice(it.p||sec.flat),raw:it.p||sec.flat||""}}
 function addBtn(m,sec,i,v,name){if(m.soon)return"";var key=m.id+"|"+sec.id+"|"+i;return '<span class="ctl" data-ctl="'+key+'" data-name="'+esc(name)+'">'+ctlInner(key,name)+'</span>'}
-function ctlInner(key,name){var q=cart[key]||0,mid=key.split("|")[0];
+function ctlInner(key,name){var q=qOf(key),mid=key.split("|")[0];
   if(!q)return '<button type="button" class="add" data-add="'+key+'" aria-label="'+esc(T[lang].addLbl+" "+name)+'">+</button>';
   return '<button type="button" class="sub" data-sub="'+key+'" aria-label="'+esc(T[lang].remLbl+" "+name)+'">−</button><b class="qn">'+fmtQ(q,mid)+'</b><button type="button" class="add has" data-add="'+key+'" aria-label="'+esc(T[lang].addLbl+" "+name)+'">+</button>'}
 function fmtQ(q,menuId){if(menuId!=="beans")return String(q);var map={"0.25":"¼","0.5":"½","0.75":"¾"};var w=Math.floor(q),f=+(q-w).toFixed(2);return (w?w:"")+(f?(map[String(f)]||f):"")||"0"}
 function fmtMoney(n){n=Math.round(n*100)/100;return String(n).replace(/\B(?=(\d{3})+(?!\d))/g,",")}
-function cartLines(){var out=[];for(var k in cart){if(!cart.hasOwnProperty(k)||!cart[k])continue;var L=lookup(k);if(!L){delete cart[k];continue}out.push({k:k,L:L,q:cart[k]})}return out}
+function cartLines(){var out=[],fl=[],k,i;for(k in cart){if(!cart.hasOwnProperty(k)||!cart[k])continue;var L=lookup(k);if(!L||(isFlvIt(L.it)&&!L.forKey)){delete cart[k];continue}
+    if(L.forKey){if(!cart[L.forKey]){delete cart[k];continue}if(cart[k]>cart[L.forKey])cart[k]=cart[L.forKey];fl.push({k:k,L:L,q:cart[k]})}else out.push({k:k,L:L,q:cart[k]})}
+  for(k in sugar)if(sugar.hasOwnProperty(k)&&!cart[k])delete sugar[k];
+  var res=[];for(i=0;i<out.length;i++){res.push(out[i]);for(var j=0;j<fl.length;j++)if(fl[j].L.forKey===out[i].k)res.push(fl[j])}return res}
 function cartTotals(){var lines=cartLines(),n=0,tot=0,unknown=false;for(var i=0;i<lines.length;i++){n+=lines[i].L.m.id==="beans"?1:lines[i].q;if(lines[i].L.price===null)unknown=true;else tot+=lines[i].L.price*lines[i].q}return {lines:lines,n:n,tot:tot,unknown:unknown}}
-function changeQty(key,delta){var L=lookup(key);if(!L)return;var st=stepOf(L.m.id),q=+((cart[key]||0)+delta*st).toFixed(2);if(q<=0)delete cart[key];else cart[key]=q;saveCart();refreshCart(key)}
+function changeQty(key,delta){var L=lookup(key);if(!L)return;var st=stepOf(L.m.id),q=+((cart[key]||0)+delta*st).toFixed(2);
+  if(L.forKey&&delta>0&&flvOn(L.forKey)+1>(cart[L.forKey]||0)){toast(lang==="en"?"Every cup already has a flavor":"كل كوباية عليها فليفر خلاص");return}
+  if(q<=0)delete cart[key];else cart[key]=q;saveCart();refreshCart(L.base||key)}
+function flvTargets(){var out=[],ls=cartLines();for(var i=0;i<ls.length;i++){var l=ls[i];if(l.L.forKey||l.L.m.id!=="takeaway"||isFlvIt(l.L.it)||/^(إضافة|اضافة|زيادة)/.test(l.L.it.n||""))continue;if(l.L.sec.id!=="hot"&&l.L.sec.id!=="iced")continue;if(/شاي/.test(l.L.it.n||""))continue;l.left=l.q-flvOn(l.k);out.push(l)}return out}
+var flvSel={base:null,drink:null,type:null},flvNo=false;
+function addFlv(){var base=flvSel.base,target=flvSel.drink,fi=flvSel.type;if(target==null||fi==null)return;if(!base)base=baseFor(target);if(!base)return;
+  if(flvOn(target)>=(cart[target]||0)){toast(lang==="en"?"Every cup already has a flavor":"كل كوباية عليها فليفر خلاص");return}
+  var k=base+">"+target+"~"+fi,L=lookup(target);cart[k]=(cart[k]||0)+1;saveCart();closeFlv();refreshCart(base);toast("✨ "+(lang==="en"?flName(fi)+" flavor on ":"فليفر "+flName(fi)+" على ")+(L?nm(L.it):""))}
+function openFlv(base,drink){var ts=flvTargets(),en=lang==="en",open=[],i;for(i=0;i<ts.length;i++)if(ts[i].left>0)open.push(ts[i]);
+  if(!ts.length){toast(en?"Add a hot or iced drink first ☕":"ضيف مشروب ساخن أو مثلج الأول ☕");return}
+  if(!open.length){toast(en?"Every cup already has a flavor":"كل كوباية عليها فليفر خلاص");return}
+  if(drink==null||!cart[drink])drink=open.length===1?open[0].k:null;
+  flvSel={base:base,drink:drink,type:flvSel&&flvSel.base===base?flvSel.type:null};renderFlv(open)}
+function renderFlv(open){var en=lang==="en",i;if(!open){open=[];var ts=flvTargets();for(i=0;i<ts.length;i++)if(ts[i].left>0)open.push(ts[i])}
+  var o=$("flv");if(!o){o=document.createElement("div");o.id="flv";o.className="flv";o.hidden=true;document.body.appendChild(o);
+    o.addEventListener("click",function(e){var b=e.target.closest?e.target.closest("button"):null;if(e.target===o||(b&&b.getAttribute("data-flvx"))){closeFlv();return}if(!b)return;
+      if(b.getAttribute("data-fd")!=null){flvSel.drink=b.getAttribute("data-fd");renderFlv();return}
+      if(b.getAttribute("data-ft")!=null){flvSel.type=+b.getAttribute("data-ft");renderFlv();return}
+      if(b.getAttribute("data-fgo")){if(flvSel.drink==null){toast(en?"Choose the drink":"اختار المشروب");return}if(flvSel.type==null){toast(en?"Choose the flavor":"اختار نوع الفليفر");return}addFlv()}})}
+  var base=flvSel.base||(flvSel.drink?baseFor(flvSel.drink):(open[0]?baseFor(open[0].k):null)),P=base?lookup0(base):null,price=P&&P.price!=null?fmtMoney(P.price)+(en?" EGP":" ج"):"";
+  var h='<div class="flv-card" role="dialog" aria-modal="true" aria-label="'+(en?"Add a flavor":"زوّد فليفر")+'"><h4>✨ '+(en?"Add a flavor":"زوّد فليفر")+(price?' <small>+'+price+'</small>':'')+'</h4>';
+  if(open.length>1){h+='<p class="flv-l">'+(en?"For which drink?":"لأنهي مشروب؟")+'</p><div class="flv-list">';
+    for(i=0;i<open.length;i++){var t=open[i];h+='<button type="button" data-fd="'+t.k+'" class="'+(flvSel.drink===t.k?"on":"")+'" aria-pressed="'+(flvSel.drink===t.k)+'"><span>'+(SEC_EMOJI[t.L.sec.id]||"☕")+' '+esc(nm(t.L.it))+(t.q>1?' <small>×'+t.q+'</small>':'')+'</span>'+(t.q-t.left?'<em>✨ '+(t.q-t.left)+'</em>':'')+'</button>'}
+    h+='</div>'}
+  else if(open[0])h+='<p class="flv-l">'+(en?"On: ":"على: ")+'<b>'+esc(nm(open[0].L.it))+'</b></p>';
+  h+='<p class="flv-l">'+(en?"Which flavor?":"نوع الفليفر")+'</p><div class="flv-types">';
+  for(i=0;i<FLAVORS.ar.length;i++)h+='<button type="button" data-ft="'+i+'" class="'+(flvSel.type===i?"on":"")+'" aria-pressed="'+(flvSel.type===i)+'">'+esc(flName(i))+'</button>';
+  h+='</div><button type="button" class="flv-go" data-fgo="1">✨ '+(en?"Add flavor":"ضيف الفليفر")+(price?' · '+price:'')+'</button><button type="button" class="flv-x" data-flvx="1">'+(en?"Cancel":"إلغاء")+'</button></div>';
+  var wasOpen=!o.hidden;o.innerHTML=h;if(!wasOpen){o.hidden=false;void o.offsetWidth;o.className="flv on";setTimeout(function(){try{o.querySelector("button").focus()}catch(e){}},50)}}
+function closeFlv(){var o=$("flv");if(!o)return;o.className="flv";setTimeout(function(){o.hidden=true},200)}
 function refreshCart(key){
-  var cs=menuEl.querySelectorAll('[data-ctl]');for(var i=0;i<cs.length;i++){var k=cs[i].getAttribute("data-ctl"),was=cs[i].getAttribute("data-q")||"0",q=String(cart[k]||0);if(was===q&&k!==key)continue;cs[i].innerHTML=ctlInner(k,cs[i].getAttribute("data-name"));cs[i].setAttribute("data-q",q);if(k===key){cs[i].className="ctl";void cs[i].offsetWidth;cs[i].className="ctl bump"}}
+  var cs=menuEl.querySelectorAll('[data-ctl]');for(var i=0;i<cs.length;i++){var k=cs[i].getAttribute("data-ctl"),was=cs[i].getAttribute("data-q")||"0",q=String(qOf(k));if(was===q&&k!==key)continue;cs[i].innerHTML=ctlInner(k,cs[i].getAttribute("data-name"));cs[i].setAttribute("data-q",q);if(k===key){cs[i].className="ctl";void cs[i].offsetWidth;cs[i].className="ctl bump"}}
   var T2=cartTotals(),bar=$("cartbar");
   if(T2.lines.length){bar.hidden=false;$("cbN").textContent=T2.n%1?T2.lines.length:T2.n;$("cbTxt").textContent=T[lang].cartBar;$("cbTot").textContent=fmtMoney(T2.tot)+" "+(lang==="en"?"EGP":"ج");bar.className="cartbar";void bar.offsetWidth;bar.className="cartbar pulse"}
   else bar.hidden=true;
@@ -1876,6 +1980,7 @@ function refreshCart(key){
   if(!$("sheet").hidden)renderSheet();
 }
 function toast(msg){var t=$("toast");t.textContent=msg;t.className="toast";void t.offsetWidth;t.className="toast on";clearTimeout(toast.t);toast.t=setTimeout(function(){t.className="toast"},1400)}
+var sugarErr=null;
 function renderSheet(){
   var t=T[lang],T2=cartTotals(),h="";$("shT").textContent="🛒 "+t.cart;$("shX").setAttribute("aria-label",t.close);
   if(!T2.lines.length){$("shBody").innerHTML='<p class="sh-empty">'+esc(t.emptyCart)+'</p>';return}
@@ -1883,9 +1988,17 @@ function renderSheet(){
   if(orderType==="h")h+='<label class="sh-f"><span>🪑 '+esc(t.table)+'</span><input id="fTable" inputmode="numeric" value="'+esc(tableNo)+'" placeholder="5"></label>';
   h+='<ul class="sh-list">';
   for(var i=0;i<T2.lines.length;i++){var l=T2.lines[i],L=l.L,isB=L.m.id==="beans",unit=isB?" "+t.kg:"",line=L.price===null?t.priceAsk:fmtMoney(L.price*l.q)+" "+(lang==="en"?"EGP":"ج");
-    h+='<li><span class="sl-e">'+(SEC_EMOJI[L.sec.id]||"•")+'</span><span class="sl-n">'+esc(nm(L.it))+'<small>'+esc(nm(L.sec))+(L.price!==null?' · '+fmtMoney(L.price)+(isB?(lang==="en"?" EGP/kg":" ج/كيلو"):(lang==="en"?" EGP":" ج")):"")+'</small></span>'+
-      '<span class="sl-q"><button type="button" data-dec="'+l.k+'" aria-label="−">−</button><b>'+fmtQ(l.q,L.m.id)+unit+'</b><button type="button" data-inc="'+l.k+'" aria-label="+">+</button></span><span class="sl-t">'+esc(line)+'</span></li>'}
+    h+='<li'+(L.forKey?' class="sl-flv"':'')+'><span class="sl-e">'+(L.forKey?"✨":(SEC_EMOJI[L.sec.id]||"•"))+'</span><span class="sl-n">'+esc(L.forKey?flvLabel(L):nm(L.it))+'<small>'+(L.forKey?esc((lang==="en"?"on ":"على ")+nm(L.forIt)):esc(nm(L.sec)))+(L.price!==null?' · '+fmtMoney(L.price)+(isB?(lang==="en"?" EGP/kg":" ج/كيلو"):(lang==="en"?" EGP":" ج")):"")+'</small></span>'+
+      '<span class="sl-q"><button type="button" data-dec="'+l.k+'" aria-label="−">−</button><b>'+fmtQ(l.q,L.m.id)+unit+'</b><button type="button" data-inc="'+l.k+'" aria-label="+">+</button></span><span class="sl-t">'+esc(line)+'</span></li>';
+    if(needsSugar(L)){var sv=sugar[l.k];h+='<li class="sl-sugar'+(sugarErr===l.k?' err':'')+'" id="sg-'+l.k.replace(/\|/g,"-")+'"><span class="sg-l">🍬 '+(lang==="en"?"Sugar":"السكر")+'</span><span class="sg-c" role="radiogroup">';
+      for(var z=0;z<5;z++)h+='<button type="button" data-sugar="'+l.k+'" data-sv="'+z+'" class="'+(sv===z?"on":"")+'" aria-pressed="'+(sv===z)+'">'+esc(sugarName(z))+'</button>';
+      var spv=typeof sv==="string"&&sv.indexOf("sp:")===0?+sv.slice(3):0;
+      h+='</span><span class="sg-sp'+(spv?' on':'')+'"><span class="sp-l">🥄 '+(lang==="en"?"Or by spoon":"أو بالمعلقة")+'</span><span class="sp-q"><button type="button" data-sp="'+l.k+'" data-d="-1" aria-label="−"'+(spv?'':' disabled')+'>−</button><b>'+(spv?esc(spName(spv)):(lang==="en"?"—":"—"))+'</b><button type="button" data-sp="'+l.k+'" data-d="1" aria-label="+"'+(spv>=5?' disabled':'')+'>+</button></span></span></li>'}}
   h+='</ul>';
+  (function(){var ts=flvTargets(),any=false,left=false,i;for(i=0;i<T2.lines.length;i++)if(T2.lines[i].L.forKey)any=true;for(i=0;i<ts.length;i++)if(ts[i].left>0)left=true;
+    if(left&&flvBases().length&&(any||flvNo)){h+='<button type="button" class="sh-up2" data-upflv="1">✨ '+(lang==="en"?(any?"Add a flavor to another drink":"Add a flavor"):(any?"زوّد فليفر لمشروب تاني":"زوّد فليفر"))+'</button>';return}
+    if(!any&&left&&!flvNo&&flvBases().length){var en=lang==="en",P=lookup0(baseFor(ts[0].k)),pr=P&&P.price!=null?fmtMoney(P.price)+(en?" EGP":" ج"):"";
+      h+='<div class="sh-up"><div><b>✨ '+(en?"Add a flavor to your drink?":"تحب تزود فليفر لمشروبك؟")+'</b><small>'+esc(FLAVORS[en?"en":"ar"].slice(0,4).join(en?", ":"، "))+'… '+(pr?(en?"for just ":"بـ ")+pr:'')+'</small></div><div class="sh-up-b"><button type="button" data-upflv="1">'+(en?"Choose flavor":"اختار الفليفر")+'</button><button type="button" class="no" data-upno="1">'+(en?"No thanks":"لا شكراً")+'</button></div></div>'}})();
   h+='<label class="sh-f"><span>👤 '+esc(t.name)+'</span><input id="fName" value="'+esc(custName)+'" autocomplete="name"></label>';
   h+='<label class="sh-f"><span>📝 '+esc(t.notes)+'</span><textarea id="fNotes" rows="2">'+esc(custNotes)+'</textarea></label>';
   h+='<div class="sh-total"><span>💰 '+esc(t.total)+'</span><b>'+fmtMoney(T2.tot)+' '+(lang==="en"?"EGP":"ج")+(T2.unknown?' +':'')+'</b></div>';
@@ -1902,9 +2015,11 @@ function buildMsg(){var t=T[lang],T2=cartTotals(),ar=lang!=="en",L=[];
   L.push(orderType==="h"?(ar?"🪑 *نوع الطلب:* في الصالة – ترابيزة رقم "+tableNo:"🪑 *Order type:* Dine-in – Table "+tableNo):(ar?"🥡 *نوع الطلب:* تيك أواي":"🥡 *Order type:* Takeaway"));
   if(custName)L.push((ar?"👤 *الاسم:* ":"👤 *Name:* ")+custName);
   L.push("━━━━━━━━━━━━");
-  for(var i=0;i<T2.lines.length;i++){var l=T2.lines[i],x=l.L,isB=x.m.id==="beans",q=fmtQ(l.q,x.m.id)+(isB?" "+t.kg:"");
+  for(var i=0,no=0;i<T2.lines.length;i++){var l=T2.lines[i],x=l.L,isB=x.m.id==="beans",q=fmtQ(l.q,x.m.id)+(isB?" "+t.kg:"");
     var price=x.price===null?(ar?"(السعر يتحدد)":"(price TBC)"):fmtMoney(x.price*l.q)+(ar?" ج":" EGP");
-    L.push((NUMS[i]||"▫️")+" "+(SEC_EMOJI[x.sec.id]||"")+" "+nm(x.it)+" × "+q+" = "+price)}
+    if(x.forKey){L.push("      ↳ ✨ "+flvLabel(x)+(ar?" على ":" on ")+nm(x.forIt)+" × "+q+" = "+price);continue}
+    L.push((NUMS[no++]||"▫️")+" "+(SEC_EMOJI[x.sec.id]||"")+" "+nm(x.it)+" × "+q+" = "+price);
+    if(needsSugar(x)&&sugar[l.k]!=null)L.push("      🍬 "+(ar?"السكر: ":"Sugar: ")+sugarName(sugar[l.k]))}
   L.push("━━━━━━━━━━━━");
   L.push((ar?"💰 *الإجمالي: ":"💰 *Total: ")+fmtMoney(T2.tot)+(ar?" ج*":" EGP*")+(T2.unknown?(ar?" + أصناف سعرها يتحدد":" + items priced in store"):""));
   if(custNotes)L.push((ar?"📝 *ملاحظات:* ":"📝 *Notes:* ")+custNotes);
@@ -1912,9 +2027,15 @@ function buildMsg(){var t=T[lang],T2=cartTotals(),ar=lang!=="en",L=[];
   return L.join("\n")}
 $("cartbar").addEventListener("click",openSheet);
 $("sheet").addEventListener("click",function(e){var a=e.target.closest?e.target.closest("#fSend"):null;
-  if(a){if(orderType==="h"&&!String(tableNo).replace(/\s/g,"")){e.preventDefault();var f=$("fTable");if(f){f.className="err";f.focus()}toast(T[lang].needTable);return}a.href=waUrl();return}
+  if(a){var ms=missingSugar();if(ms){e.preventDefault();sugarErr=ms.k;renderSheet();var el=$("sg-"+ms.k.replace(/\|/g,"-"));if(el&&el.scrollIntoView)el.scrollIntoView({block:"center",behavior:"smooth"});toast((lang==="en"?"Choose sugar for ":"اختار السكر لـ ")+nm(ms.L.it));return}
+    if(orderType==="h"&&!String(tableNo).replace(/\s/g,"")){e.preventDefault();var f=$("fTable");if(f){f.className="err";f.focus()}toast(T[lang].needTable);return}a.href=waUrl();return}
   var b=e.target.closest?e.target.closest("button,[data-close]"):null;if(!b)return;
   if(b.getAttribute("data-close")){closeSheet();return}
+  if(b.getAttribute("data-upflv")){openFlv(null,null);return}
+  if(b.getAttribute("data-upno")){flvNo=true;renderSheet();return}
+  if(b.getAttribute("data-sp")){var sk=b.getAttribute("data-sp"),cv=sugar[sk],n=typeof cv==="string"&&cv.indexOf("sp:")===0?+cv.slice(3):0;n=Math.max(0,Math.min(5,n+0.5*(+b.getAttribute("data-d"))));
+    if(n)sugar[sk]="sp:"+n;else delete sugar[sk];if(sugarErr===sk&&n)sugarErr=null;saveCart();var sc2=$("shBody").scrollTop;renderSheet();try{$("shBody").scrollTop=sc2}catch(e){}syncSend();return}
+  if(b.getAttribute("data-sugar")){sugar[b.getAttribute("data-sugar")]=+b.getAttribute("data-sv");if(sugarErr===b.getAttribute("data-sugar"))sugarErr=null;saveCart();var y=window.pageYOffset,sc=$("shBody").scrollTop;renderSheet();try{$("shBody").scrollTop=sc}catch(e){}return}
   if(b.getAttribute("data-inc")){changeQty(b.getAttribute("data-inc"),1);return}
   if(b.getAttribute("data-dec")){changeQty(b.getAttribute("data-dec"),-1);return}
   if(b.getAttribute("data-type")){orderType=b.getAttribute("data-type");saveCart();renderSheet();if(orderType==="h")setTimeout(function(){var f=$("fTable");if(f&&!f.value)f.focus()},60);return}
@@ -1922,10 +2043,10 @@ $("sheet").addEventListener("click",function(e){var a=e.target.closest?e.target.
 
 });
 $("sheet").addEventListener("input",function(e){var id=e.target.id;if(id==="fTable"){tableNo=e.target.value;e.target.className=""}else if(id==="fName")custName=e.target.value;else if(id==="fNotes")custNotes=e.target.value;saveCart();syncSend()});
-document.addEventListener("keydown",function(e){if(e.key==="Escape"&&!$("sheet").hidden)closeSheet()});
+document.addEventListener("keydown",function(e){if(e.key!=="Escape")return;var o=$("flv");if(o&&!o.hidden){closeFlv();return}if(!$("sheet").hidden)closeSheet()});
 menuEl.addEventListener("click",function(e){if(!e.target.closest)return;var b=e.target.closest("[data-add]"),r=e.target.closest("[data-sub]"),k,L;
-  if(b){k=b.getAttribute("data-add");changeQty(k,1);L=lookup(k);toast("✓ "+T[lang].added+(L?" – "+nm(L.it):""));return}
-  if(r){k=r.getAttribute("data-sub");changeQty(k,-1);L=lookup(k);toast("− "+T[lang].removed+(L?" – "+nm(L.it):""))}});
+  if(b){k=b.getAttribute("data-add");if(isFlvKey(k)){openFlv(k);return}changeQty(k,1);L=lookup(k);toast("✓ "+T[lang].added+(L?" – "+nm(L.it):""));return}
+  if(r){k=r.getAttribute("data-sub");if(isFlvKey(k)){var last=null;for(var x in cart)if(cart.hasOwnProperty(x)&&x.indexOf(k+">")===0)last=x;if(last){changeQty(last,-1);L=lookup(last);toast("− "+T[lang].removed+(L?" – "+flvLabel(L)+(lang==="en"?" on ":" على ")+nm(L.forIt):""))}return}changeQty(k,-1);L=lookup(k);toast("− "+T[lang].removed+(L?" – "+nm(L.it):""))}});
 /* ---- start ---- */
 var h=(location.hash||"").replace("#","");
 cur=findMenu(h)?h:(findMenu(load("gh_menu"))&&!findMenu(load("gh_menu")).soon?load("gh_menu"):"takeaway");

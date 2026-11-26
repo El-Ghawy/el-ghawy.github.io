@@ -612,7 +612,7 @@ var MENU = {
     ],
     [
      "hot",
-     "قهوة بالجينسنج"
+     "قهوة جينسنج"
     ],
     [
      "iced",
@@ -1743,14 +1743,14 @@ var MENU = {
        "den": ""
       },
       {
-       "n": "قهوة بالجينسنج",
+       "n": "قهوة جينسنج",
        "en": "Ginseng Coffee",
        "p": "25",
        "d": "",
        "den": ""
       },
       {
-       "n": "قهوة كولمبي بيور",
+       "n": "قهوة كولومبي بيور",
        "en": "Pure Colombian Coffee",
        "p": "25",
        "d": "",
@@ -3128,7 +3128,8 @@ function cartLines(){var out=[],fl=[],k,i;for(k in cart){if(!cart.hasOwnProperty
 function cartTotals(){var lines=cartLines(),n=0,tot=0,unknown=false;for(var i=0;i<lines.length;i++){n+=lines[i].L.m.id==="beans"?1:lines[i].q;if(lines[i].L.price===null)unknown=true;else tot+=lines[i].L.price*lines[i].q}return {lines:lines,n:n,tot:tot,unknown:unknown}}
 function otherMenuIn(mid){for(var k in cart){if(!cart.hasOwnProperty(k))continue;var p=k.split("|")[0];if((p==="hall"||p==="takeaway")&&p!==mid)return true}return false}
 function mapKey(k,to){var p=k.split("|");if(p[0]===to||(p[0]!=="hall"&&p[0]!=="takeaway"))return k;var L=lookup0(k),tm=findMenu(to);if(!L||!tm||!tm.sections)return null;
-  for(var i=0;i<tm.sections.length;i++){if(tm.sections[i].id!==p[1])continue;var its=tm.sections[i].items;for(var j=0;j<its.length;j++)if(!its[j].hide&&its[j].n===L.it.n)return to+"|"+p[1]+"|"+j}return null}
+  for(var i=0;i<tm.sections.length;i++){if(tm.sections[i].id!==p[1])continue;var its=tm.sections[i].items;for(var j=0;j<its.length;j++)if(!its[j].hide&&its[j].n===L.it.n)return to+"|"+p[1]+"|"+j}
+  for(i=0;i<tm.sections.length;i++){its=tm.sections[i].items;for(j=0;j<its.length;j++)if(!its[j].hide&&!isFlvIt(its[j])&&its[j].n===L.it.n)return to+"|"+tm.sections[i].id+"|"+j}return null}
 function convertCart(to,quiet){var nc={},ns={},no={},moved=0,kept=[],k;
   for(k in cart){if(!cart.hasOwnProperty(k)||!cart[k])continue;var nk,j=k.indexOf(">");
     if(j>-1){var rest=k.slice(j+1),w=rest.indexOf("~"),b=mapKey(k.slice(0,j),to),d=w>-1?mapKey(rest.slice(0,w),to):null;nk=(b&&d)?b+">"+d+rest.slice(w):null}else nk=mapKey(k,to);

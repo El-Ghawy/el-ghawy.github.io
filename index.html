@@ -555,13 +555,1127 @@ var MENU = {
  "reviewUrl": "https://maps.app.goo.gl/75Zio4KhW2PpcRrt9",
  "goatcounter": "elghawy",
  "showVisits": true,
- "moods": [{"id": "classic", "icon": "☕", "name": "قهوة على أصولها", "en": "Proper coffee", "line": "ريحة القهوة لوحدها بتعدّل اليوم.", "lineEn": "The smell alone fixes your day.", "items": [["hot", "قهوة تركي"], ["hot", "قهوة فرنساوي"], ["hot", "قهوة بندق قطع"], ["hot", "اسبريسو دبل"], ["hot", "كابتشينو"], ["hot", "فلات وايت"], ["hot", "كورتادو"]]}, {"id": "boost", "icon": "⚡", "name": "محتاج أصحصح", "en": "Need a boost", "line": "جرعة طاقة محترمة تشغّلك للآخر.", "lineEn": "A proper kick to get you going.", "items": [["hot", "اسبريسو دبل"], ["hot", "قهوة دبل"], ["hot", "قهوة بالجينسنج"], ["iced", "أيس كوفي"], ["hot", "كورتادو"]]}, {"id": "cold", "icon": "🧊", "name": "حاجة ساقعة", "en": "Something cold", "line": "خلّي يومك أبرد وأخف.", "lineEn": "Cool down and slow down.", "items": [["iced", "أيس سبانش لاتيه"], ["iced", "أيس لاتيه"], ["iced", "أيس موكا"], ["iced", "أيس وايت موكا"], ["iced", "فرابتشينو"], ["iced", "أيس كوفي"], ["iced", "اسبريسو أيس فانيلا"]]}, {"id": "sweet", "icon": "🍫", "name": "مزاج حلو", "en": "Sweet tooth", "line": "لما القهوة تقابل الحلاوة… يبقى ده اختيارك.", "lineEn": "When coffee meets sweet — this is your cup.", "items": [["hot", "موكا"], ["hot", "قهوة نوتيلا"], ["hot", "هوت شوكليت"], ["iced", "فرابيه سولتيد كاراميل"], ["shake", "نوتيلا", "ميلك شيك نوتيلا", "Nutella Milkshake"], ["shake", "أوريو", "ميلك شيك أوريو", "Oreo Milkshake"], ["hot", "سحلب مكسرات"]]}, {"id": "fresh", "icon": "🍃", "name": "فريش ومنعش", "en": "Fresh & zesty", "line": "فريش، خفيف، وبيفوّق الحواس.", "lineEn": "Light, bright and refreshing.", "items": [["juice", "ليمون نعناع"], ["soda", "موهيتو ميكس بيري"], ["soda", "موهيتو فراولة"], ["soda", "صن منت"], ["smoothie", "بطيخ", "سموزي بطيخ", "Watermelon Smoothie"], ["juice", "مانجو", "عصير مانجو", "Mango Juice"]]}, {"id": "calm", "icon": "🌿", "name": "عايز أهدى", "en": "Calm & cozy", "line": "كوباية دافية تريّح أعصابك.", "lineEn": "A warm cup to slow things down.", "items": [["herbs", "أزهار بابونج", "بابونج", "Chamomile"], ["herbs", "ينسون"], ["herbs", "نعناع"], ["herbs", "شاي أخضر"], ["hot", "سحلب سادة"], ["herbs", "قرفة حليب"]]}],
+ "moods": [
+  {
+   "id": "classic",
+   "icon": "☕",
+   "name": "قهوة على أصولها",
+   "en": "Proper coffee",
+   "line": "ريحة القهوة لوحدها بتعدّل اليوم.",
+   "lineEn": "The smell alone fixes your day.",
+   "items": [
+    [
+     "hot",
+     "قهوة تركي"
+    ],
+    [
+     "hot",
+     "قهوة فرنساوي"
+    ],
+    [
+     "hot",
+     "قهوة بندق قطع"
+    ],
+    [
+     "hot",
+     "اسبريسو دبل"
+    ],
+    [
+     "hot",
+     "كابتشينو"
+    ],
+    [
+     "hot",
+     "فلات وايت"
+    ],
+    [
+     "hot",
+     "كورتادو"
+    ]
+   ]
+  },
+  {
+   "id": "boost",
+   "icon": "⚡",
+   "name": "محتاج أصحصح",
+   "en": "Need a boost",
+   "line": "جرعة طاقة محترمة تشغّلك للآخر.",
+   "lineEn": "A proper kick to get you going.",
+   "items": [
+    [
+     "hot",
+     "اسبريسو دبل"
+    ],
+    [
+     "hot",
+     "قهوة دبل"
+    ],
+    [
+     "hot",
+     "قهوة بالجينسنج"
+    ],
+    [
+     "iced",
+     "أيس كوفي"
+    ],
+    [
+     "hot",
+     "كورتادو"
+    ]
+   ]
+  },
+  {
+   "id": "cold",
+   "icon": "🧊",
+   "name": "حاجة ساقعة",
+   "en": "Something cold",
+   "line": "خلّي يومك أبرد وأخف.",
+   "lineEn": "Cool down and slow down.",
+   "items": [
+    [
+     "iced",
+     "أيس سبانش لاتيه"
+    ],
+    [
+     "iced",
+     "أيس لاتيه"
+    ],
+    [
+     "iced",
+     "أيس موكا"
+    ],
+    [
+     "iced",
+     "أيس وايت موكا"
+    ],
+    [
+     "iced",
+     "فرابتشينو"
+    ],
+    [
+     "iced",
+     "أيس كوفي"
+    ],
+    [
+     "iced",
+     "اسبريسو أيس فانيلا"
+    ]
+   ]
+  },
+  {
+   "id": "sweet",
+   "icon": "🍫",
+   "name": "مزاج حلو",
+   "en": "Sweet tooth",
+   "line": "لما القهوة تقابل الحلاوة… يبقى ده اختيارك.",
+   "lineEn": "When coffee meets sweet — this is your cup.",
+   "items": [
+    [
+     "hot",
+     "موكا"
+    ],
+    [
+     "hot",
+     "قهوة نوتيلا"
+    ],
+    [
+     "hot",
+     "هوت شوكليت"
+    ],
+    [
+     "iced",
+     "فرابيه سولتيد كاراميل"
+    ],
+    [
+     "shake",
+     "نوتيلا",
+     "ميلك شيك نوتيلا",
+     "Nutella Milkshake"
+    ],
+    [
+     "shake",
+     "أوريو",
+     "ميلك شيك أوريو",
+     "Oreo Milkshake"
+    ],
+    [
+     "hot",
+     "سحلب مكسرات"
+    ]
+   ]
+  },
+  {
+   "id": "fresh",
+   "icon": "🍃",
+   "name": "فريش ومنعش",
+   "en": "Fresh & zesty",
+   "line": "فريش، خفيف، وبيفوّق الحواس.",
+   "lineEn": "Light, bright and refreshing.",
+   "items": [
+    [
+     "juice",
+     "ليمون نعناع"
+    ],
+    [
+     "soda",
+     "موهيتو ميكس بيري"
+    ],
+    [
+     "soda",
+     "موهيتو فراولة"
+    ],
+    [
+     "soda",
+     "صن منت"
+    ],
+    [
+     "smoothie",
+     "بطيخ",
+     "سموزي بطيخ",
+     "Watermelon Smoothie"
+    ],
+    [
+     "juice",
+     "مانجو",
+     "عصير مانجو",
+     "Mango Juice"
+    ]
+   ]
+  },
+  {
+   "id": "calm",
+   "icon": "🌿",
+   "name": "عايز أهدى",
+   "en": "Calm & cozy",
+   "line": "كوباية دافية تريّح أعصابك.",
+   "lineEn": "A warm cup to slow things down.",
+   "items": [
+    [
+     "herbs",
+     "أزهار بابونج",
+     "بابونج",
+     "Chamomile"
+    ],
+    [
+     "herbs",
+     "ينسون"
+    ],
+    [
+     "herbs",
+     "نعناع"
+    ],
+    [
+     "herbs",
+     "شاي أخضر"
+    ],
+    [
+     "hot",
+     "سحلب سادة"
+    ],
+    [
+     "herbs",
+     "قرفة حليب"
+    ]
+   ]
+  }
+ ],
  "menus": [
   {
    "id": "hall",
    "name": "منيو الصالة",
    "en": "Dine-in",
-   "soon": true
+   "tag": "أسعار الصالة",
+   "tagEn": "Dine-in prices",
+   "unit": "ج",
+   "unitEn": "EGP",
+   "sections": [
+    {
+     "id": "hot",
+     "name": "مشروبات ساخنة",
+     "en": "Hot Drinks",
+     "flat": "",
+     "note": "",
+     "noteEn": "",
+     "items": [
+      {
+       "n": "إضافة فليفر",
+       "en": "Add Flavor",
+       "p": "10",
+       "d": "إضافة نكهة للمشروب",
+       "den": "Add a flavor to your drink"
+      },
+      {
+       "n": "شاي",
+       "en": "Tea",
+       "p": "15",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "شاي أحمد تي",
+       "en": "Ahmad Tea",
+       "p": "20",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "شاي كرك",
+       "en": "Karak Tea",
+       "p": "45",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "شاي نكهات",
+       "en": "Flavored Tea",
+       "p": "20",
+       "d": "",
+       "den": "",
+       "opts": [
+        "تفاح",
+        "فراولة",
+        "خوخ",
+        "توت",
+        "ليمون",
+        "نعناع"
+       ],
+       "optsEn": [
+        "Apple",
+        "Strawberry",
+        "Peach",
+        "Berry",
+        "Lemon",
+        "Mint"
+       ]
+      },
+      {
+       "n": "شاي حليب",
+       "en": "Milk Tea",
+       "p": "35",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "قهوة تركي",
+       "en": "Turkish Coffee",
+       "p": "20",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "قهوة الغاوي",
+       "en": "El Ghawy Coffee",
+       "p": "25",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "قهوة جينسنج",
+       "en": "Ginseng Coffee",
+       "p": "30",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "قهوة كولومبي بيور",
+       "en": "Pure Colombian Coffee",
+       "p": "30",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "قهوة دبل",
+       "en": "Double Turkish Coffee",
+       "p": "30",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "قهوة فرنساوي",
+       "en": "French Coffee",
+       "p": "35",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "نسكافيه حليب",
+       "en": "Nescafé with Milk",
+       "p": "40",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "كوفي ميكس",
+       "en": "Coffee Mix",
+       "p": "20",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "كوفي بريك",
+       "en": "Coffee Break",
+       "p": "20",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "كافيه لاتيه",
+       "en": "Caffè Latte",
+       "p": "45",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "موكا",
+       "en": "Mocha",
+       "p": "55",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "وايت موكا",
+       "en": "White Mocha",
+       "p": "55",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "قهوة نكهات",
+       "en": "Flavored Coffee",
+       "p": "35",
+       "d": "بندق – كراميل – شوكولاتة – توت – تفاح",
+       "den": "Hazelnut – Caramel – Chocolate – Berry – Apple",
+       "opts": [
+        "بندق",
+        "كراميل",
+        "شوكولاتة",
+        "توت",
+        "تفاح"
+       ],
+       "optsEn": [
+        "Hazelnut",
+        "Caramel",
+        "Chocolate",
+        "Berry",
+        "Apple"
+       ]
+      },
+      {
+       "n": "قهوة بندق قطع",
+       "en": "Hazelnut Chunks Coffee",
+       "p": "40",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "قهوة نوتيلا",
+       "en": "Nutella Coffee",
+       "p": "45",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "قهوة بيستاشيو",
+       "en": "Pistachio Coffee",
+       "p": "50",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "اسبريسو سنجل",
+       "en": "Single Espresso",
+       "p": "30",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "اسبريسو دبل",
+       "en": "Double Espresso",
+       "p": "40",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "اسبريسو ماكياتو سنجل",
+       "en": "Single Espresso Macchiato",
+       "p": "35",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "اسبريسو ماكياتو دبل",
+       "en": "Double Espresso Macchiato",
+       "p": "45",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "كورتادو",
+       "en": "Cortado",
+       "p": "50",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "فلات وايت",
+       "en": "Flat White",
+       "p": "50",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "كابتشينو",
+       "en": "Cappuccino",
+       "p": "50",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "هوت شوكليت",
+       "en": "Hot Chocolate",
+       "p": "40",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "هوت شوكليت نوتيلا",
+       "en": "Nutella Hot Chocolate",
+       "p": "50",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "هوت شوكليت كادبري",
+       "en": "Cadbury Hot Chocolate",
+       "p": "50",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "هوت سيدر",
+       "en": "Hot Cider",
+       "p": "40",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "سحلب سادة",
+       "en": "Plain Sahlab",
+       "p": "35",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "سحلب مكسرات",
+       "en": "Sahlab with Nuts",
+       "p": "45",
+       "d": "",
+       "den": ""
+      }
+     ]
+    },
+    {
+     "id": "iced",
+     "name": "قهوة مثلجة",
+     "en": "Iced Coffee",
+     "flat": "",
+     "note": "",
+     "noteEn": "",
+     "items": [
+      {
+       "n": "اسبريسو أيس فانيلا",
+       "en": "Iced Vanilla Espresso",
+       "p": "40",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "أيس كوفي",
+       "en": "Iced Coffee",
+       "p": "50",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "أيس لاتيه",
+       "en": "Iced Latte",
+       "p": "50",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "أيس سبانش لاتيه",
+       "en": "Iced Spanish Latte",
+       "p": "60",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "أيس موكا",
+       "en": "Iced Mocha",
+       "p": "60",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "أيس وايت موكا",
+       "en": "Iced White Mocha",
+       "p": "60",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "أيس شوكليت",
+       "en": "Iced Chocolate",
+       "p": "45",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "فرابتشينو",
+       "en": "Frappuccino",
+       "p": "55",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "إضافة فليفر",
+       "en": "Add Flavor",
+       "p": "10",
+       "d": "إضافة نكهة للمشروب",
+       "den": "Add a flavor to your drink"
+      }
+     ]
+    },
+    {
+     "id": "juice",
+     "name": "عصائر فريش",
+     "en": "Fresh Juices",
+     "flat": "",
+     "note": "",
+     "noteEn": "",
+     "items": [
+      {
+       "n": "مانجو",
+       "en": "Mango",
+       "p": "40",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "فراولة",
+       "en": "Strawberry",
+       "p": "40",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "جوافة",
+       "en": "Guava",
+       "p": "40",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "جوافة حليب",
+       "en": "Guava with Milk",
+       "p": "45",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "موز",
+       "en": "Banana",
+       "p": "45",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "برتقال",
+       "en": "Orange",
+       "p": "45",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "عناب",
+       "en": "Jujube",
+       "p": "30",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "ليمون",
+       "en": "Lemon",
+       "p": "30",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "ليمون نعناع",
+       "en": "Lemon Mint",
+       "p": "35",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "زبادي سادة",
+       "en": "Plain Yogurt",
+       "p": "40",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "زبادي عسل",
+       "en": "Honey Yogurt",
+       "p": "45",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "زبادي فواكه",
+       "en": "Fruit Yogurt",
+       "p": "50",
+       "d": "",
+       "den": ""
+      }
+     ]
+    },
+    {
+     "id": "season",
+     "name": "عصائر موسمية",
+     "en": "Seasonal Juices",
+     "flat": "45",
+     "note": "",
+     "noteEn": "",
+     "items": [
+      {
+       "n": "بلح باللبن",
+       "en": "Dates with Milk",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "كيوي",
+       "en": "Kiwi",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "بطيخ",
+       "en": "Watermelon",
+       "p": "",
+       "d": "",
+       "den": ""
+      }
+     ]
+    },
+    {
+     "id": "smoothie",
+     "name": "سموزي",
+     "en": "Smoothies",
+     "flat": "45",
+     "note": "",
+     "noteEn": "",
+     "items": [
+      {
+       "n": "مانجو",
+       "en": "Mango",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "فراولة",
+       "en": "Strawberry",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "جوافة",
+       "en": "Guava",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "بطيخ",
+       "en": "Watermelon",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "ليمون",
+       "en": "Lemon",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "ليمون نعناع",
+       "en": "Lemon Mint",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "ريد بيري",
+       "en": "Red Berry",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "بلو بيري",
+       "en": "Blueberry",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "ميكس بيري",
+       "en": "Mixed Berry",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "أناناس جوز هند",
+       "en": "Pineapple Coconut",
+       "p": "",
+       "d": "",
+       "den": ""
+      }
+     ]
+    },
+    {
+     "id": "shake",
+     "name": "ميلك شيك",
+     "en": "Milkshakes",
+     "flat": "50",
+     "note": "",
+     "noteEn": "",
+     "items": [
+      {
+       "n": "فانيليا",
+       "en": "Vanilla",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "فانيليا جوز هند",
+       "en": "Vanilla Coconut",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "شوكليت",
+       "en": "Chocolate",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "شوكليت جوز هند",
+       "en": "Chocolate Coconut",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "ميلك شيك اسبريسو",
+       "en": "Espresso Milkshake",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "مانجو",
+       "en": "Mango",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "فراولة",
+       "en": "Strawberry",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "كراميل",
+       "en": "Caramel",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "أوريو",
+       "en": "Oreo",
+       "p": "60",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "نوتيلا",
+       "en": "Nutella",
+       "p": "60",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "بلو بيري",
+       "en": "Blueberry",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "ريد بيري",
+       "en": "Red Berry",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "ميكس بيري",
+       "en": "Mixed Berry",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "أناناس جوز هند",
+       "en": "Pineapple Coconut",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "كيوي",
+       "en": "Kiwi",
+       "p": "",
+       "d": "",
+       "den": ""
+      }
+     ]
+    },
+    {
+     "id": "herbs",
+     "name": "أعشاب",
+     "en": "Herbal Drinks",
+     "flat": "15",
+     "note": "السعر الموحد للأعشاب السادة",
+     "noteEn": "Flat price applies to plain herbs",
+     "items": [
+      {
+       "n": "شاي أخضر",
+       "en": "Green Tea",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "ينسون",
+       "en": "Anise",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "نعناع",
+       "en": "Mint",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "زنجبيل",
+       "en": "Ginger",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "كركديه",
+       "en": "Hibiscus",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "حلبة",
+       "en": "Fenugreek",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "زنجبيل + ليمون",
+       "en": "Ginger + Lemon",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "زنجبيل + قرفة",
+       "en": "Ginger + Cinnamon",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "ميكس أعشاب",
+       "en": "Mixed Herbs",
+       "p": "20",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "حلبة حليب",
+       "en": "Fenugreek with Milk",
+       "p": "35",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "قرفة حليب",
+       "en": "Cinnamon with Milk",
+       "p": "35",
+       "d": "",
+       "den": ""
+      }
+     ]
+    },
+    {
+     "id": "ice",
+     "name": "آيس كريم",
+     "en": "Ice Cream",
+     "flat": "",
+     "note": "",
+     "noteEn": "",
+     "items": [
+      {
+       "n": "آيس كريم 2 بولة",
+       "en": "Ice Cream – 2 Scoops",
+       "p": "35",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "آيس كريم 3 بولة",
+       "en": "Ice Cream – 3 Scoops",
+       "p": "45",
+       "d": "",
+       "den": ""
+      }
+     ]
+    },
+    {
+     "id": "cold",
+     "name": "مشروبات غازية ومياه",
+     "en": "Soft Drinks & Water",
+     "flat": "",
+     "note": "",
+     "noteEn": "",
+     "items": [
+      {
+       "n": "بيبسي",
+       "en": "Pepsi",
+       "p": "35",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "سفن أب",
+       "en": "7UP",
+       "p": "35",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "ميرندا",
+       "en": "Mirinda",
+       "p": "35",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "شويبس",
+       "en": "Schweppes",
+       "p": "35",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "فيروز",
+       "en": "Fayrouz",
+       "p": "35",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "بيريل",
+       "en": "Birell",
+       "p": "35",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "تويست",
+       "en": "Twist",
+       "p": "35",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "ريد بول",
+       "en": "Red Bull",
+       "p": "80",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "مياه صغيرة",
+       "en": "Small Water",
+       "p": "10",
+       "d": "",
+       "den": ""
+      }
+     ]
+    },
+    {
+     "id": "indomie",
+     "name": "إندومي",
+     "en": "Indomie",
+     "flat": "",
+     "note": "",
+     "noteEn": "",
+     "items": [
+      {
+       "n": "إندومي صغير",
+       "en": "Indomie – Small",
+       "p": "15",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "إندومي كبير",
+       "en": "Indomie – Large",
+       "p": "20",
+       "d": "",
+       "den": ""
+      }
+     ]
+    }
+   ]
   },
   {
    "id": "takeaway",
@@ -594,8 +1708,22 @@ var MENU = {
       {
        "n": "شاي نكهات",
        "en": "Flavored Tea",
-       "opts": ["تفاح", "فراولة", "خوخ", "توت", "ليمون", "نعناع"],
-       "optsEn": ["Apple", "Strawberry", "Peach", "Berry", "Lemon", "Mint"],
+       "opts": [
+        "تفاح",
+        "فراولة",
+        "خوخ",
+        "توت",
+        "ليمون",
+        "نعناع"
+       ],
+       "optsEn": [
+        "Apple",
+        "Strawberry",
+        "Peach",
+        "Berry",
+        "Lemon",
+        "Mint"
+       ],
        "p": "15",
        "d": "",
        "den": ""
@@ -647,7 +1775,19 @@ var MENU = {
        "en": "Flavored Coffee",
        "p": "30",
        "d": "بندق – كراميل – مانجو – موز",
-       "den": "Hazelnut – Caramel – Mango – Banana"
+       "den": "Hazelnut – Caramel – Mango – Banana",
+       "opts": [
+        "بندق",
+        "كراميل",
+        "مانجو",
+        "موز"
+       ],
+       "optsEn": [
+        "Hazelnut",
+        "Caramel",
+        "Mango",
+        "Banana"
+       ]
       },
       {
        "n": "قهوة بندق قطع",
@@ -1708,8 +2848,8 @@ var MENU = {
 <script>
 (function(){
 var T={
- ar:{search:"دوّر على مشروب… مثلاً: مانجو، لاتيه",empty:"مفيش حاجة بالاسم ده. جرّب اسم تاني، أو اختار مزاجك تحت.",flat:"سعر موحد {x} جنيه",addr:"العنوان:",phone:"للتواصل:",upd:"آخر تحديث للأسعار: ",slogan:"كل غاوي وليه مزاج",soonT:"قريباً",soonP:"منيو الصالة بيتجهز… استنونا قريب جداً",goT:"شوف منيو التيك أواي",goB:"منيو البن",soonTab:"قريباً",lang:"EN",featured:"ترشيحات الغاوي",featuredSub:"اختيارات للي محتار يبدأ بإيه",featuredLabel:"ترشيح",order:"اطلب على واتساب",directions:"اعرف طريقك",moodEy:"مزاجك… كوبايتك",moodH:"مش عارف تختار؟ <em>اختار مزاجك</em>",moodP:"دوس على مزاجك والغاوي يختارلك.",surprise:"فاجئني",mrK:"اختيار الغاوي لمزاجك",find:"لاقيه في المنيو",another:"اقترح غيره",also:"وممكن كمان يعجبك:",gm:"صباحك قهوة ☀️",revK:"رأيك يفرق معانا",revT:"عجبك مزاجك النهارده؟",revP:"قيّمنا على جوجل في ثانية، وساعد غاويين تانيين يلاقونا.",revB:"قيّمنا على جوجل",revApp:"أو افتحنا في تطبيق الخرائط ← التقييمات",cart:"سلتك",cartBar:"عرض الطلب",items:"صنف",total:"الإجمالي",typeT:"تيك أواي",typeH:"في الصالة",table:"رقم الترابيزة",name:"اسمك (اختياري)",notes:"ملاحظات",notesPh:"مثلاً: كوب تيك أواي، كوب زجاج، فنجان، بدون ثلج، شوت زيادة…",send:"ابعت الطلب على واتساب",clear:"فضّي السلة",emptyCart:"السلة فاضية… ضيف أي حاجة من المنيو ☕",added:"اتضاف للسلة",addLbl:"أضف",remLbl:"شيل",removed:"اتشال من السلة",needTable:"اكتب رقم الترابيزة",priceAsk:"السعر يتحدد في المحل",kg:"كيلو",close:"إغلاق",addMood:"ضيفه للسلة",ga:"عصرية رايقة 🌤️",ge:"سهرة على مزاجك 🌙"},
- en:{search:"Search the menu… e.g. mango, latte",empty:"Nothing matches that. Try another name, or pick your mood below.",flat:"All {x} EGP",addr:"Address:",phone:"Contact:",upd:"Prices last updated: ",slogan:"Every coffee lover has a mood of their own",soonT:"Coming soon",soonP:"Our dine-in menu is on its way — stay tuned!",goT:"See takeaway menu",goB:"Coffee beans",soonTab:"Soon",lang:"ع",featured:"El Ghawy Picks",featuredSub:"A few favorites to help you choose",featuredLabel:"Recommended",order:"Order on WhatsApp",directions:"Get directions",moodEy:"YOUR MOOD, YOUR CUP",moodH:"Can't decide? <em>Pick your mood</em>",moodP:"Tap your mood and El Ghawy picks for you.",surprise:"Surprise me",mrK:"EL GHAWY PICK FOR YOUR MOOD",find:"Find it in the menu",another:"Suggest another",also:"You might also like:",gm:"Good morning ☀️",revK:"YOUR OPINION MATTERS",revT:"Enjoyed your cup today?",revP:"Rate us on Google in seconds and help other coffee lovers find us.",revB:"Rate us on Google",revApp:"or open us in the Maps app → Reviews",cart:"Your order",cartBar:"View order",items:"items",total:"Total",typeT:"Takeaway",typeH:"Dine-in",table:"Table number",name:"Your name (optional)",notes:"Notes",notesPh:"e.g. takeaway cup, glass cup, small cup (fingan), no ice, extra shot…",send:"Send order on WhatsApp",clear:"Clear",emptyCart:"Your cart is empty… add something from the menu ☕",added:"Added to your order",addLbl:"Add",remLbl:"Remove",removed:"Removed from your order",needTable:"Enter your table number",priceAsk:"Price confirmed in store",kg:"kg",close:"Close",addMood:"Add to order",ga:"Easy afternoon 🌤️",ge:"Cozy evening 🌙"}
+ ar:{search:"دوّر على مشروب… مثلاً: مانجو، لاتيه",empty:"مفيش حاجة بالاسم ده. جرّب اسم تاني، أو اختار مزاجك تحت.",flat:"سعر موحد {x} جنيه",addr:"العنوان:",phone:"للتواصل:",upd:"آخر تحديث للأسعار: ",slogan:"كل غاوي وليه مزاج",soonT:"قريباً",soonP:"منيو الصالة بيتجهز… استنونا قريب جداً",goT:"شوف منيو التيك أواي",goB:"منيو البن",soonTab:"قريباً",lang:"EN",featured:"ترشيحات الغاوي",featuredSub:"اختيارات للي محتار يبدأ بإيه",featuredLabel:"ترشيح",order:"اطلب على واتساب",directions:"اعرف طريقك",moodEy:"مزاجك… كوبايتك",moodH:"مش عارف تختار؟ <em>اختار مزاجك</em>",moodP:"دوس على مزاجك والغاوي يختارلك.",surprise:"فاجئني",mrK:"اختيار الغاوي لمزاجك",find:"لاقيه في المنيو",another:"اقترح غيره",also:"وممكن كمان يعجبك:",gm:"صباحك قهوة ☀️",revK:"رأيك يفرق معانا",revT:"عجبك مزاجك النهارده؟",revP:"قيّمنا على جوجل في ثانية، وساعد غاويين تانيين يلاقونا.",revB:"قيّمنا على جوجل",revApp:"أو افتحنا في تطبيق الخرائط ← التقييمات",cart:"سلتك",cartBar:"عرض الطلب",items:"صنف",total:"الإجمالي",typeT:"تيك أواي",typeH:"في الصالة",table:"رقم الترابيزة (اختياري)",name:"اسمك (اختياري)",notes:"ملاحظات",notesPh:"مثلاً: كوب تيك أواي، كوب زجاج، فنجان، بدون ثلج، شوت زيادة…",send:"ابعت الطلب على واتساب",clear:"فضّي السلة",emptyCart:"السلة فاضية… ضيف أي حاجة من المنيو ☕",added:"اتضاف للسلة",addLbl:"أضف",remLbl:"شيل",removed:"اتشال من السلة",needTable:"اكتب رقم الترابيزة",priceAsk:"السعر يتحدد في المحل",kg:"كيلو",close:"إغلاق",addMood:"ضيفه للسلة",ga:"عصرية رايقة 🌤️",ge:"سهرة على مزاجك 🌙"},
+ en:{search:"Search the menu… e.g. mango, latte",empty:"Nothing matches that. Try another name, or pick your mood below.",flat:"All {x} EGP",addr:"Address:",phone:"Contact:",upd:"Prices last updated: ",slogan:"Every coffee lover has a mood of their own",soonT:"Coming soon",soonP:"Our dine-in menu is on its way — stay tuned!",goT:"See takeaway menu",goB:"Coffee beans",soonTab:"Soon",lang:"ع",featured:"El Ghawy Picks",featuredSub:"A few favorites to help you choose",featuredLabel:"Recommended",order:"Order on WhatsApp",directions:"Get directions",moodEy:"YOUR MOOD, YOUR CUP",moodH:"Can't decide? <em>Pick your mood</em>",moodP:"Tap your mood and El Ghawy picks for you.",surprise:"Surprise me",mrK:"EL GHAWY PICK FOR YOUR MOOD",find:"Find it in the menu",another:"Suggest another",also:"You might also like:",gm:"Good morning ☀️",revK:"YOUR OPINION MATTERS",revT:"Enjoyed your cup today?",revP:"Rate us on Google in seconds and help other coffee lovers find us.",revB:"Rate us on Google",revApp:"or open us in the Maps app → Reviews",cart:"Your order",cartBar:"View order",items:"items",total:"Total",typeT:"Takeaway",typeH:"Dine-in",table:"Table number (optional)",name:"Your name (optional)",notes:"Notes",notesPh:"e.g. takeaway cup, glass cup, small cup (fingan), no ice, extra shot…",send:"Send order on WhatsApp",clear:"Clear",emptyCart:"Your cart is empty… add something from the menu ☕",added:"Added to your order",addLbl:"Add",remLbl:"Remove",removed:"Removed from your order",needTable:"Enter your table number",priceAsk:"Price confirmed in store",kg:"kg",close:"Close",addMood:"Add to order",ga:"Easy afternoon 🌤️",ge:"Cozy evening 🌙"}
 };
 var root=document.documentElement;
 function store(k,v){try{localStorage.setItem(k,v)}catch(e){}}
@@ -1950,9 +3090,9 @@ var SEC_EMOJI={hot:"☕",iced:"🧊",juice:"🍹",season:"🍉",smoothie:"🥤",
 var NUMS=["1️⃣","2️⃣","3️⃣","4️⃣","5️⃣","6️⃣","7️⃣","8️⃣","9️⃣","🔟"];
 var opt={},sugar={},cart={},orderType="t",tableNo="",custName="",custNotes="";
 try{var cs=JSON.parse(localStorage.getItem("gh_cart3")||"{}");cart=cs.c||{};sugar=cs.s||{};opt=cs.o||{};orderType=cs.t||"t";tableNo=cs.tb||"";custName=cs.n||""}catch(e){}
-var FLAVORS={ar:["فانيلا","كراميل","بندق","شوكولاتة","بستاشيو","توت"],en:["Vanilla","Caramel","Hazelnut","Chocolate","Pistachio","Berry"]};
+var FLAVORS={ar:["بندق","فانيليا","شوكليت","كراميل","سولتد كراميل"],en:["Hazelnut","Vanilla","Chocolate","Caramel","Salted Caramel"]};
 var SUGAR={ar:["خفيف","مظبوط","مانو","زيادة","فوق الزيادة","سادة"],en:["Light","Medium","Medium+","Sweet","Extra sweet","No sugar"]},SUGAR_ORDER=[5,0,1,2,3,4];
-function needsSugar(L){return !!L&&!L.forKey&&L.m.id==="takeaway"&&(L.sec.id==="hot"||L.sec.id==="iced"||L.sec.id==="herbs")&&!/^(إضافة|اضافة|زيادة)/.test(L.it.n||"")}
+function needsSugar(L){return !!L&&!L.forKey&&(L.m.id==="takeaway"||L.m.id==="hall")&&(L.sec.id==="hot"||L.sec.id==="iced"||L.sec.id==="herbs")&&!/^(إضافة|اضافة|زيادة)/.test(L.it.n||"")}
 function spName(n){var en=lang==="en";if(en)return (n%1?(Math.floor(n)?Math.floor(n)+"½":"½"):n)+(n>1?" spoons":" spoon");
   var w=Math.floor(n),h=n%1?" ونص":"";if(!w)return "نص معلقة";return (w===1?"معلقة":w===2?"معلقتين":w+" معالق")+h}
 function sugarName(i){if(typeof i==="string"&&i.indexOf("sp:")===0)return spName(+i.slice(3));return (lang==="en"?SUGAR.en:SUGAR.ar)[i]}
@@ -1971,8 +3111,8 @@ function lookup(key){var j=key.indexOf(">");if(j<0)return lookup0(key);var rest=
 function flName(i){return (lang==="en"?FLAVORS.en:FLAVORS.ar)[i]||""}
 function flvLabel(L){return (lang==="en"?flName(L.fl)+" flavor":"فليفر "+flName(L.fl))}
 function flvOn(dk){var n=0;for(var x in cart)if(cart.hasOwnProperty(x)&&x.indexOf(">"+dk+"~")>-1)n+=cart[x];return n}
-function flvBases(){var m=findMenu("takeaway"),out=[];if(!m)return out;for(var i=0;i<m.sections.length;i++)for(var j=0;j<m.sections[i].items.length;j++){var it=m.sections[i].items[j];if(!it.hide&&isFlvIt(it))out.push({k:"takeaway|"+m.sections[i].id+"|"+j,sec:m.sections[i].id})}return out}
-function baseFor(dk){var bs=flvBases(),sec=dk.split("|")[1];for(var i=0;i<bs.length;i++)if(bs[i].sec===sec)return bs[i].k;return bs.length?bs[0].k:null}
+function flvBases(mid){var m=findMenu(mid||"takeaway"),out=[];if(!m)return out;for(var i=0;i<m.sections.length;i++)for(var j=0;j<m.sections[i].items.length;j++){var it=m.sections[i].items[j];if(!it.hide&&isFlvIt(it))out.push({k:m.id+"|"+m.sections[i].id+"|"+j,sec:m.sections[i].id})}return out}
+function baseFor(dk){var bs=flvBases(dk.split("|")[0]),sec=dk.split("|")[1];for(var i=0;i<bs.length;i++)if(bs[i].sec===sec)return bs[i].k;return bs.length?bs[0].k:null}
 function lookup0(key){var p=key.split("|"),m=findMenu(p[0]);if(!m||!m.sections)return null;var sec=null;for(var i=0;i<m.sections.length;i++)if(m.sections[i].id===p[1])sec=m.sections[i];if(!sec)return null;var it=sec.items[+p[2]];if(!it||it.hide)return null;
   return {m:m,sec:sec,it:it,price:numPrice(it.p||sec.flat),raw:it.p||sec.flat||""}}
 function addBtn(m,sec,i,v,name){if(m.soon)return"";var key=m.id+"|"+sec.id+"|"+i;return '<span class="ctl" data-ctl="'+key+'" data-name="'+esc(name)+'">'+ctlInner(key,name)+'</span>'}
@@ -1986,10 +3126,23 @@ function cartLines(){var out=[],fl=[],k,i;for(k in cart){if(!cart.hasOwnProperty
   for(k in sugar)if(sugar.hasOwnProperty(k)&&!cart[k])delete sugar[k];for(k in opt)if(opt.hasOwnProperty(k)&&!cart[k])delete opt[k];
   var res=[];for(i=0;i<out.length;i++){res.push(out[i]);for(var j=0;j<fl.length;j++)if(fl[j].L.forKey===out[i].k)res.push(fl[j])}return res}
 function cartTotals(){var lines=cartLines(),n=0,tot=0,unknown=false;for(var i=0;i<lines.length;i++){n+=lines[i].L.m.id==="beans"?1:lines[i].q;if(lines[i].L.price===null)unknown=true;else tot+=lines[i].L.price*lines[i].q}return {lines:lines,n:n,tot:tot,unknown:unknown}}
-function changeQty(key,delta){var L=lookup(key);if(!L)return;var st=stepOf(L.m.id),q=+((cart[key]||0)+delta*st).toFixed(2);
+function otherMenuIn(mid){for(var k in cart){if(!cart.hasOwnProperty(k))continue;var p=k.split("|")[0];if((p==="hall"||p==="takeaway")&&p!==mid)return true}return false}
+function mapKey(k,to){var p=k.split("|");if(p[0]===to||(p[0]!=="hall"&&p[0]!=="takeaway"))return k;var L=lookup0(k),tm=findMenu(to);if(!L||!tm||!tm.sections)return null;
+  for(var i=0;i<tm.sections.length;i++){if(tm.sections[i].id!==p[1])continue;var its=tm.sections[i].items;for(var j=0;j<its.length;j++)if(!its[j].hide&&its[j].n===L.it.n)return to+"|"+p[1]+"|"+j}return null}
+function convertCart(to,quiet){var nc={},ns={},no={},moved=0,kept=[],k;
+  for(k in cart){if(!cart.hasOwnProperty(k)||!cart[k])continue;var nk,j=k.indexOf(">");
+    if(j>-1){var rest=k.slice(j+1),w=rest.indexOf("~"),b=mapKey(k.slice(0,j),to),d=w>-1?mapKey(rest.slice(0,w),to):null;nk=(b&&d)?b+">"+d+rest.slice(w):null}else nk=mapKey(k,to);
+    if(!nk){nk=k;var L0=lookup(k);if(L0&&!L0.forKey&&(k.split("|")[0]==="hall"||k.split("|")[0]==="takeaway"))kept.push(nm(L0.it))}
+    if(nk!==k)moved++;
+    nc[nk]=(nc[nk]||0)+cart[k];if(sugar[k]!=null)ns[nk]=sugar[k];
+    if(opt[k]!=null){var A=lookup0(k),B=lookup0(nk);if(A&&B&&optsOf(A.it)&&optsOf(B.it)){var on=A.it.opts[opt[k]],ix=B.it.opts.indexOf(on);if(ix>-1)no[nk]=ix}}}
+  cart=nc;sugar=ns;opt=no;saveCart();
+  if(moved||kept.length){var en=lang==="en";toast((to==="hall"?(en?"Order switched to dine-in prices":"طلبك اتحسب بأسعار الصالة"):(en?"Order switched to takeaway prices":"طلبك اتحسب بأسعار التيك أواي"))+(kept.length?(en?" · not on this menu: ":" · مش في المنيو ده: ")+kept.join("، "):""))}
+  return moved}
+function changeQty(key,delta){var L=lookup(key);if(!L)return;if(delta>0&&(L.m.id==="hall"||L.m.id==="takeaway")){var want=L.m.id==="hall"?"h":"t";if(orderType!==want||otherMenuIn(L.m.id)){orderType=want;convertCart(L.m.id,true)}}var st=stepOf(L.m.id),q=+((cart[key]||0)+delta*st).toFixed(2);
   if(L.forKey&&delta>0&&flvOn(L.forKey)+1>(cart[L.forKey]||0)){toast(lang==="en"?"Every cup already has a flavor":"كل كوباية عليها فليفر خلاص");return}
   if(q<=0)delete cart[key];else cart[key]=q;saveCart();refreshCart(L.base||key)}
-function flvTargets(){var out=[],ls=cartLines();for(var i=0;i<ls.length;i++){var l=ls[i];if(l.L.forKey||l.L.m.id!=="takeaway"||isFlvIt(l.L.it)||/^(إضافة|اضافة|زيادة)/.test(l.L.it.n||""))continue;if(l.L.sec.id!=="hot"&&l.L.sec.id!=="iced")continue;if(/شاي/.test(l.L.it.n||""))continue;l.left=l.q-flvOn(l.k);out.push(l)}return out}
+function flvTargets(){var out=[],ls=cartLines();for(var i=0;i<ls.length;i++){var l=ls[i];if(l.L.forKey||(l.L.m.id!=="takeaway"&&l.L.m.id!=="hall")||isFlvIt(l.L.it)||/^(إضافة|اضافة|زيادة)/.test(l.L.it.n||""))continue;if(l.L.sec.id!=="hot"&&l.L.sec.id!=="iced")continue;if(/شاي/.test(l.L.it.n||"")||optsOf(l.L.it))continue;l.left=l.q-flvOn(l.k);out.push(l)}return out}
 var flvSel={base:null,drink:null,type:null},flvNo=false;
 function addFlv(){var base=flvSel.base,target=flvSel.drink,fi=flvSel.type;if(target==null||fi==null)return;if(!base)base=baseFor(target);if(!base)return;
   if(flvOn(target)>=(cart[target]||0)){toast(lang==="en"?"Every cup already has a flavor":"كل كوباية عليها فليفر خلاص");return}
@@ -2060,7 +3213,7 @@ function waUrl(){return "https://wa.me/"+MENU.whatsappOrder+"?text="+encodeURICo
 function syncSend(){var a=$("fSend");if(a)a.href=waUrl()}
 function buildMsg(){var t=T[lang],T2=cartTotals(),ar=lang!=="en",L=[];
   L.push(ar?"☕ *طلب جديد – بن الغاوي*":"☕ *New order – El Ghawy Coffee*");L.push("━━━━━━━━━━━━");
-  L.push(orderType==="h"?(ar?"🪑 *نوع الطلب:* في الصالة – ترابيزة رقم "+tableNo:"🪑 *Order type:* Dine-in – Table "+tableNo):(ar?"🥡 *نوع الطلب:* تيك أواي":"🥡 *Order type:* Takeaway"));
+  var tb=String(tableNo||"").replace(/^\s+|\s+$/g,"");L.push(orderType==="h"?(ar?"🪑 *نوع الطلب:* في الصالة"+(tb?" – ترابيزة رقم "+tb:""):"🪑 *Order type:* Dine-in"+(tb?" – Table "+tb:"")):(ar?"🥡 *نوع الطلب:* تيك أواي":"🥡 *Order type:* Takeaway"));
   if(custName)L.push((ar?"👤 *الاسم:* ":"👤 *Name:* ")+custName);
   L.push("━━━━━━━━━━━━");
   for(var i=0,no=0;i<T2.lines.length;i++){var l=T2.lines[i],x=l.L,isB=x.m.id==="beans",q=fmtQ(l.q,x.m.id)+(isB?" "+t.kg:"");
@@ -2089,7 +3242,7 @@ $("cartbar").addEventListener("click",openSheet);
 $("sheet").addEventListener("click",function(e){var a=e.target.closest?e.target.closest("#fSend"):null;
   if(a){var mo=missingOpt();if(mo){e.preventDefault();sugarErr=mo.k+"#o";renderSheet();var eo=$("op-"+mo.k.replace(/\|/g,"-"));if(eo&&eo.scrollIntoView)eo.scrollIntoView({block:"center",behavior:"smooth"});toast((lang==="en"?"Choose the flavor for ":"اختار النكهة لـ ")+nm(mo.L.it));return}
     var ms=missingSugar();if(ms){e.preventDefault();sugarErr=ms.k;renderSheet();var el=$("sg-"+ms.k.replace(/\|/g,"-"));if(el&&el.scrollIntoView)el.scrollIntoView({block:"center",behavior:"smooth"});toast((lang==="en"?"Choose sugar for ":"اختار السكر لـ ")+nm(ms.L.it));return}
-    if(orderType==="h"&&!String(tableNo).replace(/\s/g,"")){e.preventDefault();var f=$("fTable");if(f){f.className="err";f.focus()}toast(T[lang].needTable);return}a.href=waUrl();return}
+    a.href=waUrl();return}
   var b=e.target.closest?e.target.closest("button,[data-close]"):null;if(!b)return;
   if(b.getAttribute("data-close")){closeSheet();return}
   if(b.getAttribute("data-upflv")){openFlv(null,null);return}
@@ -2100,7 +3253,7 @@ $("sheet").addEventListener("click",function(e){var a=e.target.closest?e.target.
   if(b.getAttribute("data-sugar")){sugar[b.getAttribute("data-sugar")]=+b.getAttribute("data-sv");if(sugarErr===b.getAttribute("data-sugar"))sugarErr=null;saveCart();var y=window.pageYOffset,sc=$("shBody").scrollTop;renderSheet();try{$("shBody").scrollTop=sc}catch(e){}return}
   if(b.getAttribute("data-inc")){changeQty(b.getAttribute("data-inc"),1);return}
   if(b.getAttribute("data-dec")){changeQty(b.getAttribute("data-dec"),-1);return}
-  if(b.getAttribute("data-type")){orderType=b.getAttribute("data-type");saveCart();renderSheet();if(orderType==="h")setTimeout(function(){var f=$("fTable");if(f&&!f.value)f.focus()},60);return}
+  if(b.getAttribute("data-type")){orderType=b.getAttribute("data-type");convertCart(orderType==="h"?"hall":"takeaway");refreshCart();saveCart();renderSheet();if(orderType==="h")setTimeout(function(){var f=$("fTable");if(f&&!f.value)f.focus()},60);return}
   if(b.id==="fClear"){cart={};saveCart();refreshCart();closeSheet();return}
 
 });

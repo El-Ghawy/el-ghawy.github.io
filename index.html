@@ -3089,8 +3089,8 @@ function renderReview(){var box=$("review");if(!box)return;var u=MENU.reviewUrl|
 var SEC_EMOJI={hot:"☕",iced:"🧊",juice:"🍹",season:"🍉",smoothie:"🥤",shake:"🥛",soda:"🫧",herbs:"🌿",ice:"🍨",cold:"🥤",indomie:"🍜",blends:"🫘",flavored:"🫘",pure:"🫘",nes:"🫙"};
 var NUMS=["1️⃣","2️⃣","3️⃣","4️⃣","5️⃣","6️⃣","7️⃣","8️⃣","9️⃣","🔟"];
 var opt={},sugar={},cart={},orderType="t",tableNo="",custName="",custNotes="";
-try{var cs=JSON.parse(localStorage.getItem("gh_cart3")||"{}");cart=cs.c||{};sugar=cs.s||{};opt=cs.o||{};orderType=cs.t||"t";tableNo=cs.tb||"";custName=cs.n||""}catch(e){}
-var FLAVORS={ar:["بندق","فانيليا","شوكليت","كراميل","سولتد كراميل"],en:["Hazelnut","Vanilla","Chocolate","Caramel","Salted Caramel"]};
+try{var cs=JSON.parse(localStorage.getItem("gh_cart4")||"{}");cart=cs.c||{};sugar=cs.s||{};opt=cs.o||{};orderType=cs.t||"t";tableNo=cs.tb||"";custName=cs.n||""}catch(e){}
+var FLAVORS={ar:["فانيلا","شوكولاتة","بندق","كاراميل","سولتيد كاراميل"],en:["Vanilla","Chocolate","Hazelnut","Caramel","Salted Caramel"]};
 var SUGAR={ar:["خفيف","مظبوط","مانو","زيادة","فوق الزيادة","سادة"],en:["Light","Medium","Medium+","Sweet","Extra sweet","No sugar"]},SUGAR_ORDER=[5,0,1,2,3,4];
 function needsSugar(L){return !!L&&!L.forKey&&(L.m.id==="takeaway"||L.m.id==="hall")&&(L.sec.id==="hot"||L.sec.id==="iced"||L.sec.id==="herbs")&&!/^(إضافة|اضافة|زيادة)/.test(L.it.n||"")}
 function spName(n){var en=lang==="en";if(en)return (n%1?(Math.floor(n)?Math.floor(n)+"½":"½"):n)+(n>1?" spoons":" spoon");
@@ -3100,7 +3100,7 @@ function optsOf(it){return it&&it.opts&&it.opts.length?it.opts:null}
 function optName(it,i){return (lang==="en"&&it.optsEn?it.optsEn:it.opts)[i]||""}
 function missingOpt(){var ls=cartLines();for(var i=0;i<ls.length;i++)if(!ls[i].L.forKey&&optsOf(ls[i].L.it)&&opt[ls[i].k]==null)return ls[i];return null}
 function missingSugar(){var ls=cartLines();for(var i=0;i<ls.length;i++)if(needsSugar(ls[i].L)&&sugar[ls[i].k]==null)return ls[i];return null}
-function saveCart(){try{localStorage.setItem("gh_cart3",JSON.stringify({c:cart,s:sugar,o:opt,t:orderType,tb:tableNo,n:custName}))}catch(e){}}
+function saveCart(){try{localStorage.setItem("gh_cart4",JSON.stringify({c:cart,s:sugar,o:opt,t:orderType,tb:tableNo,n:custName}))}catch(e){}}
 function numPrice(v){v=String(v||"").replace(/\s/g,"");return /^\d+(\.\d+)?$/.test(v)?parseFloat(v):null}
 function stepOf(menuId){return menuId==="beans"?0.25:1}
 function isFlvIt(it){return !!it&&/فليفر/.test(it.n||"")}

@@ -3335,8 +3335,9 @@ var sugarErr=null;
 function renderSheet(){
   var t=T[lang],T2=cartTotals(),h="";$("shT").textContent="🛒 "+t.cart;$("shX").setAttribute("aria-label",t.close);
   if(!T2.lines.length){$("shBody").innerHTML='<p class="sh-empty">'+esc(t.emptyCart)+'</p>';return}
-  h+='<div class="sh-type" role="radiogroup"><button type="button" data-type="t" class="'+(orderType==="t"?"on":"")+'" aria-pressed="'+(orderType==="t")+'">🥡 '+esc(t.typeT)+'</button><button type="button" data-type="h" class="'+(orderType==="h"?"on":"")+'" aria-pressed="'+(orderType==="h")+'">🪑 '+esc(t.typeH)+'</button></div>';
-  if(orderType==="h")h+='<label class="sh-f"><span>🪑 '+esc(t.table)+'</span><input id="fTable" inputmode="numeric" value="'+esc(tableNo)+'" placeholder="5"></label>';
+  var beansOnly=onlyBeans();
+  if(!beansOnly)h+='<div class="sh-type" role="radiogroup"><button type="button" data-type="t" class="'+(orderType==="t"?"on":"")+'" aria-pressed="'+(orderType==="t")+'">🥡 '+esc(t.typeT)+'</button><button type="button" data-type="h" class="'+(orderType==="h"?"on":"")+'" aria-pressed="'+(orderType==="h")+'">🪑 '+esc(t.typeH)+'</button></div>';
+  if(orderType==="h"&&!beansOnly)h+='<label class="sh-f"><span>🪑 '+esc(t.table)+'</span><input id="fTable" inputmode="numeric" value="'+esc(tableNo)+'" placeholder="5"></label>';
   h+='<ul class="sh-list">';
   for(var i=0;i<T2.lines.length;i++){var l=T2.lines[i],L=l.L,isB=L.m.id==="beans",unit=isB?" "+t.kg:"",line=L.price===null?t.priceAsk:fmtMoney(L.price*l.q)+" "+(lang==="en"?"EGP":"ج");
     h+='<li'+(L.forKey?' class="sl-flv"':'')+'><span class="sl-e">'+(L.forKey?"✨":(SEC_EMOJI[L.sec.id]||"•"))+'</span><span class="sl-n">'+esc(L.forKey?flvLabel(L):nm(L.it))+'<small>'+(L.forKey?esc((lang==="en"?"on ":"على ")+nm(L.forIt)):esc(nm(L.sec)))+(L.price!==null?' · '+fmtMoney(L.price)+(isB?(lang==="en"?" EGP/kg":" ج/كيلو"):(lang==="en"?" EGP":" ج")):"")+'</small></span>'+
@@ -3366,9 +3367,10 @@ function waUrl(){return "https://wa.me/"+MENU.whatsappOrder+"?text="+encodeURICo
 function syncSend(){var a=$("fSend");if(a)a.href=waUrl()}
 function itemLabel(x){var n=0,ss=x.m.sections||[];for(var i=0;i<ss.length;i++)for(var j=0;j<ss[i].items.length;j++)if(!ss[i].items[j].hide&&ss[i].items[j].n===x.it.n)n++;
   var lab=nm(x.it);if(n>1)lab+=" ("+nm(x.sec)+")";return lab}
+function onlyBeans(){var ls=cartLines();if(!ls.length)return false;for(var i=0;i<ls.length;i++)if(ls[i].L.m.id!=="beans")return false;return true}
 function buildMsg(){var t=T[lang],T2=cartTotals(),ar=lang!=="en",L=[];
   L.push(ar?"☕ *طلب جديد – بن الغاوي*":"☕ *New order – El Ghawy Coffee*");L.push("━━━━━━━━━━━━");
-  var tb=String(tableNo||"").replace(/^\s+|\s+$/g,"");L.push(orderType==="h"?(ar?"🪑 *نوع الطلب:* في الصالة"+(tb?" – ترابيزة رقم "+tb:""):"🪑 *Order type:* Dine-in"+(tb?" – Table "+tb:"")):(ar?"🥡 *نوع الطلب:* تيك أواي":"🥡 *Order type:* Takeaway"));
+  var tb=String(tableNo||"").replace(/^\s+|\s+$/g,"");L.push(onlyBeans()?(ar?"🫘 *نوع الطلب:* طلب بن":"🫘 *Order type:* Coffee beans"):orderType==="h"?(ar?"🪑 *نوع الطلب:* في الصالة"+(tb?" – ترابيزة رقم "+tb:""):"🪑 *Order type:* Dine-in"+(tb?" – Table "+tb:"")):(ar?"🥡 *نوع الطلب:* تيك أواي":"🥡 *Order type:* Takeaway"));
   if(custName)L.push((ar?"👤 *الاسم:* ":"👤 *Name:* ")+custName);
   L.push("━━━━━━━━━━━━");
   for(var i=0,no=0;i<T2.lines.length;i++){var l=T2.lines[i],x=l.L,isB=x.m.id==="beans",q=fmtQ(l.q,x.m.id)+(isB?" "+t.kg:"");

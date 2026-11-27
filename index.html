@@ -752,12 +752,6 @@ var MENU = {
    "items": [
     [
      "herbs",
-     "أزهار بابونج",
-     "بابونج",
-     "Chamomile"
-    ],
-    [
-     "herbs",
      "ينسون"
     ],
     [
@@ -826,27 +820,11 @@ var MENU = {
        "den": ""
       },
       {
-       "n": "شاي نكهات",
-       "en": "Flavored Tea",
+       "n": "شاي نكهات (تفاح)",
+       "en": "Apple Flavored Tea",
        "p": "20",
        "d": "",
-       "den": "",
-       "opts": [
-        "تفاح",
-        "فراولة",
-        "خوخ",
-        "توت",
-        "ليمون",
-        "نعناع"
-       ],
-       "optsEn": [
-        "Apple",
-        "Strawberry",
-        "Peach",
-        "Berry",
-        "Lemon",
-        "Mint"
-       ]
+       "den": ""
       },
       {
        "n": "شاي حليب",
@@ -898,6 +876,13 @@ var MENU = {
        "den": ""
       },
       {
+       "n": "نسكافيه بلاك",
+       "en": "Nescafé Black",
+       "p": "15",
+       "d": "",
+       "den": ""
+      },
+      {
        "n": "نسكافيه حليب",
        "en": "Nescafé with Milk",
        "p": "40",
@@ -943,21 +928,21 @@ var MENU = {
        "n": "قهوة نكهات",
        "en": "Flavored Coffee",
        "p": "35",
-       "d": "بندق – كراميل – شوكولاتة – توت – تفاح",
-       "den": "Hazelnut – Caramel – Chocolate – Berry – Apple",
+       "d": "بندق – كراميل – توت – تفاح – شوكولاتة",
+       "den": "Hazelnut – Caramel – Berry – Apple – Chocolate",
        "opts": [
         "بندق",
         "كراميل",
-        "شوكولاتة",
         "توت",
-        "تفاح"
+        "تفاح",
+        "شوكولاتة"
        ],
        "optsEn": [
         "Hazelnut",
         "Caramel",
-        "Chocolate",
         "Berry",
-        "Apple"
+        "Apple",
+        "Chocolate"
        ]
       },
       {
@@ -1135,6 +1120,13 @@ var MENU = {
        "n": "فرابتشينو",
        "en": "Frappuccino",
        "p": "55",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "فرابيه سولتيد كاراميل",
+       "en": "Salted Caramel Frappé",
+       "p": "65",
        "d": "",
        "den": ""
       },
@@ -1468,6 +1460,93 @@ var MENU = {
      ]
     },
     {
+     "id": "soda",
+     "name": "مشروبات صودا",
+     "en": "Soda Drinks",
+     "flat": "45",
+     "items": [
+      {
+       "n": "صن منت",
+       "en": "Sun Mint",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "صن شاين",
+       "en": "Sunshine",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "صودا أناناس",
+       "en": "Pineapple Soda",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "صودا كيوي",
+       "en": "Kiwi Soda",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "موهيتو كيوي",
+       "en": "Kiwi Mojito",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "موهيتو فراولة",
+       "en": "Strawberry Mojito",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "موهيتو توت",
+       "en": "Berry Mojito",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "موهيتو ميكس بيري",
+       "en": "Mixed Berry Mojito",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "موهيتو أناناس",
+       "en": "Pineapple Mojito",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "موهيتو كلاسيك",
+       "en": "Classic Mojito",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "موهيتو بطيخ",
+       "en": "Watermelon Mojito",
+       "p": "",
+       "d": "",
+       "den": ""
+      }
+     ],
+     "note": "",
+     "noteEn": ""
+    },
+    {
      "id": "herbs",
      "name": "أعشاب",
      "en": "Herbal Drinks",
@@ -1499,6 +1578,13 @@ var MENU = {
       {
        "n": "زنجبيل",
        "en": "Ginger",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "قرفة",
+       "en": "Cinnamon",
        "p": "",
        "d": "",
        "den": ""
@@ -1706,24 +1792,22 @@ var MENU = {
        "den": ""
       },
       {
-       "n": "شاي نكهات",
-       "en": "Flavored Tea",
-       "opts": [
-        "تفاح",
-        "فراولة",
-        "خوخ",
-        "توت",
-        "ليمون",
-        "نعناع"
-       ],
-       "optsEn": [
-        "Apple",
-        "Strawberry",
-        "Peach",
-        "Berry",
-        "Lemon",
-        "Mint"
-       ],
+       "n": "شاي أحمد تي",
+       "en": "Ahmad Tea",
+       "p": "15",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "شاي كرك",
+       "en": "Karak Tea",
+       "p": "40",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "شاي نكهات (تفاح)",
+       "en": "Apple Flavored Tea",
        "p": "15",
        "d": "",
        "den": ""
@@ -1739,6 +1823,13 @@ var MENU = {
        "n": "قهوة تركي",
        "en": "Turkish Coffee",
        "p": "10",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "قهوة الغاوي",
+       "en": "El Ghawy Coffee",
+       "p": "20",
        "d": "",
        "den": ""
       },
@@ -1774,19 +1865,21 @@ var MENU = {
        "n": "قهوة نكهات",
        "en": "Flavored Coffee",
        "p": "30",
-       "d": "بندق – كراميل – مانجو – موز",
-       "den": "Hazelnut – Caramel – Mango – Banana",
+       "d": "بندق – كراميل – توت – تفاح – شوكولاتة",
+       "den": "Hazelnut – Caramel – Berry – Apple – Chocolate",
        "opts": [
         "بندق",
         "كراميل",
-        "مانجو",
-        "موز"
+        "توت",
+        "تفاح",
+        "شوكولاتة"
        ],
        "optsEn": [
         "Hazelnut",
         "Caramel",
-        "Mango",
-        "Banana"
+        "Berry",
+        "Apple",
+        "Chocolate"
        ]
       },
       {
@@ -1799,6 +1892,13 @@ var MENU = {
       {
        "n": "قهوة نوتيلا",
        "en": "Nutella Coffee",
+       "p": "40",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "قهوة بيستاشيو",
+       "en": "Pistachio Coffee",
        "p": "40",
        "d": "",
        "den": ""
@@ -1818,9 +1918,16 @@ var MENU = {
        "den": ""
       },
       {
-       "n": "اسبريسو ماكياتو",
-       "en": "Espresso Macchiato",
+       "n": "اسبريسو ماكياتو سنجل",
+       "en": "Single Espresso Macchiato",
        "p": "30",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "اسبريسو ماكياتو دبل",
+       "en": "Double Espresso Macchiato",
+       "p": "40",
        "d": "",
        "den": ""
       },
@@ -1841,9 +1948,23 @@ var MENU = {
       {
        "n": "هوت شوكليت",
        "en": "Hot Chocolate",
-       "p": "35 – 45",
+       "p": "35",
        "d": "نوتيلا – كابري",
        "den": "Nutella – Capri"
+      },
+      {
+       "n": "هوت شوكليت نوتيلا",
+       "en": "Nutella Hot Chocolate",
+       "p": "45",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "هوت شوكليت كادبري",
+       "en": "Cadbury Hot Chocolate",
+       "p": "45",
+       "d": "",
+       "den": ""
       },
       {
        "n": "هوت سيدر",
@@ -1888,6 +2009,13 @@ var MENU = {
        "den": ""
       },
       {
+       "n": "كوفي بريك",
+       "en": "Coffee Break",
+       "p": "15",
+       "d": "",
+       "den": ""
+      },
+      {
        "n": "كافيه لاتيه",
        "en": "Caffè Latte",
        "p": "40",
@@ -1904,6 +2032,13 @@ var MENU = {
       {
        "n": "موكا",
        "en": "Mocha",
+       "p": "55",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "وايت موكا",
+       "en": "White Mocha",
        "p": "55",
        "d": "",
        "den": ""
@@ -2263,14 +2398,14 @@ var MENU = {
       {
        "n": "أوريو",
        "en": "Oreo",
-       "p": "",
+       "p": "50",
        "d": "",
        "den": ""
       },
       {
        "n": "نوتيلا",
        "en": "Nutella",
-       "p": "",
+       "p": "50",
        "d": "",
        "den": ""
       },
@@ -2381,6 +2516,20 @@ var MENU = {
        "p": "",
        "d": "",
        "den": ""
+      },
+      {
+       "n": "موهيتو كلاسيك",
+       "en": "Classic Mojito",
+       "p": "",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "موهيتو بطيخ",
+       "en": "Watermelon Mojito",
+       "p": "",
+       "d": "",
+       "den": ""
       }
      ],
      "note": "",
@@ -2430,13 +2579,6 @@ var MENU = {
        "den": ""
       },
       {
-       "n": "رمان",
-       "en": "Pomegranate",
-       "p": "",
-       "d": "",
-       "den": ""
-      },
-      {
        "n": "كركديه",
        "en": "Hibiscus",
        "p": "",
@@ -2460,13 +2602,6 @@ var MENU = {
       {
        "n": "زنجبيل + قرفة",
        "en": "Ginger + Cinnamon",
-       "p": "",
-       "d": "",
-       "den": ""
-      },
-      {
-       "n": "أزهار بابونج",
-       "en": "Chamomile",
        "p": "",
        "d": "",
        "den": ""
@@ -2562,6 +2697,20 @@ var MENU = {
        "n": "بيريل",
        "en": "Birell",
        "p": "30",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "تويست",
+       "en": "Twist",
+       "p": "30",
+       "d": "",
+       "den": ""
+      },
+      {
+       "n": "ريد بول",
+       "en": "Red Bull",
+       "p": "80",
        "d": "",
        "den": ""
       },
@@ -2907,7 +3056,7 @@ function reveal(){
 
 function renderFeatured(m){
  var box=$("featured");if(!box)return;
- if(!m||m.soon||!m.sections||m.id!=="takeaway"){box.className="featured";box.innerHTML="";return}
+ if(!m||m.soon||!m.sections||(m.id!=="takeaway"&&m.id!=="hall")){box.className="featured";box.innerHTML="";return}
  // Editorial picks, not sales rankings. Only display items that exist in this menu.
  // Editorial picks: [item name, section id, custom Arabic label, custom English label]
  var picks=[["فرابيه سولتيد كاراميل","iced","",""],["أيس سبانش لاتيه","iced","",""],["كابتشينو","hot","",""],["موكا","hot","",""],["قهوة بندق قطع","hot","",""],["ليمون نعناع","juice","",""],["موهيتو ميكس بيري","soda","",""],["بطيخ","smoothie","سموزي بطيخ","Watermelon Smoothie"]];
@@ -2927,8 +3076,8 @@ function moodOrder(){var h=new Date().getHours(),L=(MENU.moods||[]).slice(),firs
   L.sort(function(x,y){return (y.id===first)-(x.id===first)});return L}
 function renderMood(){
   var box=$("mood");if(!box)return;var t=T[lang],h="",L=moodOrder();
-  for(var i=0;i<L.length;i++)h+='<button type="button" data-mood="'+esc(L[i].id)+'"><span class="mi">'+L[i].icon+'</span>'+esc(nm(L[i]))+'</button>';
   h+='<button type="button" data-mood="*" class="sur"><span class="mi">🎲</span>'+esc(t.surprise)+'</button>';
+  for(var i=0;i<L.length;i++)h+='<button type="button" data-mood="'+esc(L[i].id)+'"><span class="mi">'+L[i].icon+'</span>'+esc(nm(L[i]))+'</button>';
   box.setAttribute("aria-label",lang==="en"?"Pick your mood":"اختار مزاجك");
   box.innerHTML='<div class="mood-title"><span class="eyebrow">'+esc(t.moodEy)+'</span><span class="greet">'+esc(greet())+'</span><h2>'+t.moodH+'</h2><p>'+esc(t.moodP)+'</p></div><div class="mood-chips">'+h+'</div><div class="mood-result" id="moodResult" aria-live="polite"></div>';
   moodState=null;
@@ -2941,23 +3090,25 @@ function resolvePick(m,ref){/* ref=[sectionId,itemName,labelAr,labelEn] */
 var SURPRISE_SKIP_SEC=["cold","indomie","herbs"],SURPRISE_SKIP=["شاي","قهوة تركي","نسكافيه بلاك","كوفي ميكس"];
 function allPicks(m){var out=[];for(var i=0;i<m.sections.length;i++){var s=m.sections[i];if(s.id==="cold"||s.id==="indomie")continue;if(SURPRISE_SKIP_SEC.indexOf(s.id)>-1)continue;for(var j=0;j<s.items.length;j++){var it=s.items[j];if(SURPRISE_SKIP.indexOf(it.n)>-1)continue;if(!it.hide&&!/^(إضافة|اضافة|زيادة)/.test(it.n||"")&&s.id!=="indomie"&&!/^مياه/.test(it.n||"")&&(it.p||s.flat))out.push({it:it,sec:s,id:"it-"+s.id+"-"+j,label:nm(it),price:it.p||s.flat})}}return out}
 function showMood(id,btn){
-  var m=findMenu("takeaway"),box=$("moodResult");if(!m||!box)return;
+  var m=findMenu(cur==="hall"?"hall":"takeaway"),box=$("moodResult");if(!m||!box)return;
   var bs=$("mood").querySelectorAll("[data-mood]");for(var z=0;z<bs.length;z++)bs[z].className=bs[z].className.replace(/\s*active/g,"");
   if(btn)btn.className+=" active";
   var pool=[],md=null,i;
   if(id==="*"){pool=allPicks(m)}else{for(i=0;i<(MENU.moods||[]).length;i++)if(MENU.moods[i].id===id)md=MENU.moods[i];if(!md)return;
     for(i=0;i<md.items.length;i++){var r=resolvePick(m,md.items[i]);if(r)pool.push(r)}}
   if(!pool.length)return;
-  if(!moodState||moodState.id!==id)moodState={id:id,pool:pool,used:[]};
+  if(!moodState||moodState.id!==id||moodState.mid!==m.id)moodState={id:id,mid:m.id,pool:pool,used:[]};
   var cand=[];for(i=0;i<pool.length;i++)if(moodState.used.indexOf(i)<0)cand.push(i);
   if(!cand.length){moodState.used=[moodState.used[moodState.used.length-1]];cand=[];for(i=0;i<pool.length;i++)if(moodState.used.indexOf(i)<0)cand.push(i)}
-  var k=cand[Math.floor(Math.random()*cand.length)];moodState.used.push(k);var P=pool[k];
+  var k=cand[Math.floor(Math.random()*cand.length)];
+  if(id==="*"){var tw=0,ws=[];for(i=0;i<cand.length;i++){var pm=String(pool[cand[i]].price||"").match(/\d+(\.\d+)?/),pv=pm?parseFloat(pm[0]):20,wv=Math.pow(Math.max(pv,5),1.5);ws.push(wv);tw+=wv}
+    var r=Math.random()*tw;for(i=0;i<cand.length;i++){r-=ws[i];if(r<=0){k=cand[i];break}}}moodState.used.push(k);var P=pool[k];
   var unit=tr(m,"unit")||"",line=md?tr(md,"line"):(lang==="en"?"Feeling lucky? Here's your cup today.":"سيبها على الغاوي… ده مشروبك النهارده."),icon=md?md.icon:"🎲";
   var alts=[];for(i=0;i<pool.length&&alts.length<3&&id!=="*";i++)if(i!==k)alts.push(pool[i]);
   var ah="";if(alts.length){ah='<div class="mr-alt"><span>'+esc(T[lang].also)+'</span>';for(i=0;i<alts.length;i++)ah+='<button type="button" data-go-item="'+alts[i].id+'">'+esc(alts[i].label)+'</button>';ah+='</div>'}
   box.innerHTML='<div class="mr-card"><div class="mr-icon">'+icon+'</div><div class="mr-kicker">'+esc(T[lang].mrK)+'</div><div class="mr-name">'+esc(P.label)+'</div><div class="mr-sec">'+esc(nm(P.sec))+'</div><div class="mr-desc">'+esc(line)+'</div>'+
     (P.price?'<div class="mr-price">'+esc(P.price)+' <small>'+esc(unit)+'</small></div>':'')+
-    '<div class="mr-btns">'+(numPrice(P.price)!==null?'<button type="button" class="go" data-mood-add="takeaway|'+P.id.replace(/^it-/,"").replace(/-(\d+)$/,"|$1")+'">🛒 '+esc(T[lang].addMood)+'</button>':'')+'<button type="button" class="go2" data-go-item="'+P.id+'">'+esc(T[lang].find)+' ↓</button><button type="button" class="again" data-again="'+esc(id)+'"><span class="dice">🎲</span> '+esc(T[lang].another)+'</button></div>'+ah+'</div>';
+    '<div class="mr-btns">'+(numPrice(P.price)!==null?'<button type="button" class="go" data-mood-add="'+m.id+'|'+P.id.replace(/^it-/,"").replace(/-(\d+)$/,"|$1")+'">🛒 '+esc(T[lang].addMood)+'</button>':'')+'<button type="button" class="go2" data-go-item="'+P.id+'">'+esc(T[lang].find)+' ↓</button><button type="button" class="again" data-again="'+esc(id)+'"><span class="dice">🎲</span> '+esc(T[lang].another)+'</button></div>'+ah+'</div>';
   box.className="mood-result show";var c=box.firstChild;c.className="mr-card";void c.offsetWidth;c.className="mr-card pop";
   var r=box.getBoundingClientRect();if(r.bottom>window.innerHeight||r.top<120){var y=r.top+window.pageYOffset-140;try{window.scrollTo({top:y,behavior:"smooth"})}catch(e){window.scrollTo(0,y)}}
 }
@@ -2968,7 +3119,7 @@ function goItem(id){var t=$(id);if(!t)return;var sec=t.closest?t.closest(".sec")
 function renderMenu(){
   var m=findMenu(cur);
   renderFeatured(m);renderMood();
-  if($("mood"))$("mood").style.display=(cur==="takeaway")?"":"none";
+  if($("mood"))$("mood").style.display=(cur==="takeaway"||cur==="hall")?"":"none";
   $("tag").textContent=m.soon?nm(m):tr(m,"tag");
   if(m.soon){
     menuEl.innerHTML="";nav.innerHTML="";nav.style.display="none";searchWrap.style.display="none";empty.style.display="none";soon.style.display="block";var actionsSoon=document.getElementById("menuActions");if(actionsSoon)actionsSoon.style.display="none";
@@ -3089,8 +3240,8 @@ function renderReview(){var box=$("review");if(!box)return;var u=MENU.reviewUrl|
 var SEC_EMOJI={hot:"☕",iced:"🧊",juice:"🍹",season:"🍉",smoothie:"🥤",shake:"🥛",soda:"🫧",herbs:"🌿",ice:"🍨",cold:"🥤",indomie:"🍜",blends:"🫘",flavored:"🫘",pure:"🫘",nes:"🫙"};
 var NUMS=["1️⃣","2️⃣","3️⃣","4️⃣","5️⃣","6️⃣","7️⃣","8️⃣","9️⃣","🔟"];
 var opt={},sugar={},cart={},orderType="t",tableNo="",custName="",custNotes="";
-try{var cs=JSON.parse(localStorage.getItem("gh_cart4")||"{}");cart=cs.c||{};sugar=cs.s||{};opt=cs.o||{};orderType=cs.t||"t";tableNo=cs.tb||"";custName=cs.n||""}catch(e){}
-var FLAVORS={ar:["فانيلا","شوكولاتة","بندق","كاراميل","سولتيد كاراميل"],en:["Vanilla","Chocolate","Hazelnut","Caramel","Salted Caramel"]};
+try{var cs=JSON.parse(localStorage.getItem("gh_cart7")||"{}");cart=cs.c||{};sugar=cs.s||{};opt=cs.o||{};orderType=cs.t||"t";tableNo=cs.tb||"";custName=cs.n||""}catch(e){}
+var FLAVORS={ar:["كاراميل","سولتيد كاراميل","فانيلا","بندق","شوكولاتة"],en:["Caramel","Salted Caramel","Vanilla","Hazelnut","Chocolate"]};
 var SUGAR={ar:["خفيف","مظبوط","مانو","زيادة","فوق الزيادة","سادة"],en:["Light","Medium","Medium+","Sweet","Extra sweet","No sugar"]},SUGAR_ORDER=[5,0,1,2,3,4];
 function needsSugar(L){return !!L&&!L.forKey&&(L.m.id==="takeaway"||L.m.id==="hall")&&(L.sec.id==="hot"||L.sec.id==="iced"||L.sec.id==="herbs")&&!/^(إضافة|اضافة|زيادة)/.test(L.it.n||"")}
 function spName(n){var en=lang==="en";if(en)return (n%1?(Math.floor(n)?Math.floor(n)+"½":"½"):n)+(n>1?" spoons":" spoon");
@@ -3100,7 +3251,7 @@ function optsOf(it){return it&&it.opts&&it.opts.length?it.opts:null}
 function optName(it,i){return (lang==="en"&&it.optsEn?it.optsEn:it.opts)[i]||""}
 function missingOpt(){var ls=cartLines();for(var i=0;i<ls.length;i++)if(!ls[i].L.forKey&&optsOf(ls[i].L.it)&&opt[ls[i].k]==null)return ls[i];return null}
 function missingSugar(){var ls=cartLines();for(var i=0;i<ls.length;i++)if(needsSugar(ls[i].L)&&sugar[ls[i].k]==null)return ls[i];return null}
-function saveCart(){try{localStorage.setItem("gh_cart4",JSON.stringify({c:cart,s:sugar,o:opt,t:orderType,tb:tableNo,n:custName}))}catch(e){}}
+function saveCart(){try{localStorage.setItem("gh_cart7",JSON.stringify({c:cart,s:sugar,o:opt,t:orderType,tb:tableNo,n:custName}))}catch(e){}}
 function numPrice(v){v=String(v||"").replace(/\s/g,"");return /^\d+(\.\d+)?$/.test(v)?parseFloat(v):null}
 function stepOf(menuId){return menuId==="beans"?0.25:1}
 function isFlvIt(it){return !!it&&/فليفر/.test(it.n||"")}
@@ -3143,7 +3294,8 @@ function convertCart(to,quiet){var nc={},ns={},no={},moved=0,kept=[],k;
 function changeQty(key,delta){var L=lookup(key);if(!L)return;if(delta>0&&(L.m.id==="hall"||L.m.id==="takeaway")){var want=L.m.id==="hall"?"h":"t";if(orderType!==want||otherMenuIn(L.m.id)){orderType=want;convertCart(L.m.id,true)}}var st=stepOf(L.m.id),q=+((cart[key]||0)+delta*st).toFixed(2);
   if(L.forKey&&delta>0&&flvOn(L.forKey)+1>(cart[L.forKey]||0)){toast(lang==="en"?"Every cup already has a flavor":"كل كوباية عليها فليفر خلاص");return}
   if(q<=0)delete cart[key];else cart[key]=q;saveCart();refreshCart(L.base||key)}
-function flvTargets(){var out=[],ls=cartLines();for(var i=0;i<ls.length;i++){var l=ls[i];if(l.L.forKey||(l.L.m.id!=="takeaway"&&l.L.m.id!=="hall")||isFlvIt(l.L.it)||/^(إضافة|اضافة|زيادة)/.test(l.L.it.n||""))continue;if(l.L.sec.id!=="hot"&&l.L.sec.id!=="iced")continue;if(/شاي/.test(l.L.it.n||"")||optsOf(l.L.it))continue;l.left=l.q-flvOn(l.k);out.push(l)}return out}
+function flvOk(L){if(!L||!L.sec)return false;if(L.sec.id==="iced")return true;return L.sec.id==="hot"&&/كابتشينو|نسكافيه|لاتيه/.test(L.it.n||"")}
+function flvTargets(){var out=[],ls=cartLines();for(var i=0;i<ls.length;i++){var l=ls[i];if(l.L.forKey||(l.L.m.id!=="takeaway"&&l.L.m.id!=="hall")||isFlvIt(l.L.it)||/^(إضافة|اضافة|زيادة)/.test(l.L.it.n||""))continue;if(!flvOk(l.L))continue;l.left=l.q-flvOn(l.k);out.push(l)}return out}
 var flvSel={base:null,drink:null,type:null},flvNo=false;
 function addFlv(){var base=flvSel.base,target=flvSel.drink,fi=flvSel.type;if(target==null||fi==null)return;if(!base)base=baseFor(target);if(!base)return;
   if(flvOn(target)>=(cart[target]||0)){toast(lang==="en"?"Every cup already has a flavor":"كل كوباية عليها فليفر خلاص");return}
@@ -3212,6 +3364,8 @@ function openSheet(){lastFocus=document.activeElement;renderSheet();var s=$("she
 function closeSheet(){var s=$("sheet"),pn=s.querySelector(".sh-panel");if(pn){pn.style.transition="";pn.style.transform=""};s.className="sheet";document.documentElement.style.overflow="";setTimeout(function(){s.hidden=true},250);try{lastFocus&&lastFocus.focus()}catch(e){}}
 function waUrl(){return "https://wa.me/"+MENU.whatsappOrder+"?text="+encodeURIComponent(buildMsg())}
 function syncSend(){var a=$("fSend");if(a)a.href=waUrl()}
+function itemLabel(x){var n=0,ss=x.m.sections||[];for(var i=0;i<ss.length;i++)for(var j=0;j<ss[i].items.length;j++)if(!ss[i].items[j].hide&&ss[i].items[j].n===x.it.n)n++;
+  var lab=nm(x.it);if(n>1)lab+=" ("+nm(x.sec)+")";return lab}
 function buildMsg(){var t=T[lang],T2=cartTotals(),ar=lang!=="en",L=[];
   L.push(ar?"☕ *طلب جديد – بن الغاوي*":"☕ *New order – El Ghawy Coffee*");L.push("━━━━━━━━━━━━");
   var tb=String(tableNo||"").replace(/^\s+|\s+$/g,"");L.push(orderType==="h"?(ar?"🪑 *نوع الطلب:* في الصالة"+(tb?" – ترابيزة رقم "+tb:""):"🪑 *Order type:* Dine-in"+(tb?" – Table "+tb:"")):(ar?"🥡 *نوع الطلب:* تيك أواي":"🥡 *Order type:* Takeaway"));
@@ -3220,7 +3374,7 @@ function buildMsg(){var t=T[lang],T2=cartTotals(),ar=lang!=="en",L=[];
   for(var i=0,no=0;i<T2.lines.length;i++){var l=T2.lines[i],x=l.L,isB=x.m.id==="beans",q=fmtQ(l.q,x.m.id)+(isB?" "+t.kg:"");
     var price=x.price===null?(ar?"(السعر يتحدد)":"(price TBC)"):fmtMoney(x.price*l.q)+(ar?" ج":" EGP");
     if(x.forKey){L.push("      ↳ ✨ "+flvLabel(x)+(ar?" على ":" on ")+nm(x.forIt)+" × "+q+" = "+price);continue}
-    L.push((NUMS[no++]||"▫️")+" "+(SEC_EMOJI[x.sec.id]||"")+" "+nm(x.it)+(optsOf(x.it)&&opt[l.k]!=null?" ("+optName(x.it,opt[l.k])+")":"")+" × "+q+" = "+price);
+    L.push((NUMS[no++]||"▫️")+" "+(SEC_EMOJI[x.sec.id]||"")+" "+itemLabel(x)+(optsOf(x.it)&&opt[l.k]!=null?" ("+optName(x.it,opt[l.k])+")":"")+" × "+q+" = "+price);
     if(needsSugar(x)&&sugar[l.k]!=null)L.push("      🍬 "+(ar?"السكر: ":"Sugar: ")+sugarName(sugar[l.k]))}
   L.push("━━━━━━━━━━━━");
   L.push((ar?"💰 *الإجمالي: ":"💰 *Total: ")+fmtMoney(T2.tot)+(ar?" ج*":" EGP*")+(T2.unknown?(ar?" + أصناف سعرها يتحدد":" + items priced in store"):""));
@@ -3265,7 +3419,7 @@ menuEl.addEventListener("click",function(e){if(!e.target.closest)return;var b=e.
   if(r){k=r.getAttribute("data-sub");if(isFlvKey(k)){var last=null;for(var x in cart)if(cart.hasOwnProperty(x)&&x.indexOf(k+">")===0)last=x;if(last){changeQty(last,-1);L=lookup(last);toast("− "+T[lang].removed+(L?" – "+flvLabel(L)+(lang==="en"?" on ":" على ")+nm(L.forIt):""))}return}changeQty(k,-1);L=lookup(k);toast("− "+T[lang].removed+(L?" – "+nm(L.it):""))}});
 /* ---- start ---- */
 var h=(location.hash||"").replace("#","");
-cur=findMenu(h)?h:(findMenu(load("gh_menu"))&&!findMenu(load("gh_menu")).soon?load("gh_menu"):"takeaway");
+cur=findMenu(h)?h:"hall";
 renderAll();loadVisits();
 })();
 </script>
